@@ -30,7 +30,7 @@ function Register-LimitedFallback {
   )
 
   $PowerShellPath = Join-Path $env:WINDIR "System32\WindowsPowerShell\v1.0\powershell.exe"
-  $TaskRun = "`"$PowerShellPath`" -NoProfile -ExecutionPolicy Bypass -File `"$RunnerPath`""
+  $TaskRun = '\"' + $PowerShellPath + '\" -NoProfile -ExecutionPolicy Bypass -File \"' + $RunnerPath + '\"'
 
   & schtasks.exe /Create /TN $DailyTaskName /SC DAILY /ST $DailyStartTime /TR $TaskRun /RL LIMITED /F | Write-Host
   if ($LASTEXITCODE -ne 0) {
@@ -39,7 +39,8 @@ function Register-LimitedFallback {
 
   & schtasks.exe /Create /TN $CatchupTaskName /SC ONLOGON /TR $TaskRun /RL LIMITED /F | Write-Host
   if ($LASTEXITCODE -ne 0) {
-    throw "Limited logon catch-up task registration failed with exit code $LASTEXITCODE."
+    Write-Warning "Limited logon catch-up task registration failed with exit code $LASTEXITCODE. Daily scheduling is still registered."
+    return
   }
 
   Write-Host "Registered limited fallback tasks:"

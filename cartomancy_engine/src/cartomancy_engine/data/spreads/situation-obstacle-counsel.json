@@ -1,0 +1,21 @@
+{
+  "id": "situation-obstacle-counsel",
+  "name": "Situation / Obstacle / Counsel",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Situation",
+      "prompt": "What is the situation as it stands?"
+    },
+    {
+      "index": 2,
+      "label": "Obstacle",
+      "prompt": "What obstacle, tension, or constraint needs attention?"
+    },
+    {
+      "index": 3,
+      "label": "Counsel",
+      "prompt": "What counsel or response is most useful now?"
+    }
+  ]
+}

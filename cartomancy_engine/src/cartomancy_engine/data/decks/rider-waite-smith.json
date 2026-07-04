@@ -1,0 +1,248 @@
+{
+  "id": "rider-waite-smith",
+  "name": "Rider-Waite-Smith",
+  "cards": [
+    {
+      "id": "major_00_fool",
+      "name": "The Fool",
+      "arcana": "major",
+      "number": 0,
+      "suit": null,
+      "element": "air",
+      "upright_keywords": ["beginning", "risk", "innocence", "threshold"],
+      "reversed_keywords": ["folly", "avoidance", "recklessness", "blocked beginning"],
+      "notes": ""
+    },
+    {
+      "id": "major_01_magician",
+      "name": "The Magician",
+      "arcana": "major",
+      "number": 1,
+      "suit": null,
+      "element": "air",
+      "upright_keywords": ["agency", "skill", "will", "manifestation"],
+      "reversed_keywords": ["manipulation", "scattered will", "misdirection", "unused skill"],
+      "notes": ""
+    },
+    {
+      "id": "major_02_high_priestess",
+      "name": "The High Priestess",
+      "arcana": "major",
+      "number": 2,
+      "suit": null,
+      "element": "water",
+      "upright_keywords": ["intuition", "mystery", "inner knowing", "receptivity"],
+      "reversed_keywords": ["withheld knowledge", "disconnection", "secrecy", "ignored intuition"],
+      "notes": ""
+    },
+    {
+      "id": "major_03_empress",
+      "name": "The Empress",
+      "arcana": "major",
+      "number": 3,
+      "suit": null,
+      "element": "earth",
+      "upright_keywords": ["fertility", "care", "embodiment", "abundance"],
+      "reversed_keywords": ["neglect", "overgiving", "creative block", "depletion"],
+      "notes": ""
+    },
+    {
+      "id": "major_04_emperor",
+      "name": "The Emperor",
+      "arcana": "major",
+      "number": 4,
+      "suit": null,
+      "element": "fire",
+      "upright_keywords": ["structure", "authority", "stability", "command"],
+      "reversed_keywords": ["rigidity", "domination", "instability", "control"],
+      "notes": ""
+    },
+    {
+      "id": "major_05_hierophant",
+      "name": "The Hierophant",
+      "arcana": "major",
+      "number": 5,
+      "suit": null,
+      "element": "earth",
+      "upright_keywords": ["tradition", "teaching", "lineage", "shared practice"],
+      "reversed_keywords": ["dogma", "rebellion", "stale doctrine", "private path"],
+      "notes": ""
+    },
+    {
+      "id": "major_06_lovers",
+      "name": "The Lovers",
+      "arcana": "major",
+      "number": 6,
+      "suit": null,
+      "element": "air",
+      "upright_keywords": ["choice", "union", "values", "alignment"],
+      "reversed_keywords": ["misalignment", "indecision", "division", "conflicted values"],
+      "notes": ""
+    },
+    {
+      "id": "major_07_chariot",
+      "name": "The Chariot",
+      "arcana": "major",
+      "number": 7,
+      "suit": null,
+      "element": "water",
+      "upright_keywords": ["direction", "discipline", "victory", "momentum"],
+      "reversed_keywords": ["drift", "force without aim", "stalling", "loss of control"],
+      "notes": ""
+    },
+    {
+      "id": "major_08_strength",
+      "name": "Strength",
+      "arcana": "major",
+      "number": 8,
+      "suit": null,
+      "element": "fire",
+      "upright_keywords": ["courage", "patience", "gentle power", "self-mastery"],
+      "reversed_keywords": ["self-doubt", "force", "impatience", "inner conflict"],
+      "notes": ""
+    },
+    {
+      "id": "major_09_hermit",
+      "name": "The Hermit",
+      "arcana": "major",
+      "number": 9,
+      "suit": null,
+      "element": "earth",
+      "upright_keywords": ["solitude", "discernment", "study", "inner guidance"],
+      "reversed_keywords": ["isolation", "avoidance", "lost counsel", "withdrawal"],
+      "notes": ""
+    },
+    {
+      "id": "major_10_wheel_of_fortune",
+      "name": "Wheel of Fortune",
+      "arcana": "major",
+      "number": 10,
+      "suit": null,
+      "element": "fire",
+      "upright_keywords": ["turning point", "cycle", "chance", "pattern"],
+      "reversed_keywords": ["resistance", "bad timing", "repeating cycle", "instability"],
+      "notes": ""
+    },
+    {
+      "id": "major_11_justice",
+      "name": "Justice",
+      "arcana": "major",
+      "number": 11,
+      "suit": null,
+      "element": "air",
+      "upright_keywords": ["truth", "accountability", "balance", "consequence"],
+      "reversed_keywords": ["bias", "avoidance", "unfairness", "unowned consequence"],
+      "notes": ""
+    },
+    {
+      "id": "major_12_hanged_man",
+      "name": "The Hanged Man",
+      "arcana": "major",
+      "number": 12,
+      "suit": null,
+      "element": "water",
+      "upright_keywords": ["pause", "surrender", "reversal", "new perspective"],
+      "reversed_keywords": ["stasis", "martyrdom", "resistance", "pointless delay"],
+      "notes": ""
+    },
+    {
+      "id": "major_13_death",
+      "name": "Death",
+      "arcana": "major",
+      "number": 13,
+      "suit": null,
+      "element": "water",
+      "upright_keywords": ["ending", "transformation", "release", "threshold"],
+      "reversed_keywords": ["clinging", "stagnation", "fear of change", "unfinished ending"],
+      "notes": ""
+    },
+    {
+      "id": "major_14_temperance",
+      "name": "Temperance",
+      "arcana": "major",
+      "number": 14,
+      "suit": null,
+      "element": "fire",
+      "upright_keywords": ["integration", "moderation", "alchemy", "patience"],
+      "reversed_keywords": ["excess", "imbalance", "haste", "failed integration"],
+      "notes": ""
+    },
+    {
+      "id": "major_15_devil",
+      "name": "The Devil",
+      "arcana": "major",
+      "number": 15,
+      "suit": null,
+      "element": "earth",
+      "upright_keywords": ["attachment", "shadow", "bondage", "compulsion"],
+      "reversed_keywords": ["release", "awareness", "detachment", "breaking pattern"],
+      "notes": ""
+    },
+    {
+      "id": "major_16_tower",
+      "name": "The Tower",
+      "arcana": "major",
+      "number": 16,
+      "suit": null,
+      "element": "fire",
+      "upright_keywords": ["rupture", "revelation", "collapse", "liberation"],
+      "reversed_keywords": ["delayed collapse", "denial", "fear of upheaval", "private crisis"],
+      "notes": ""
+    },
+    {
+      "id": "major_17_star",
+      "name": "The Star",
+      "arcana": "major",
+      "number": 17,
+      "suit": null,
+      "element": "air",
+      "upright_keywords": ["hope", "renewal", "guidance", "restoration"],
+      "reversed_keywords": ["discouragement", "lost faith", "depletion", "dimmed vision"],
+      "notes": ""
+    },
+    {
+      "id": "major_18_moon",
+      "name": "The Moon",
+      "arcana": "major",
+      "number": 18,
+      "suit": null,
+      "element": "water",
+      "upright_keywords": ["dream", "uncertainty", "projection", "subconscious"],
+      "reversed_keywords": ["confusion clearing", "deception", "anxiety", "distorted signal"],
+      "notes": ""
+    },
+    {
+      "id": "major_19_sun",
+      "name": "The Sun",
+      "arcana": "major",
+      "number": 19,
+      "suit": null,
+      "element": "fire",
+      "upright_keywords": ["clarity", "vitality", "joy", "revelation"],
+      "reversed_keywords": ["partial clarity", "burnout", "blocked joy", "overexposure"],
+      "notes": ""
+    },
+    {
+      "id": "major_20_judgement",
+      "name": "Judgement",
+      "arcana": "major",
+      "number": 20,
+      "suit": null,
+      "element": "fire",
+      "upright_keywords": ["reckoning", "calling", "awakening", "review"],
+      "reversed_keywords": ["self-judgment", "avoidance", "unanswered call", "refusal to review"],
+      "notes": ""
+    },
+    {
+      "id": "major_21_world",
+      "name": "The World",
+      "arcana": "major",
+      "number": 21,
+      "suit": null,
+      "element": "earth",
+      "upright_keywords": ["completion", "integration", "arrival", "wholeness"],
+      "reversed_keywords": ["incompletion", "loose ends", "delay", "unintegrated lesson"],
+      "notes": ""
+    }
+  ]
+}

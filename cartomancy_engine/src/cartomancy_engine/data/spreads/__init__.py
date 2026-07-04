@@ -1,0 +1,1 @@
+"""Bundled spread JSON resources."""

@@ -1,0 +1,21 @@
+{
+  "id": "body-mind-action",
+  "name": "Body / Mind / Action",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Body",
+      "prompt": "What is the body or felt sense registering?"
+    },
+    {
+      "index": 2,
+      "label": "Mind",
+      "prompt": "What thought, frame, or interpretation is active?"
+    },
+    {
+      "index": 3,
+      "label": "Action",
+      "prompt": "What action would make the reflection concrete?"
+    }
+  ]
+}

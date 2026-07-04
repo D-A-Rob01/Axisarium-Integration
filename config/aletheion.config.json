@@ -1,0 +1,254 @@
+{
+  "name": "Aletheion",
+  "person": {
+    "name": "David",
+    "timezone": "America/New_York",
+    "birth": {
+      "date": "1999-07-01",
+      "time": "11:36 CEST / 09:36 UT",
+      "location": "Manual coordinates from PDF calculator output",
+      "latitude": 39.21455,
+      "longitude": -76.886368
+    }
+  },
+  "source_basis": {
+    "primary_document": "David's Natal Birth Chat Info.pdf",
+    "extracted_on": "2026-06-10",
+    "notes": [
+      "PDF calculator output is authoritative where it differs from earlier synthesis notes.",
+      "Birth chart source lists Placidus houses, AC Virgo 08 deg 19 min, and MC Gemini 04 deg 56 min.",
+      "Node and Lilith are recorded as mean positions in the PDF: Node (M) and Lilith (M).",
+      "Asteroid placements remain from the earlier synthesis until separately verified against an asteroid table."
+    ]
+  },
+  "obsidian_vault_path": "C:\\Users\\david\\OneDrive\\Apps\\remotely-save\\Axisarium",
+  "daily_note_folder": "02 Daily Sky",
+  "house_system": "Placidus",
+  "natal_house_cusps": [
+    {"house": 1, "sign": "Virgo", "display_degree": "08 deg 19 min", "longitude": 158.3167},
+    {"house": 2, "sign": "Libra", "display_degree": "02 deg 38 min", "longitude": 182.6333},
+    {"house": 3, "sign": "Scorpio", "display_degree": "01 deg 48 min", "longitude": 211.8},
+    {"house": 4, "sign": "Sagittarius", "display_degree": "04 deg 56 min", "longitude": 244.9333},
+    {"house": 5, "sign": "Capricorn", "display_degree": "09 deg 00 min", "longitude": 279.0},
+    {"house": 6, "sign": "Aquarius", "display_degree": "10 deg 32 min", "longitude": 310.5333},
+    {"house": 7, "sign": "Pisces", "display_degree": "08 deg 19 min", "longitude": 338.3167},
+    {"house": 8, "sign": "Aries", "display_degree": "02 deg 38 min", "longitude": 2.6333},
+    {"house": 9, "sign": "Taurus", "display_degree": "01 deg 48 min", "longitude": 31.8},
+    {"house": 10, "sign": "Gemini", "display_degree": "04 deg 56 min", "longitude": 64.9333},
+    {"house": 11, "sign": "Cancer", "display_degree": "09 deg 00 min", "longitude": 99.0},
+    {"house": 12, "sign": "Leo", "display_degree": "10 deg 32 min", "longitude": 130.5333}
+  ],
+  "temporal_awareness": {
+    "alert_horizon_days": 7,
+    "exactitude_window_hours": 36,
+    "eclipse_horizon_days": 30,
+    "scan_step_hours": 6,
+    "eclipse_natal_orb": 2.0
+  },
+  "ephemeris": {
+    "provider": "swetest",
+    "swetest_executable": "swiss-eph\\bin\\swetest64.exe",
+    "ephemeris_files_path": "swiss-eph\\ephe",
+    "default_utc_time": "12:00:00",
+    "swetest_planet_sequence": "0123456789Dt"
+  },
+  "interpretation_style": {
+    "tone": "concise, mythopoetic, practical, and epistemically careful",
+    "separate_verified_from_symbolic": true,
+    "max_daily_words": 900,
+    "max_active_contacts": 12,
+    "contact_tiers": {
+      "exact_urgent_orb": 0.5,
+      "active_orb": 1.5,
+      "max_exact_urgent": 8,
+      "max_active": 8,
+      "max_background": 6
+    }
+  },
+  "natal_points": [
+    {
+      "name": "Sun",
+      "sign": "Cancer",
+      "degree": 9.1167,
+      "display_degree": "09 deg 07 min",
+      "longitude": 99.1167,
+      "house": 11,
+      "keywords": ["solar identity", "protection", "memory", "lineage"]
+    },
+    {
+      "name": "Moon",
+      "sign": "Aquarius",
+      "degree": 7.3667,
+      "display_degree": "07 deg 22 min",
+      "longitude": 307.3667,
+      "house": 5,
+      "keywords": ["emotional abstraction", "systems feeling", "distance", "friendship"]
+    },
+    {
+      "name": "Mercury",
+      "sign": "Leo",
+      "degree": 4.5,
+      "display_degree": "04 deg 30 min",
+      "longitude": 124.5,
+      "house": 11,
+      "keywords": ["rhetoric", "teaching", "collective voice", "dramatic speech"]
+    },
+    {
+      "name": "Venus",
+      "sign": "Leo",
+      "degree": 22.6833,
+      "display_degree": "22 deg 41 min",
+      "longitude": 142.6833,
+      "house": 12,
+      "keywords": ["hidden radiance", "private glamour", "devotion", "romantic idealization"]
+    },
+    {
+      "name": "Mars",
+      "sign": "Libra",
+      "degree": 28.8,
+      "display_degree": "28 deg 48 min",
+      "longitude": 208.8,
+      "house": 2,
+      "keywords": ["value conflict", "aesthetic strategy", "fairness", "clean assertion"]
+    },
+    {
+      "name": "Ascendant",
+      "sign": "Virgo",
+      "degree": 8.3167,
+      "display_degree": "08 deg 19 min",
+      "longitude": 158.3167,
+      "house": 1,
+      "keywords": ["method", "discernment", "body as instrument", "craft"]
+    },
+    {
+      "name": "Midheaven",
+      "sign": "Gemini",
+      "degree": 4.9333,
+      "display_degree": "04 deg 56 min",
+      "longitude": 64.9333,
+      "house": 10,
+      "keywords": ["public language", "teaching", "translation", "rhetorical agility"]
+    },
+    {
+      "name": "Node (M)",
+      "sign": "Leo",
+      "degree": 14.7833,
+      "display_degree": "14 deg 47 min R",
+      "longitude": 134.7833,
+      "house": 12,
+      "keywords": ["hidden authorship", "courage behind the veil", "creative sovereignty", "spiritual risk"]
+    },
+    {
+      "name": "Jupiter",
+      "sign": "Taurus",
+      "degree": 0.4667,
+      "display_degree": "00 deg 28 min",
+      "longitude": 30.4667,
+      "house": 8,
+      "keywords": ["deep study", "inheritance", "taboo knowledge", "trust"]
+    },
+    {
+      "name": "Saturn",
+      "sign": "Taurus",
+      "degree": 14.25,
+      "display_degree": "14 deg 15 min",
+      "longitude": 44.25,
+      "house": 9,
+      "keywords": ["disciplined worldview", "long study", "belief under pressure", "earned authority"]
+    },
+    {
+      "name": "Uranus",
+      "sign": "Aquarius",
+      "degree": 16.1667,
+      "display_degree": "16 deg 10 min R",
+      "longitude": 316.1667,
+      "house": 6,
+      "keywords": ["daily disruption", "liberating systems", "nervous rhythm", "work-body experimentation"]
+    },
+    {
+      "name": "Neptune",
+      "sign": "Aquarius",
+      "degree": 3.6167,
+      "display_degree": "03 deg 37 min R",
+      "longitude": 303.6167,
+      "house": 5,
+      "keywords": ["visionary imagination", "aesthetic atmosphere", "porous fantasy", "creative fog"]
+    },
+    {
+      "name": "Pluto",
+      "sign": "Sagittarius",
+      "degree": 8.3167,
+      "display_degree": "08 deg 19 min R",
+      "longitude": 248.3167,
+      "house": 4,
+      "keywords": ["ancestral underworld", "root transformation", "private intensity", "foundational truth"]
+    },
+    {
+      "name": "Chiron",
+      "sign": "Scorpio",
+      "degree": 28.2,
+      "display_degree": "28 deg 12 min R",
+      "longitude": 238.2,
+      "house": 3,
+      "keywords": ["wounded speech", "therapeutic inquiry", "dangerous knowledge"]
+    },
+    {
+      "name": "Lilith (M)",
+      "sign": "Sagittarius",
+      "degree": 2.9,
+      "display_degree": "02 deg 54 min",
+      "longitude": 242.9,
+      "house": 3,
+      "keywords": ["taboo speech", "feral truth", "unsanctioned knowing", "third-house rupture"]
+    },
+    {
+      "name": "Part of Fortune",
+      "sign": "Aries",
+      "degree": 6.5667,
+      "display_degree": "06 deg 34 min",
+      "longitude": 6.5667,
+      "house": 8,
+      "keywords": ["direct instinct", "shared resources", "risk", "vitality through depth"]
+    },
+    {
+      "name": "Vertex",
+      "sign": "Aquarius",
+      "degree": 6.0,
+      "display_degree": "06 deg 00 min",
+      "longitude": 306.0,
+      "house": 5,
+      "keywords": ["creative thresholds", "fated play", "imaginative encounter", "performance gates"]
+    }
+  ],
+  "natal_aspect_motifs": [
+    "Moon-Neptune-Vertex in the 5th: imaginative feeling and creative thresholds need capture and routing.",
+    "Mercury-Neptune-Pluto: mythic imagination plus investigative depth; fact, inference, and symbol should stay separated.",
+    "Venus-Uranus-Chiron-Psyche: love as freedom, wound, soul-test, and hidden radiance.",
+    "Saturn in the 9th and Uranus in the 6th: disciplined worldview meets liberating daily systems.",
+    "Mars-Jupiter-Fortune: action and opportunity activate value, trust, and shared resources."
+  ],
+  "natal_asteroids": [
+    {"name": "Ceres", "sign": "Cancer", "degree": 20.8667, "display_degree": "20 deg 52 min", "longitude": 110.8667},
+    {"name": "Pallas", "sign": "Gemini", "degree": 4.9333, "display_degree": "04 deg 56 min", "longitude": 64.9333},
+    {"name": "Juno", "sign": "Scorpio", "degree": 27.2667, "display_degree": "27 deg 16 min R", "longitude": 237.2667},
+    {"name": "Vesta", "sign": "Virgo", "degree": 3.4, "display_degree": "03 deg 24 min", "longitude": 153.4},
+    {"name": "Psyche", "sign": "Aquarius", "degree": 16.9, "display_degree": "16 deg 54 min R", "longitude": 316.9},
+    {"name": "Eros", "sign": "Gemini", "degree": 15.4333, "display_degree": "15 deg 26 min", "longitude": 75.4333},
+    {"name": "Asteroid Lilith", "sign": "Pisces", "degree": 12.3333, "display_degree": "12 deg 20 min", "longitude": 342.3333},
+    {"name": "Atropos", "sign": "Virgo", "degree": 1.4333, "display_degree": "01 deg 26 min", "longitude": 151.4333},
+    {"name": "Klotho", "sign": "Libra", "degree": 6.1667, "display_degree": "06 deg 10 min", "longitude": 186.1667},
+    {"name": "Lachesis", "sign": "Scorpio", "degree": 6.8, "display_degree": "06 deg 48 min", "longitude": 216.8},
+    {"name": "Moira", "sign": "Taurus", "degree": 5.1833, "display_degree": "05 deg 11 min", "longitude": 35.1833},
+    {"name": "Hekate", "sign": "Pisces", "degree": 23.1333, "display_degree": "23 deg 08 min", "longitude": 353.1333},
+    {"name": "Vibilia", "sign": "Virgo", "degree": 10.7, "display_degree": "10 deg 42 min", "longitude": 160.7}
+  ],
+  "aspect_orbs": {
+    "conjunction": 6,
+    "opposition": 6,
+    "trine": 5,
+    "square": 5,
+    "sextile": 4
+  },
+  "watch_planets": ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"],
+  "asteroids": ["Chiron", "Ceres", "Pallas", "Juno", "Vesta"]
+}

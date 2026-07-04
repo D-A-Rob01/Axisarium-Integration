@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-09",
+  "source": "manual_sample",
+  "source_note": "Replace these values with verified ephemeris data before treating the Raw Sky Data section as astronomical fact.",
+  "location": {
+    "label": "User location placeholder",
+    "latitude": null,
+    "longitude": null
+  },
+  "moon_phase": {
+    "label": "Sample moon phase",
+    "illumination_percent": null
+  },
+  "weather": {
+    "source": "not_configured",
+    "summary": "Weather provider not connected yet."
+  },
+  "bodies": [
+    {"name": "Sun", "sign": "Gemini", "degree": 18.5, "longitude": 78.5, "speed": "direct", "house": null},
+    {"name": "Moon", "sign": "Virgo", "degree": 7.2, "longitude": 157.2, "speed": "direct", "house": null},
+    {"name": "Mercury", "sign": "Cancer", "degree": 3.0, "longitude": 93.0, "speed": "direct", "house": null},
+    {"name": "Venus", "sign": "Taurus", "degree": 25.0, "longitude": 55.0, "speed": "direct", "house": null},
+    {"name": "Mars", "sign": "Leo", "degree": 11.0, "longitude": 131.0, "speed": "direct", "house": null},
+    {"name": "Jupiter", "sign": "Cancer", "degree": 0.5, "longitude": 90.5, "speed": "direct", "house": null},
+    {"name": "Saturn", "sign": "Aries", "degree": 2.0, "longitude": 2.0, "speed": "direct", "house": null},
+    {"name": "Uranus", "sign": "Gemini", "degree": 1.0, "longitude": 61.0, "speed": "direct", "house": null},
+    {"name": "Neptune", "sign": "Aries", "degree": 1.5, "longitude": 1.5, "speed": "direct", "house": null},
+    {"name": "Pluto", "sign": "Aquarius", "degree": 4.0, "longitude": 304.0, "speed": "retrograde", "house": null}
+  ],
+  "collective_aspects": [
+    {"body_a": "Saturn", "aspect": "conjunction", "body_b": "Neptune", "orb": 0.5, "status": "sample"}
+  ],
+  "events": [
+    {"type": "ingress", "body": "Jupiter", "description": "Sample: Jupiter newly in Cancer."}
+  ]
+}
+

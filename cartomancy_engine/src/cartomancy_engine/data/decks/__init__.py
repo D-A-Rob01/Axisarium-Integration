@@ -1,0 +1,1 @@
+"""Bundled deck JSON resources."""

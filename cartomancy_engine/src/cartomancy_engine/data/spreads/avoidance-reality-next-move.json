@@ -1,0 +1,21 @@
+{
+  "id": "avoidance-reality-next-move",
+  "name": "What Am I Avoiding? / What Is Real? / What Is The Next Move?",
+  "positions": [
+    {
+      "index": 1,
+      "label": "What am I avoiding?",
+      "prompt": "What am I avoiding, minimizing, or refusing to name?"
+    },
+    {
+      "index": 2,
+      "label": "What is real?",
+      "prompt": "What is materially, emotionally, or symbolically real here?"
+    },
+    {
+      "index": 3,
+      "label": "What is the next move?",
+      "prompt": "What next move is small enough to take and honest enough to matter?"
+    }
+  ]
+}

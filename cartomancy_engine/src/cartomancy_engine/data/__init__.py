@@ -1,0 +1,1 @@
+"""Bundled cartomancy data resources."""

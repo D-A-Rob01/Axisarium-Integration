@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cartomancy-engine"
+version = "0.1.0"
+description = "A local-first Tarot and cartomancy reading logger for Axisarium."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "David" }]
+dependencies = [
+  "pydantic>=2.7",
+  "pyyaml>=6.0",
+  "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+cartomancy-engine = "cartomancy_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cartomancy_engine = ["data/decks/*.json", "data/spreads/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

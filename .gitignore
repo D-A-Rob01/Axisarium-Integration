@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime output
+logs/
+scratch/
+reports/
+*.log
+.env
+.env.*
+!.env.example
+
+# Mutable local memory
+memory/events.jsonl
+melographion/data/cache/.spotify_token
+
+# Retired vault mirrors and local sync artifacts
+vault/
+vault.retired-*/
+.obsidian/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

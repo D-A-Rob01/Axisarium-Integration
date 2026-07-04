@@ -16,7 +16,7 @@ Local code and tooling workspace for the Axisarium Obsidian vault.
 The live vault is not mirrored here. It remains at:
 
 ```text
-H:\My Drive\Axisarium
+C:\Users\david\Documents\Axisarium Vault
 ```
 
 ## Daily Sky
@@ -36,7 +36,7 @@ Generate a safe test note into repo scratch space:
 The configured production output folder is:
 
 ```text
-H:\My Drive\Axisarium\02 Daily Sky
+C:\Users\david\Documents\Axisarium Vault\02 Daily Sky
 ```
 
 ## Observation Ledger
@@ -54,7 +54,7 @@ Observation records are deterministic JSONL entries with `schema_version: alethe
 Run a read-only scan of the live Axisarium vault and write reports into repo scratch space:
 
 ```powershell
-& "C:\Users\david\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" .\tools\vault_audit.py --vault "H:\My Drive\Axisarium" --reports-dir ".\scratch\audit-reports"
+& "C:\Users\david\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" .\tools\vault_audit.py --vault "C:\Users\david\Documents\Axisarium Vault" --reports-dir ".\scratch\audit-reports"
 ```
 
 To intentionally update the live vault's `reports/` folder, omit `--reports-dir`.

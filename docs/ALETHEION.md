@@ -30,7 +30,7 @@ From the Axisarium Integration workspace root:
 By default, the note is written to the active Google Drive-backed Obsidian vault:
 
 ```text
-H:\My Drive\Axisarium\02 Daily Sky\Daily Sky - YYYY-MM-DD.md
+C:\Users\david\Documents\Axisarium Vault\02 Daily Sky\Daily Sky - YYYY-MM-DD.md
 ```
 
 The active production vault path is configured in:
@@ -42,7 +42,7 @@ config/aletheion.config.json
 Current production setting:
 
 ```json
-"obsidian_vault_path": "H:\\My Drive\\Axisarium",
+"obsidian_vault_path": "C:\\Users\\david\\Documents\\Axisarium Vault",
 "daily_note_folder": "02 Daily Sky"
 ```
 
@@ -214,7 +214,7 @@ run-daily-aletheion.ps1
 That script generates the daily note directly into the configured Google Drive-backed Obsidian vault:
 
 ```text
-H:\My Drive\Axisarium\02 Daily Sky
+C:\Users\david\Documents\Axisarium Vault\02 Daily Sky
 ```
 
 Run logs are written to:

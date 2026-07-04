@@ -13,7 +13,7 @@ Keep these in `C:\Users\david\Documents\Axisarium Integration`:
 
 ## Live Vault
 
-Keep these in `H:\My Drive\Axisarium`:
+Keep these in `C:\Users\david\Documents\Axisarium Vault`:
 
 - Obsidian notes, daily notes, Daily Sky notes, attachments, and templates used in Obsidian.
 - `.obsidian` settings and plugin state.

@@ -63,7 +63,7 @@ Melographion does not call public cobalt.tools in v0.1.
 The live vault defaults to:
 
 ```text
-H:\My Drive\Axisarium
+C:\Users\david\Documents\Axisarium Vault
 ```
 
 Every live vault write has a dry-run mode. Real writes create a timestamped backup manifest under:

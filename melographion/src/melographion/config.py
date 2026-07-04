@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_VAULT_PATH = Path(r"H:\My Drive\Axisarium")
+DEFAULT_VAULT_PATH = Path(r"C:\Users\david\Documents\Axisarium Vault")
 
 
 def _load_dotenv(path: Path) -> None:

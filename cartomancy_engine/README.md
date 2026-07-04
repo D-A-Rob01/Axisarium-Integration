@@ -50,7 +50,7 @@ cartomancy-engine draw --mode decision-support --question "What should I priorit
 Write to a specific folder:
 
 ```powershell
-cartomancy-engine draw --deck rider-waite-smith --spread three-card --mode decision-support --question "What should I prioritize this week?" --output "H:\My Drive\Axisarium\03 Readings\Tarot"
+cartomancy-engine draw --deck rider-waite-smith --spread three-card --mode decision-support --question "What should I prioritize this week?" --output "C:\Users\david\Documents\Axisarium Vault\03 Readings\Tarot"
 ```
 
 Preview without writing:

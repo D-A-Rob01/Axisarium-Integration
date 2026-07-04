@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-DEFAULT_VAULT_ROOT = Path(r"H:\My Drive\Axisarium")
+DEFAULT_VAULT_ROOT = Path(r"C:\Users\david\Documents\Axisarium Vault")
 VAULT_ROOT = DEFAULT_VAULT_ROOT
 REPORTS_DIR = DEFAULT_VAULT_ROOT / "reports"
 TODAY = date.today()

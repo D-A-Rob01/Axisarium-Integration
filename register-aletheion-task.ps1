@@ -73,7 +73,7 @@ try {
     -Action $Action `
     -Trigger $Triggers `
     -Settings $Settings `
-    -Description "Generate Aletheion Daily Sky note into the OneDrive-synced Obsidian vault." `
+    -Description "Generate Aletheion Daily Sky note into the Google Drive-backed Obsidian vault." `
     -Force | Out-Null
 
   Write-Host "Registered task: $TaskName"

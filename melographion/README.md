@@ -1,4 +1,4 @@
-﻿# Melographion
+# Melographion
 
 Melographion is a local resonance-session engine. It connects Spotify playlist metadata, optional local audio files, David's verbatim reflection responses, rule-based inferred observations, and Obsidian-ready Axisarium notes.
 
@@ -17,7 +17,7 @@ Phase 2 prioritizes session-atomic capture:
 ## Setup
 
 ```powershell
-cd "C:\Users\david\OneDrive\Documents\Axisarium Integration\melographion"
+cd "C:\Users\david\Documents\Axisarium Integration\melographion"
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
 Copy-Item .env.example .env
@@ -63,14 +63,13 @@ Melographion does not call public cobalt.tools in v0.1.
 The live vault defaults to:
 
 ```text
-C:\Users\david\OneDrive\Apps\remotely-save\Axisarium
+H:\My Drive\Axisarium
 ```
 
 Every live vault write has a dry-run mode. Real writes create a timestamped backup manifest under:
 
 ```text
-C:\Users\david\OneDrive\Documents\Axisarium Integration\scratch\backups\melographion
+C:\Users\david\Documents\Axisarium Integration\scratch\backups\melographion
 ```
 
 Melographion never modifies `.obsidian` or sync internals.
-

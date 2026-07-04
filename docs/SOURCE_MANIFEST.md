@@ -4,8 +4,8 @@ Generated during the Axisarium workspace reconstruction on 2026-06-17.
 
 ## Canonical Local Paths
 
-- Workspace: `C:\Users\david\OneDrive\Documents\Axisarium Integration`
-- Live vault: `C:\Users\david\OneDrive\Apps\remotely-save\Axisarium`
+- Workspace: `C:\Users\david\Documents\Axisarium Integration`
+- Live vault: `H:\My Drive\Axisarium`
 
 ## Google Drive Sources
 

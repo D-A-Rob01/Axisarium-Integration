@@ -4,7 +4,7 @@ This workspace is the code and tooling home for Axisarium. The live Obsidian vau
 
 ## Repo
 
-Keep these in `C:\Users\david\OneDrive\Documents\Axisarium Integration`:
+Keep these in `C:\Users\david\Documents\Axisarium Integration`:
 
 - Aletheion source, configuration, scripts, sample data, and templates.
 - Swiss Ephemeris bridge files needed for local generation.
@@ -13,7 +13,7 @@ Keep these in `C:\Users\david\OneDrive\Documents\Axisarium Integration`:
 
 ## Live Vault
 
-Keep these in `C:\Users\david\OneDrive\Apps\remotely-save\Axisarium`:
+Keep these in `H:\My Drive\Axisarium`:
 
 - Obsidian notes, daily notes, Daily Sky notes, attachments, and templates used in Obsidian.
 - `.obsidian` settings and plugin state.

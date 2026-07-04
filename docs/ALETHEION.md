@@ -1,4 +1,4 @@
-﻿# Aletheion
+# Aletheion
 
 Aletheion is a local, Obsidian-oriented starter kit for a personal astrological and weather-symbolic observatory.
 
@@ -27,10 +27,10 @@ From the Axisarium Integration workspace root:
 & "C:\Users\david\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" .\aletheion.py daily
 ```
 
-By default, the note is written to the active OneDrive-synced Obsidian vault:
+By default, the note is written to the active Google Drive-backed Obsidian vault:
 
 ```text
-C:\Users\david\OneDrive\Apps\remotely-save\Axisarium\02 Daily Sky\Daily Sky - YYYY-MM-DD.md
+H:\My Drive\Axisarium\02 Daily Sky\Daily Sky - YYYY-MM-DD.md
 ```
 
 The active production vault path is configured in:
@@ -42,7 +42,7 @@ config/aletheion.config.json
 Current production setting:
 
 ```json
-"obsidian_vault_path": "C:\\Users\\david\\OneDrive\\Apps\\remotely-save\\Axisarium",
+"obsidian_vault_path": "H:\\My Drive\\Axisarium",
 "daily_note_folder": "02 Daily Sky"
 ```
 
@@ -91,7 +91,7 @@ When `provider` is `swetest` and the executable exists, Aletheion asks Swiss Eph
 This project includes an adapted setup script:
 
 ```powershell
-Set-Location "C:\Users\david\OneDrive\Documents\Axisarium Integration"
+Set-Location "C:\Users\david\Documents\Axisarium Integration"
 .\setup-swiss-ephemeris.ps1
 ```
 
@@ -211,10 +211,10 @@ The scheduled task runs:
 run-daily-aletheion.ps1
 ```
 
-That script generates the daily note directly into the configured OneDrive-synced Obsidian vault:
+That script generates the daily note directly into the configured Google Drive-backed Obsidian vault:
 
 ```text
-C:\Users\david\OneDrive\Apps\remotely-save\Axisarium\02 Daily Sky
+H:\My Drive\Axisarium\02 Daily Sky
 ```
 
 Run logs are written to:
@@ -222,4 +222,3 @@ Run logs are written to:
 ```text
 logs
 ```
-

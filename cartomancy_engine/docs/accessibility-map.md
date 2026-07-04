@@ -1,11 +1,11 @@
-﻿# Cartomancy Engine Accessibility Map
+# Cartomancy Engine Accessibility Map
 
 ## Source of Truth
 
-The source code lives in OneDrive/local development storage:
+The source code lives in local development storage:
 
 ```text
-C:\Users\david\OneDrive\Documents\Axisarium Integration\cartomancy_engine\
+C:\Users\david\Documents\Axisarium Integration\cartomancy_engine\
 ```
 
 ## Vault Outputs
@@ -22,7 +22,7 @@ Use `--output` when writing directly into the Axisarium vault.
 
 Google Drive may contain documentation and reading outputs, but not necessarily the full executable repo.
 
-The executable package, tests, bundled data, and local development state should remain rooted in local/OneDrive development storage unless intentionally exported.
+The executable package, tests, bundled data, and local development state should remain rooted in local development storage unless intentionally exported.
 
 ## Do Not Mirror Automatically
 
@@ -39,4 +39,3 @@ The executable package, tests, bundled data, and local development state should 
 - `docs/`
 - `readings/`
 - review/audit summaries
-

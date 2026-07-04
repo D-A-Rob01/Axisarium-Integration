@@ -8,7 +8,7 @@
 - Previous Google Drive Desktop vault copy: `H:\My Drive\Axisarium`
 - Previous OneDrive vault: `C:\Users\david\OneDrive\Apps\remotely-save\Axisarium`
 
-The OneDrive and Google Drive Desktop vault copies are no longer production targets. Keep them only as temporary rollback copies until Google Drive Vault Sync is fully authorized and verified across desktop and Android.
+The OneDrive and Google Drive Desktop vault copies are no longer production targets. Keep them only as temporary rollback copies until Google Drive Vault Sync is verified across desktop and Android.
 
 ## Completed
 
@@ -21,12 +21,13 @@ The OneDrive and Google Drive Desktop vault copies are no longer production targ
 - Confirmed MCP Bundles is installed locally and its tunnel status reports as connected.
 - Installed Google Drive Vault Sync `0.1.20` in the local vault and enabled it as the active vault sync plugin.
 - Set Google Drive Vault Sync's remote folder name to `Axisarium Vault Sync` to avoid colliding with the previous Google Drive Desktop vault copy.
+- Authorized Google Drive Vault Sync on desktop and completed the first baseline sync from local to cloud: 166 uploads, 0 downloads, 0 deletes, 0 conflicts, and 0 errors.
 - Disabled Remotely Save in the active community plugin list while leaving its plugin files/settings in place as rollback material.
 
 ## Still Manual or Elevated
 
 - Optional: re-register the `Aletheion Daily Sky` Windows scheduled task with administrator rights if wake-to-run and logon catch-up behavior are needed. The non-elevated daily fallback is registered from this workspace.
-- Open Obsidian and configure Google Drive Vault Sync with Google OAuth before relying on cross-device sync.
+- Configure Google Drive Vault Sync on Android with the same Google OAuth client and remote folder name before relying on cross-device sync.
 - Keep Remotely Save inactive unless intentionally reverting to it. Its plugin state is intentionally opaque/encrypted, so provider changes should not be made by editing JSON directly.
 
 ## Verification Rules

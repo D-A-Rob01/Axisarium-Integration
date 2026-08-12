@@ -14,9 +14,14 @@ from datetime import datetime
 import json
 from pathlib import Path
 import re
+import sys
 from zoneinfo import ZoneInfo
 
-import aletheion
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+import aletheion  # noqa: E402
 
 CANONICAL_TZ = "America/New_York"
 H1_RE = re.compile(r"^# Daily Sky - (\d{4}-\d{2}-\d{2})$", re.MULTILINE)
@@ -101,7 +106,7 @@ def append_event(root: Path, requested_day: str, sky: dict, out_path: Path, cont
 
 
 def run(requested_day: str, force: bool = False) -> Path:
-    root = Path(__file__).resolve().parents[1]
+    root = ROOT
     config = aletheion.load_json(root / "config" / "aletheion.config.json")
     aletheion.resolve_repo_relative_config_paths(config, root)
 

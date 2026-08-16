@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Kybernion" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">#080B14</item>
+        <item name="android:navigationBarColor">#080B14</item>
+        <item name="android:statusBarColor">#080B14</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="Theme.Kybernion.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#080B14</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kybernion_mark</item>
+        <item name="postSplashScreenTheme">@style/Theme.Kybernion</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+APP_HOME=$(cd "$(dirname "$0")" >/dev/null 2>&1 && pwd -P)
+APP_NAME="Gradle"
+JAVA_EXE="java"
+
+if [ -n "$JAVA_HOME" ]; then
+  JAVA_EXE="$JAVA_HOME/bin/java"
+fi
+
+if [ ! -x "$JAVA_EXE" ]; then
+  echo "ERROR: Java is not available. Install JDK 17 or set JAVA_HOME." >&2
+  exit 1
+fi
+
+CLASSPATH="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
+exec "$JAVA_EXE" -Dorg.gradle.appname="$APP_NAME" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"

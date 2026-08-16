@@ -26,6 +26,11 @@ import aletheion  # noqa: E402
 CANONICAL_TZ = "America/New_York"
 H1_RE = re.compile(r"^# Daily Sky - (\d{4}-\d{2}-\d{2})$", re.MULTILINE)
 FILENAME_RE = re.compile(r"^Daily Sky - (\d{4}-\d{2}-\d{2})\.md$")
+REQUIRED_PROVENANCE = (
+    "- Instrument: Aletheion",
+    "- Sky data source: swetest",
+    "- Data status: calculated / Swiss Ephemeris",
+)
 
 
 def canonical_day(value: str | None, timezone: str = CANONICAL_TZ) -> str:
@@ -39,19 +44,14 @@ def canonical_day(value: str | None, timezone: str = CANONICAL_TZ) -> str:
 def validate_existing_note(path: Path, requested_day: str) -> tuple[bool, str]:
     if not path.exists() or path.stat().st_size == 0:
         return False, "missing-or-empty"
-    match = FILENAME_RE.match(path.name)
+    match = FILENAME_RE.fullmatch(path.name)
     if not match or match.group(1) != requested_day:
         return False, "filename-date-mismatch"
     text = path.read_text(encoding="utf-8")
     h1 = H1_RE.search(text)
     if not h1 or h1.group(1) != requested_day:
         return False, "heading-date-mismatch"
-    required = [
-        "- Instrument: Aletheion",
-        "- Sky data source: swetest",
-        "- Data status: calculated / Swiss Ephemeris",
-    ]
-    missing = [item for item in required if item not in text]
+    missing = [item for item in REQUIRED_PROVENANCE if item not in text]
     if missing:
         return False, "invalid-provenance:" + ",".join(missing)
     return True, "valid"
@@ -76,6 +76,12 @@ def validate_rendered_note(note: str, requested_day: str, sky: dict) -> None:
         raise RuntimeError(
             "PROVENANCE_FAILURE requested="
             f"{requested_day} data_status={aletheion.sky_data_status(sky)!r}"
+        )
+    missing = [item for item in REQUIRED_PROVENANCE if item not in note]
+    if missing:
+        raise RuntimeError(
+            "PROVENANCE_FAILURE requested="
+            f"{requested_day} rendered_note_missing={','.join(missing)}"
         )
 
 
@@ -105,7 +111,13 @@ def append_event(root: Path, requested_day: str, sky: dict, out_path: Path, cont
     )
 
 
-def run(requested_day: str, force: bool = False) -> Path:
+def run(
+    requested_day: str,
+    force: bool = False,
+    *,
+    dry_run: bool = False,
+    stage_dir: Path | None = None,
+) -> Path:
     root = ROOT
     config = aletheion.load_json(root / "config" / "aletheion.config.json")
     aletheion.resolve_repo_relative_config_paths(config, root)
@@ -113,7 +125,7 @@ def run(requested_day: str, force: bool = False) -> Path:
     requested_day = canonical_day(requested_day, config.get("person", {}).get("timezone", CANONICAL_TZ))
     out_path = aletheion.output_path_for(config, requested_day)
 
-    if not force:
+    if not force and not dry_run:
         valid, reason = validate_existing_note(out_path, requested_day)
         if valid:
             print(json.dumps({"status": "already-valid", "date": requested_day, "output": str(out_path)}))
@@ -131,6 +143,24 @@ def run(requested_day: str, force: bool = False) -> Path:
     )
     validate_rendered_note(note, requested_day, sky)
 
+    if dry_run:
+        if stage_dir is None:
+            raise RuntimeError("DRY_RUN_STAGE_DIR_REQUIRED")
+        staged_path = stage_dir.resolve() / f"Daily Sky - {requested_day}.md"
+        aletheion.save_text(staged_path, note)
+        print(
+            json.dumps(
+                {
+                    "status": "dry-run-valid",
+                    "date": requested_day,
+                    "output": str(staged_path),
+                    "production_output": str(out_path),
+                    "durable_writes": False,
+                }
+            )
+        )
+        return staged_path
+
     # Durable writes begin only after every date/provenance invariant passes.
     aletheion.save_text(out_path, note)
     aletheion.upsert_jsonl_records(aletheion.observation_ledger_path(root), observations)
@@ -144,8 +174,19 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Guarded Aletheion production runner")
     parser.add_argument("--date", help="Strict ISO date YYYY-MM-DD. Defaults to America/New_York today.")
     parser.add_argument("--force", action="store_true")
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Render and validate into a temporary staging directory without production writes.",
+    )
+    parser.add_argument("--stage-dir", type=Path)
     args = parser.parse_args()
-    run(canonical_day(args.date), force=args.force)
+    run(
+        canonical_day(args.date),
+        force=args.force,
+        dry_run=args.dry_run,
+        stage_dir=args.stage_dir,
+    )
 
 
 if __name__ == "__main__":

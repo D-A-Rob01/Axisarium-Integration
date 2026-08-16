@@ -101,7 +101,21 @@ yyyy-dd-mm
 
 and remove all non-ISO Daily Sky filename generation.
 
-The current local Topologos invocation must call `tools/validate_topologos_source.py` immediately before reading/rendering the Aletheion source. Validation failure must prevent dossier, envelope, manifest, and tandem writes.
+The scheduled runner now calls `tools/validate_topologos_source.py` immediately after the guarded producer. The live Topologos tandem call site applies the same gate before reading/rendering the Aletheion source. Validation failure prevents downstream dossier, envelope, manifest, and tandem writes.
+
+`run-daily-aletheion.ps1 -Date YYYY-MM-DD -DryRun` exercises the guarded producer and the Topologos source gate against temporary staging. It removes that staging after validation and does not write the production note, observation/event ledgers, or Oneiromnesis captures.
+
+## Verified 2026-08-15 recovery
+
+Astræos production recovery established the canonical ISO path with a real Swiss Ephemeris run:
+
+- requested date, calculated `sky.date`, filename, and H1 all resolved to `2026-08-15`;
+- the source was written as `Daily Sky - 2026-08-15.md` with Aletheion / `swetest` / calculated provenance;
+- repeated runs preserved the existing `Oneiromnesis - 2026-08-15.md` capture;
+- Topologos consumed the validated source and emitted a non-degraded tandem note, manifest, dossier, and Cabeir envelope bound to the source SHA-256;
+- the scheduled task action remained the guarded `run-daily-aletheion.ps1` producer and reported exit code `0`.
+
+The production vault contents remain outside Git. This PR ports only the executable date/provenance controls and regression coverage; it does not copy notes, ledgers, captures, or generated tandem artifacts into the repository.
 
 ## Cloud migration
 

@@ -1,5 +1,8 @@
 param(
-  [switch]$Force
+  [switch]$Force,
+  [string]$Date,
+  [switch]$DryRun,
+  [string]$PythonPath
 )
 
 $ErrorActionPreference = "Stop"
@@ -8,9 +11,21 @@ if (Get-Variable -Name PSNativeCommandUseErrorActionPreference -ErrorAction Sile
 }
 
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$Python = "C:\Users\david\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+$ProjectPython = Join-Path $Root ".venv\Scripts\python.exe"
+$FallbackPython = "C:\Users\david\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+$Python = if (-not [string]::IsNullOrWhiteSpace($PythonPath)) {
+  $PythonPath
+} elseif (Test-Path -LiteralPath $ProjectPython -PathType Leaf) {
+  $ProjectPython
+} else {
+  $FallbackPython
+}
+if (!(Test-Path -LiteralPath $Python -PathType Leaf)) {
+  throw "Python runtime not found: $Python"
+}
 $ConfigPath = Join-Path $Root "config\aletheion.config.json"
 $GuardedRunner = Join-Path $Root "tools\run_aletheion_guarded.py"
+$SourceGate = Join-Path $Root "tools\validate_topologos_source.py"
 $LogDir = Join-Path $Root "logs"
 $Stamp = Get-Date -Format "yyyy-MM-dd_HHmmss"
 $LogFile = Join-Path $LogDir "aletheion-$Stamp.log"
@@ -28,16 +43,23 @@ if (!(Test-Path -LiteralPath $GuardedRunner)) {
   "Guarded runner not found: $GuardedRunner" | Tee-Object -FilePath $LogFile -Append
   exit 1
 }
+if (!(Test-Path -LiteralPath $SourceGate)) {
+  "Topologos source gate not found: $SourceGate" | Tee-Object -FilePath $LogFile -Append
+  exit 1
+}
 
 $Config = Get-Content -LiteralPath $ConfigPath -Raw | ConvertFrom-Json
-$TimeZoneId = "Eastern Standard Time"
-try {
-  $UtcNow = [DateTimeOffset]::UtcNow
-  $Eastern = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId($UtcNow, $TimeZoneId)
-  $Day = $Eastern.ToString("yyyy-MM-dd")
-} catch {
-  "Unable to resolve America/New_York date: $($_.Exception.Message)" | Tee-Object -FilePath $LogFile -Append
-  exit 1
+if (-not [string]::IsNullOrWhiteSpace($Date)) {
+  $Day = $Date
+} else {
+  try {
+    $UtcNow = [DateTimeOffset]::UtcNow
+    $Eastern = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId($UtcNow, "Eastern Standard Time")
+    $Day = $Eastern.ToString("yyyy-MM-dd")
+  } catch {
+    "Unable to resolve America/New_York date: $($_.Exception.Message)" | Tee-Object -FilePath $LogFile -Append
+    exit 1
+  }
 }
 
 $Vault = [string]$Config.obsidian_vault_path
@@ -54,6 +76,15 @@ $Arguments = @($GuardedRunner, "--date", $Day)
 if ($Force) {
   $Arguments += "--force"
 }
+$DryRunDirectory = $null
+$SourcePath = $OutputPath
+if ($DryRun) {
+  $DryRunDirectory = Join-Path ([System.IO.Path]::GetTempPath()) ("aletheion-dry-run-" + [guid]::NewGuid().ToString("N"))
+  New-Item -ItemType Directory -Path $DryRunDirectory | Out-Null
+  $SourcePath = Join-Path $DryRunDirectory "Daily Sky - $Day.md"
+  $Arguments += @("--dry-run", "--stage-dir", $DryRunDirectory)
+  "Dry-run staging only: $SourcePath" | Tee-Object -FilePath $LogFile -Append
+}
 
 "& $Python $($Arguments -join ' ')" | Tee-Object -FilePath $LogFile -Append
 
@@ -64,6 +95,34 @@ $ExitCode = $LASTEXITCODE
 $ErrorActionPreference = $PriorErrorActionPreference
 
 $Output | Tee-Object -FilePath $LogFile -Append
+
+if ($ExitCode -eq 0) {
+  $GateArguments = @($SourceGate, "--requested-date", $Day, "--source", $SourcePath)
+  "& $Python $($GateArguments -join ' ')" | Tee-Object -FilePath $LogFile -Append
+  $PriorErrorActionPreference = $ErrorActionPreference
+  $ErrorActionPreference = "Continue"
+  $GateOutput = & $Python @GateArguments 2>&1
+  $GateExitCode = $LASTEXITCODE
+  $ErrorActionPreference = $PriorErrorActionPreference
+  $GateOutput | Tee-Object -FilePath $LogFile -Append
+  if ($GateExitCode -ne 0) {
+    "Topologos source gate rejected the guarded producer output." | Tee-Object -FilePath $LogFile -Append
+    $ExitCode = $GateExitCode
+  }
+}
+
+if ($DryRunDirectory) {
+  $ResolvedTempRoot = [System.IO.Path]::GetFullPath([System.IO.Path]::GetTempPath())
+  $ResolvedDryRun = [System.IO.Path]::GetFullPath($DryRunDirectory)
+  if ($ResolvedDryRun.StartsWith($ResolvedTempRoot, [System.StringComparison]::OrdinalIgnoreCase) -and
+      (Split-Path -Leaf $ResolvedDryRun).StartsWith("aletheion-dry-run-")) {
+    Remove-Item -LiteralPath $ResolvedDryRun -Recurse -Force
+    "Dry-run staging removed; production note, ledgers, and captures were not written." | Tee-Object -FilePath $LogFile -Append
+  } else {
+    "Refusing to remove unexpected dry-run staging path: $ResolvedDryRun" | Tee-Object -FilePath $LogFile -Append
+    $ExitCode = 1
+  }
+}
 
 "Aletheion guarded daily run finished: $(Get-Date -Format o)" | Tee-Object -FilePath $LogFile -Append
 "Exit code: $ExitCode" | Tee-Object -FilePath $LogFile -Append

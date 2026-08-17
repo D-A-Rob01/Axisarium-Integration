@@ -10,7 +10,7 @@ publishes the canonical note and observation/event records.
 from __future__ import annotations
 
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 import re
@@ -89,7 +89,7 @@ def append_event(root: Path, requested_day: str, sky: dict, out_path: Path, cont
     aletheion.append_jsonl(
         root / "memory" / "events.jsonl",
         {
-            "timestamp": datetime.now(ZoneInfo(CANONICAL_TZ)).isoformat(timespec="seconds"),
+            "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "date": requested_day,
             "source": sky.get("source"),
             "output": str(out_path),

@@ -3,6 +3,7 @@ import json
 import sys
 import tempfile
 import unittest
+from datetime import datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,7 +14,7 @@ from validate_topologos_source import (  # noqa: E402
     validate_source,
     validate_tandem_artifact,
 )
-from run_aletheion_guarded import validate_rendered_note  # noqa: E402
+from run_aletheion_guarded import append_event, validate_rendered_note  # noqa: E402
 
 
 VALID_PROVENANCE = """# Daily Sky - {day}
@@ -76,6 +77,24 @@ class DateIntegrityTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "PROVENANCE_FAILURE"):
             validate_rendered_note("# Daily Sky - 2026-08-16\n", "2026-08-16", sky)
 
+    def test_event_timestamp_uses_portable_utc(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            append_event(
+                root,
+                "2026-08-16",
+                {"source": "swetest"},
+                root / "Daily Sky - 2026-08-16.md",
+                [],
+                [],
+                {},
+            )
+            record = json.loads(
+                (root / "memory" / "events.jsonl").read_text(encoding="utf-8")
+            )
+            timestamp = datetime.fromisoformat(record["timestamp"])
+            self.assertEqual(timestamp.utcoffset(), timedelta(0))
+
     def test_scheduled_runner_orders_guarded_producer_before_source_gate(self):
         runner = (ROOT / "run-daily-aletheion.ps1").read_text(encoding="utf-8")
         producer_call = runner.index("$Output = & $Python @Arguments")
@@ -83,6 +102,15 @@ class DateIntegrityTests(unittest.TestCase):
         self.assertLess(producer_call, gate_call)
         self.assertIn('"--dry-run", "--stage-dir"', runner)
         self.assertIn("production note, ledgers, and captures were not written", runner)
+
+    def test_scheduled_runner_rejects_noncanonical_dates_before_paths(self):
+        runner = (ROOT / "run-daily-aletheion.ps1").read_text(encoding="utf-8")
+        exact_parse = runner.index("[DateTime]::TryParseExact")
+        output_path = runner.index("$OutputPath =")
+        self.assertLess(exact_parse, output_path)
+        self.assertIn('"yyyy-MM-dd"', runner)
+        self.assertIn("expected exact YYYY-MM-DD", runner)
+        self.assertNotIn("$Day = $Date", runner)
 
     def test_tandem_requires_hash_bound_manifest_and_envelope(self):
         with tempfile.TemporaryDirectory() as tmp:

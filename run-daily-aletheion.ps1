@@ -50,7 +50,22 @@ if (!(Test-Path -LiteralPath $SourceGate)) {
 
 $Config = Get-Content -LiteralPath $ConfigPath -Raw | ConvertFrom-Json
 if (-not [string]::IsNullOrWhiteSpace($Date)) {
-  $Day = $Date
+  $ParsedDay = [DateTime]::MinValue
+  $ValidDay = [DateTime]::TryParseExact(
+    $Date,
+    "yyyy-MM-dd",
+    [System.Globalization.CultureInfo]::InvariantCulture,
+    [System.Globalization.DateTimeStyles]::None,
+    [ref]$ParsedDay
+  )
+  if (-not $ValidDay) {
+    "Invalid -Date '$Date'; expected exact YYYY-MM-DD." | Tee-Object -FilePath $LogFile -Append
+    exit 1
+  }
+  $Day = $ParsedDay.ToString(
+    "yyyy-MM-dd",
+    [System.Globalization.CultureInfo]::InvariantCulture
+  )
 } else {
   try {
     $UtcNow = [DateTimeOffset]::UtcNow

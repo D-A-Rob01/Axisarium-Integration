@@ -10,7 +10,7 @@ publishes the canonical note and observation/event records.
 from __future__ import annotations
 
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 import re
@@ -35,6 +35,10 @@ REQUIRED_PROVENANCE = (
 
 def canonical_day(value: str | None, timezone: str = CANONICAL_TZ) -> str:
     if value:
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+            raise ValueError(
+                f"Invalid date {value!r}; expected exact YYYY-MM-DD."
+            )
         parsed = aletheion.parse_day(value)
     else:
         parsed = datetime.now(ZoneInfo(timezone)).date()
@@ -89,7 +93,7 @@ def append_event(root: Path, requested_day: str, sky: dict, out_path: Path, cont
     aletheion.append_jsonl(
         root / "memory" / "events.jsonl",
         {
-            "timestamp": datetime.now(ZoneInfo(CANONICAL_TZ)).isoformat(timespec="seconds"),
+            "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "date": requested_day,
             "source": sky.get("source"),
             "output": str(out_path),

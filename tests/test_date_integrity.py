@@ -14,7 +14,11 @@ from validate_topologos_source import (  # noqa: E402
     validate_source,
     validate_tandem_artifact,
 )
-from run_aletheion_guarded import append_event, validate_rendered_note  # noqa: E402
+from run_aletheion_guarded import (  # noqa: E402
+    append_event,
+    canonical_day,
+    validate_rendered_note,
+)
 
 
 VALID_PROVENANCE = """# Daily Sky - {day}
@@ -94,6 +98,18 @@ class DateIntegrityTests(unittest.TestCase):
             )
             timestamp = datetime.fromisoformat(record["timestamp"])
             self.assertEqual(timestamp.utcoffset(), timedelta(0))
+
+    def test_guarded_runner_rejects_noncanonical_iso_dates(self):
+        self.assertEqual(canonical_day("2026-08-16"), "2026-08-16")
+        for value in (
+            "20260816",
+            "2026-W33-7",
+            "2026-8-16",
+            "2026-08-16T00:00:00",
+        ):
+            with self.subTest(value=value):
+                with self.assertRaisesRegex(ValueError, "exact YYYY-MM-DD"):
+                    canonical_day(value)
 
     def test_scheduled_runner_orders_guarded_producer_before_source_gate(self):
         runner = (ROOT / "run-daily-aletheion.ps1").read_text(encoding="utf-8")

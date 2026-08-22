@@ -35,6 +35,10 @@ REQUIRED_PROVENANCE = (
 
 def canonical_day(value: str | None, timezone: str = CANONICAL_TZ) -> str:
     if value:
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+            raise ValueError(
+                f"Invalid date {value!r}; expected exact YYYY-MM-DD."
+            )
         parsed = aletheion.parse_day(value)
     else:
         parsed = datetime.now(ZoneInfo(timezone)).date()

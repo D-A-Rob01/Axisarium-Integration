@@ -3,6 +3,7 @@ build/
 app/build/
 app/build-stale-*/
 local.properties
+keystore.properties
 captures/
 .idea/
 *.iml

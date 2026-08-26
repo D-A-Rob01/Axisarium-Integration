@@ -1,4 +1,5 @@
 import java.security.MessageDigest
+import java.util.Properties
 
 plugins {
     id("com.android.application")
@@ -7,6 +8,14 @@ plugins {
 }
 
 val engineRoot = rootProject.projectDir.parentFile
+val signingProperties = Properties().apply {
+    val localProperties = rootProject.file("keystore.properties")
+    if (localProperties.isFile) {
+        localProperties.inputStream().use(::load)
+    }
+}
+fun signingValue(name: String): String? =
+    providers.environmentVariable(name).orNull ?: signingProperties.getProperty(name)
 
 android {
     namespace = "com.aletheion.cartomancy"
@@ -17,7 +26,7 @@ android {
         minSdk = 26
         targetSdk = 35
         versionCode = 3
-        versionName = "0.3.0-rc1"
+        versionName = "0.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -30,6 +39,24 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
+        }
+    }
+
+    val releaseStoreFile = signingValue("KYBERNION_STORE_FILE")
+    val releaseStorePassword = signingValue("KYBERNION_STORE_PASSWORD")
+    val releaseKeyAlias = signingValue("KYBERNION_KEY_ALIAS")
+    val releaseKeyPassword = signingValue("KYBERNION_KEY_PASSWORD")
+    if (listOf(releaseStoreFile, releaseStorePassword, releaseKeyAlias, releaseKeyPassword).all { it != null }) {
+        signingConfigs {
+            create("kybernionRelease") {
+                storeFile = rootProject.file(requireNotNull(releaseStoreFile))
+                storePassword = requireNotNull(releaseStorePassword)
+                keyAlias = requireNotNull(releaseKeyAlias)
+                keyPassword = requireNotNull(releaseKeyPassword)
+            }
+        }
+        buildTypes.named("release").configure {
+            signingConfig = signingConfigs.getByName("kybernionRelease")
         }
     }
 

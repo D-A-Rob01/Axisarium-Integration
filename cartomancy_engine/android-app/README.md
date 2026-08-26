@@ -22,7 +22,7 @@ The first screen supports Kybernion's field-capture workflow:
 - Android share export of Markdown and optional JSON
 - an interactive, stage-aware field cue in place of permanent onboarding copy
 
-## Version 0.3 release candidate
+## Version 0.3 release
 
 Version 0.3 integrates the complete set of 78 high-resolution Kybernion Tarot
 v3 SVGs. Every card is mapped to the canonical Rider-Waite-Smith record by ID,
@@ -55,7 +55,7 @@ python .\scripts\import_tarot_v3.py --source <path-to-tarot-sigil-drafts-v3> --c
 `verifyTarotAssets` is also attached to `preBuild`; a missing, duplicate, or
 modified SVG fails the build instead of silently substituting another card.
 
-This is a personal release candidate, not a published Play Store app. It does
+This is a personal release, not a published Play Store app. It does
 not write directly to an Obsidian vault, perform AI interpretation, sync to the
 cloud, or support Galaxy Watch. The package/application id remains
 `com.aletheion.cartomancy` as a technical compatibility name.

@@ -6,7 +6,7 @@ on:
       - "cartomancy_engine/android-app/**"
       - "cartomancy_engine/src/cartomancy_engine/data/**"
   push:
-    branches: [main]
+    branches: ["**"]
     paths:
       - "cartomancy_engine/android-app/**"
       - "cartomancy_engine/src/cartomancy_engine/data/**"

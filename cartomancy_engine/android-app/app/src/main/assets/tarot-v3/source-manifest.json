@@ -1,0 +1,2097 @@
+{
+  "schema": "kybernion-tarot-sigil-v3",
+  "count": 78,
+  "design_rule": "maximal symbolic diversity through semiotic and spatial efficiency",
+  "suit_grammar": {
+    "wands": "ignition / outward vectors",
+    "cups": "containment / receptive curvature",
+    "swords": "division / angular discontinuity",
+    "pentacles": "lattice / stable nodes"
+  },
+  "court_roles": [
+    "receiver",
+    "vector",
+    "field",
+    "governing architecture"
+  ],
+  "cards": [
+    {
+      "file": "00-the-fool.svg",
+      "arcana": "major",
+      "index": 0,
+      "title": "THE FOOL",
+      "meaning": "potential / leap",
+      "spell_intent": "open possibility",
+      "harmonic": 1,
+      "gray_code": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trigram": "earth",
+      "phase": "wood",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E74040",
+        "#CDD025"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "01-the-magician.svg",
+      "arcana": "major",
+      "index": 1,
+      "title": "THE MAGICIAN",
+      "meaning": "will / making",
+      "spell_intent": "focus will",
+      "harmonic": 2,
+      "gray_code": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "fire",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40E771",
+        "#259BD0"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "02-the-high-priestess.svg",
+      "arcana": "major",
+      "index": 2,
+      "title": "THE HIGH PRIESTESS",
+      "meaning": "threshold / intuition",
+      "spell_intent": "receive hidden knowledge",
+      "harmonic": 3,
+      "gray_code": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trigram": "water",
+      "phase": "earth",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#A240E7",
+        "#D02569"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "03-the-empress.svg",
+      "arcana": "major",
+      "index": 3,
+      "title": "THE EMPRESS",
+      "meaning": "abundance / creation",
+      "spell_intent": "generate abundance",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "metal",
+      "alchemy_element": "earth",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#E7D340",
+        "#37D025"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "04-the-emperor.svg",
+      "arcana": "major",
+      "index": 4,
+      "title": "THE EMPEROR",
+      "meaning": "order / authority",
+      "spell_intent": "establish order",
+      "harmonic": 5,
+      "gray_code": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trigram": "mountain",
+      "phase": "water",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#40CCE7",
+        "#4525D0"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "05-the-hierophant.svg",
+      "arcana": "major",
+      "index": 5,
+      "title": "THE HIEROPHANT",
+      "meaning": "tradition / transmission",
+      "spell_intent": "transmit tradition",
+      "harmonic": 6,
+      "gray_code": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "wood",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E7409B",
+        "#D07725"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "06-the-lovers.svg",
+      "arcana": "major",
+      "index": 6,
+      "title": "THE LOVERS",
+      "meaning": "union / choice",
+      "spell_intent": "join by choice",
+      "harmonic": 7,
+      "gray_code": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trigram": "wind",
+      "phase": "fire",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#6AE740",
+        "#25D0A9"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "07-the-chariot.svg",
+      "arcana": "major",
+      "index": 7,
+      "title": "THE CHARIOT",
+      "meaning": "directed will",
+      "spell_intent": "direct momentum",
+      "harmonic": 1,
+      "gray_code": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "earth",
+      "alchemy_element": "earth",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#4740E7",
+        "#D025C5"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "08-strength.svg",
+      "arcana": "major",
+      "index": 8,
+      "title": "STRENGTH",
+      "meaning": "courage / gentleness",
+      "spell_intent": "govern force",
+      "harmonic": 2,
+      "gray_code": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trigram": "earth",
+      "phase": "metal",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E77840",
+        "#93D025"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "09-the-hermit.svg",
+      "arcana": "major",
+      "index": 9,
+      "title": "THE HERMIT",
+      "meaning": "solitude / guidance",
+      "spell_intent": "illuminate within",
+      "harmonic": 3,
+      "gray_code": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "water",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40E7A9",
+        "#2561D0"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "10-wheel-of-fortune.svg",
+      "arcana": "major",
+      "index": 10,
+      "title": "WHEEL OF FORTUNE",
+      "meaning": "cycles / change",
+      "spell_intent": "turn the cycle",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trigram": "water",
+      "phase": "wood",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#DA40E7",
+        "#D0252F"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "11-justice.svg",
+      "arcana": "major",
+      "index": 11,
+      "title": "JUSTICE",
+      "meaning": "equilibrium / truth",
+      "spell_intent": "restore proportion",
+      "harmonic": 5,
+      "gray_code": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "fire",
+      "alchemy_element": "earth",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#C4E740",
+        "#25D04C"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "12-the-hanged-man.svg",
+      "arcana": "major",
+      "index": 12,
+      "title": "THE HANGED MAN",
+      "meaning": "suspension / reversal",
+      "spell_intent": "suspend and invert",
+      "harmonic": 6,
+      "gray_code": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trigram": "mountain",
+      "phase": "earth",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#4094E7",
+        "#7E25D0"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "13-death.svg",
+      "arcana": "major",
+      "index": 13,
+      "title": "DEATH",
+      "meaning": "ending / transformation",
+      "spell_intent": "end and transform",
+      "harmonic": 7,
+      "gray_code": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "metal",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E74063",
+        "#D0B025"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "14-temperance.svg",
+      "arcana": "major",
+      "index": 14,
+      "title": "TEMPERANCE",
+      "meaning": "integration / measure",
+      "spell_intent": "integrate opposites",
+      "harmonic": 1,
+      "gray_code": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "trigram": "wind",
+      "phase": "water",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#40E74F",
+        "#25BED0"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "15-the-devil.svg",
+      "arcana": "major",
+      "index": 15,
+      "title": "THE DEVIL",
+      "meaning": "attachment / shadow",
+      "spell_intent": "unbind attachment",
+      "harmonic": 2,
+      "gray_code": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "wood",
+      "alchemy_element": "earth",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#7F40E7",
+        "#D0258C"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "16-the-tower.svg",
+      "arcana": "major",
+      "index": 16,
+      "title": "THE TOWER",
+      "meaning": "rupture / revelation",
+      "spell_intent": "break false structure",
+      "harmonic": 3,
+      "gray_code": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trigram": "earth",
+      "phase": "fire",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E7B040",
+        "#5AD025"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "17-the-star.svg",
+      "arcana": "major",
+      "index": 17,
+      "title": "THE STAR",
+      "meaning": "hope / orientation",
+      "spell_intent": "orient by hope",
+      "harmonic": 4,
+      "gray_code": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "earth",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40E7E1",
+        "#2528D0"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "18-the-moon.svg",
+      "arcana": "major",
+      "index": 18,
+      "title": "THE MOON",
+      "meaning": "uncertainty / dream",
+      "spell_intent": "navigate uncertainty",
+      "harmonic": 5,
+      "gray_code": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trigram": "water",
+      "phase": "metal",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E740BD",
+        "#D05325"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "19-the-sun.svg",
+      "arcana": "major",
+      "index": 19,
+      "title": "THE SUN",
+      "meaning": "clarity / vitality",
+      "spell_intent": "radiate vitality",
+      "harmonic": 6,
+      "gray_code": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "water",
+      "alchemy_element": "earth",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#8DE740",
+        "#25D085"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "20-judgement.svg",
+      "arcana": "major",
+      "index": 20,
+      "title": "JUDGEMENT",
+      "meaning": "reckoning / renewal",
+      "spell_intent": "answer the summons",
+      "harmonic": 7,
+      "gray_code": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "trigram": "mountain",
+      "phase": "wood",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#405CE7",
+        "#B725D0"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "21-the-world.svg",
+      "arcana": "major",
+      "index": 21,
+      "title": "THE WORLD",
+      "meaning": "completion / wholeness",
+      "spell_intent": "complete and integrate",
+      "harmonic": 1,
+      "gray_code": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "fire",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E75640",
+        "#B7D025"
+      ],
+      "revision": "v3-legibility"
+    },
+    {
+      "file": "01-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 1,
+      "title": "ACE OF WANDS",
+      "meaning": "spark / potential",
+      "spell_intent": "spark",
+      "harmonic": 2,
+      "gray_code": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "earth",
+      "alchemy_element": "fire",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40E786",
+        "#2585D0"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "02-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 2,
+      "title": "TWO OF WANDS",
+      "meaning": "planning / horizon",
+      "spell_intent": "planning",
+      "harmonic": 3,
+      "gray_code": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trigram": "water",
+      "phase": "metal",
+      "alchemy_element": "fire",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#B740E7",
+        "#D02553"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "03-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 3,
+      "title": "THREE OF WANDS",
+      "meaning": "expansion / foresight",
+      "spell_intent": "expansion",
+      "harmonic": 4,
+      "gray_code": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "water",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E7E740",
+        "#25D029"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "04-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 4,
+      "title": "FOUR OF WANDS",
+      "meaning": "celebration / foundation",
+      "spell_intent": "celebration",
+      "harmonic": 5,
+      "gray_code": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trigram": "mountain",
+      "phase": "wood",
+      "alchemy_element": "fire",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40B6E7",
+        "#5B25D0"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "05-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 5,
+      "title": "FIVE OF WANDS",
+      "meaning": "friction / contest",
+      "spell_intent": "friction",
+      "harmonic": 6,
+      "gray_code": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "fire",
+      "alchemy_element": "fire",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E74085",
+        "#D08D25"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "06-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 6,
+      "title": "SIX OF WANDS",
+      "meaning": "recognition / advance",
+      "spell_intent": "recognition",
+      "harmonic": 7,
+      "gray_code": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trigram": "wind",
+      "phase": "earth",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#55E740",
+        "#25D0BF"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "07-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 7,
+      "title": "SEVEN OF WANDS",
+      "meaning": "defense / conviction",
+      "spell_intent": "defense",
+      "harmonic": 1,
+      "gray_code": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "metal",
+      "alchemy_element": "fire",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#5D40E7",
+        "#D025AF"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "08-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 8,
+      "title": "EIGHT OF WANDS",
+      "meaning": "velocity / message",
+      "spell_intent": "velocity",
+      "harmonic": 2,
+      "gray_code": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trigram": "earth",
+      "phase": "water",
+      "alchemy_element": "fire",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E78E40",
+        "#7DD025"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "09-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 9,
+      "title": "NINE OF WANDS",
+      "meaning": "resilience / boundary",
+      "spell_intent": "resilience",
+      "harmonic": 3,
+      "gray_code": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "wood",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#40E7BE",
+        "#254BD0"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "10-wands.svg",
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": 10,
+      "title": "TEN OF WANDS",
+      "meaning": "burden / completion",
+      "spell_intent": "burden",
+      "harmonic": 4,
+      "gray_code": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trigram": "water",
+      "phase": "fire",
+      "alchemy_element": "fire",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E740E0",
+        "#D03025"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "page-wands.svg",
+      "arcana": "court",
+      "suit": "wands",
+      "rank": "page",
+      "title": "PAGE OF WANDS",
+      "meaning": "impulse",
+      "spell_intent": "impulse",
+      "harmonic": 4,
+      "gray_code": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trigram": "mountain",
+      "phase": "earth",
+      "alchemy_element": "fire",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#AFE740",
+        "#25D062"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "court_role": "receiver",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "knight-wands.svg",
+      "arcana": "court",
+      "suit": "wands",
+      "rank": "knight",
+      "title": "KNIGHT OF WANDS",
+      "meaning": "command",
+      "spell_intent": "command",
+      "harmonic": 5,
+      "gray_code": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "metal",
+      "alchemy_element": "fire",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#407EE7",
+        "#9425D0"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "court_role": "vector",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "queen-wands.svg",
+      "arcana": "court",
+      "suit": "wands",
+      "rank": "queen",
+      "title": "QUEEN OF WANDS",
+      "meaning": "mastery",
+      "spell_intent": "mastery",
+      "harmonic": 6,
+      "gray_code": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trigram": "wind",
+      "phase": "water",
+      "alchemy_element": "fire",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E7404E",
+        "#D0C625"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "court_role": "field",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "king-wands.svg",
+      "arcana": "court",
+      "suit": "wands",
+      "rank": "king",
+      "title": "KING OF WANDS",
+      "meaning": "release",
+      "spell_intent": "release",
+      "harmonic": 7,
+      "gray_code": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "wood",
+      "alchemy_element": "fire",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#40E764",
+        "#25A8D0"
+      ],
+      "suit_grammar": "ignition / outward vectors",
+      "court_role": "governing architecture",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "01-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 1,
+      "title": "ACE OF CUPS",
+      "meaning": "overflow / receptivity",
+      "spell_intent": "overflow",
+      "harmonic": 2,
+      "gray_code": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "fire",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#9540E7",
+        "#D02576"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "02-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 2,
+      "title": "TWO OF CUPS",
+      "meaning": "reciprocity / union",
+      "spell_intent": "reciprocity",
+      "harmonic": 3,
+      "gray_code": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trigram": "mountain",
+      "phase": "earth",
+      "alchemy_element": "water",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E7C540",
+        "#44D025"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "03-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 3,
+      "title": "THREE OF CUPS",
+      "meaning": "gathering / joy",
+      "spell_intent": "gathering",
+      "harmonic": 4,
+      "gray_code": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "metal",
+      "alchemy_element": "water",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#40D9E7",
+        "#3725D0"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "04-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 4,
+      "title": "FOUR OF CUPS",
+      "meaning": "contemplation / refusal",
+      "spell_intent": "contemplation",
+      "harmonic": 5,
+      "gray_code": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trigram": "wind",
+      "phase": "water",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E740A8",
+        "#D06925"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "05-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 5,
+      "title": "FIVE OF CUPS",
+      "meaning": "loss / remaining grace",
+      "spell_intent": "loss",
+      "harmonic": 6,
+      "gray_code": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "wood",
+      "alchemy_element": "water",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#77E740",
+        "#25D09B"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "06-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 6,
+      "title": "SIX OF CUPS",
+      "meaning": "exchange / memory",
+      "spell_intent": "exchange",
+      "harmonic": 7,
+      "gray_code": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "trigram": "earth",
+      "phase": "fire",
+      "alchemy_element": "water",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#4046E7",
+        "#CD25D0"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "07-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 7,
+      "title": "SEVEN OF CUPS",
+      "meaning": "possibility / discernment",
+      "spell_intent": "possibility",
+      "harmonic": 1,
+      "gray_code": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "earth",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E76B40",
+        "#A1D025"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "08-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 8,
+      "title": "EIGHT OF CUPS",
+      "meaning": "departure / seeking",
+      "spell_intent": "departure",
+      "harmonic": 2,
+      "gray_code": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "trigram": "water",
+      "phase": "metal",
+      "alchemy_element": "water",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#40E79C",
+        "#256FD0"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "09-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 9,
+      "title": "NINE OF CUPS",
+      "meaning": "contentment / wish",
+      "spell_intent": "contentment",
+      "harmonic": 3,
+      "gray_code": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "water",
+      "alchemy_element": "water",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#CD40E7",
+        "#D0253D"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "10-cups.svg",
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": 10,
+      "title": "TEN OF CUPS",
+      "meaning": "belonging / fulfillment",
+      "spell_intent": "belonging",
+      "harmonic": 4,
+      "gray_code": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trigram": "mountain",
+      "phase": "wood",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#D2E740",
+        "#25D03F"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "page-cups.svg",
+      "arcana": "court",
+      "suit": "cups",
+      "rank": "page",
+      "title": "PAGE OF CUPS",
+      "meaning": "feeling",
+      "spell_intent": "feeling",
+      "harmonic": 4,
+      "gray_code": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "trigram": "wind",
+      "phase": "fire",
+      "alchemy_element": "water",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#40A1E7",
+        "#7125D0"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "court_role": "receiver",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "knight-cups.svg",
+      "arcana": "court",
+      "suit": "cups",
+      "rank": "knight",
+      "title": "KNIGHT OF CUPS",
+      "meaning": "reception",
+      "spell_intent": "reception",
+      "harmonic": 5,
+      "gray_code": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "earth",
+      "alchemy_element": "water",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E74070",
+        "#D0A325"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "court_role": "vector",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "queen-cups.svg",
+      "arcana": "court",
+      "suit": "cups",
+      "rank": "queen",
+      "title": "QUEEN OF CUPS",
+      "meaning": "devotion",
+      "spell_intent": "devotion",
+      "harmonic": 6,
+      "gray_code": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trigram": "earth",
+      "phase": "metal",
+      "alchemy_element": "water",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#40E741",
+        "#25CCD0"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "court_role": "field",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "king-cups.svg",
+      "arcana": "court",
+      "suit": "cups",
+      "rank": "king",
+      "title": "KING OF CUPS",
+      "meaning": "release",
+      "spell_intent": "release",
+      "harmonic": 7,
+      "gray_code": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "water",
+      "alchemy_element": "water",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#7240E7",
+        "#D0259A"
+      ],
+      "suit_grammar": "containment / receptive curvature",
+      "court_role": "governing architecture",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "01-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 1,
+      "title": "ACE OF SWORDS",
+      "meaning": "clarity / incision",
+      "spell_intent": "clarity",
+      "harmonic": 2,
+      "gray_code": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "wood",
+      "alchemy_element": "air",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E7A340",
+        "#68D025"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "02-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 2,
+      "title": "TWO OF SWORDS",
+      "meaning": "stalemate / balance",
+      "spell_intent": "stalemate",
+      "harmonic": 3,
+      "gray_code": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trigram": "wind",
+      "phase": "fire",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#40E7D4",
+        "#2536D0"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "03-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 3,
+      "title": "THREE OF SWORDS",
+      "meaning": "heartbreak / separation",
+      "spell_intent": "heartbreak",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "earth",
+      "alchemy_element": "air",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E740CA",
+        "#D04625"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "04-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 4,
+      "title": "FOUR OF SWORDS",
+      "meaning": "rest / recovery",
+      "spell_intent": "rest",
+      "harmonic": 5,
+      "gray_code": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trigram": "earth",
+      "phase": "metal",
+      "alchemy_element": "air",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#9AE740",
+        "#25D078"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "05-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 5,
+      "title": "FIVE OF SWORDS",
+      "meaning": "conflict / cost",
+      "spell_intent": "conflict",
+      "harmonic": 6,
+      "gray_code": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "water",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#4069E7",
+        "#AA25D0"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "06-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 6,
+      "title": "SIX OF SWORDS",
+      "meaning": "passage / transition",
+      "spell_intent": "passage",
+      "harmonic": 7,
+      "gray_code": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trigram": "water",
+      "phase": "wood",
+      "alchemy_element": "air",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E74940",
+        "#C4D025"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "07-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 7,
+      "title": "SEVEN OF SWORDS",
+      "meaning": "strategy / omission",
+      "spell_intent": "strategy",
+      "harmonic": 1,
+      "gray_code": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "fire",
+      "alchemy_element": "air",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40E779",
+        "#2592D0"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "08-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 8,
+      "title": "EIGHT OF SWORDS",
+      "meaning": "restriction / perception",
+      "spell_intent": "restriction",
+      "harmonic": 2,
+      "gray_code": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trigram": "mountain",
+      "phase": "earth",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#AA40E7",
+        "#D02560"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "09-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 9,
+      "title": "NINE OF SWORDS",
+      "meaning": "anxiety / night mind",
+      "spell_intent": "anxiety",
+      "harmonic": 3,
+      "gray_code": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "metal",
+      "alchemy_element": "air",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E7DB40",
+        "#2ED025"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "10-swords.svg",
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": 10,
+      "title": "TEN OF SWORDS",
+      "meaning": "closure / release",
+      "spell_intent": "closure",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trigram": "wind",
+      "phase": "water",
+      "alchemy_element": "air",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40C3E7",
+        "#4D25D0"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "page-swords.svg",
+      "arcana": "court",
+      "suit": "swords",
+      "rank": "page",
+      "title": "PAGE OF SWORDS",
+      "meaning": "inquiry",
+      "spell_intent": "inquiry",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trigram": "earth",
+      "phase": "wood",
+      "alchemy_element": "air",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#E74093",
+        "#D07F25"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "court_role": "receiver",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "knight-swords.svg",
+      "arcana": "court",
+      "suit": "swords",
+      "rank": "knight",
+      "title": "KNIGHT OF SWORDS",
+      "meaning": "discernment",
+      "spell_intent": "discernment",
+      "harmonic": 5,
+      "gray_code": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "fire",
+      "alchemy_element": "air",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#62E740",
+        "#25D0B1"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "court_role": "vector",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "queen-swords.svg",
+      "arcana": "court",
+      "suit": "swords",
+      "rank": "queen",
+      "title": "QUEEN OF SWORDS",
+      "meaning": "clarity",
+      "spell_intent": "clarity",
+      "harmonic": 6,
+      "gray_code": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trigram": "water",
+      "phase": "earth",
+      "alchemy_element": "air",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#5040E7",
+        "#D025BD"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "court_role": "field",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "king-swords.svg",
+      "arcana": "court",
+      "suit": "swords",
+      "rank": "king",
+      "title": "KING OF SWORDS",
+      "meaning": "release",
+      "spell_intent": "release",
+      "harmonic": 7,
+      "gray_code": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "metal",
+      "alchemy_element": "air",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#E78040",
+        "#8BD025"
+      ],
+      "suit_grammar": "division / angular discontinuity",
+      "court_role": "governing architecture",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "01-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 1,
+      "title": "ACE OF PENTACLES",
+      "meaning": "seed / material chance",
+      "spell_intent": "seed",
+      "harmonic": 2,
+      "gray_code": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "water",
+      "alchemy_element": "earth",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#40E7B1",
+        "#2559D0"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "02-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 2,
+      "title": "TWO OF PENTACLES",
+      "meaning": "adaptation / exchange",
+      "spell_intent": "adaptation",
+      "harmonic": 3,
+      "gray_code": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trigram": "earth",
+      "phase": "wood",
+      "alchemy_element": "earth",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E240E7",
+        "#D02527"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "03-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 3,
+      "title": "THREE OF PENTACLES",
+      "meaning": "craft / collaboration",
+      "spell_intent": "craft",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trigram": "thunder",
+      "phase": "fire",
+      "alchemy_element": "earth",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#BCE740",
+        "#25D054"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "04-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 4,
+      "title": "FOUR OF PENTACLES",
+      "meaning": "holding / security",
+      "spell_intent": "holding",
+      "harmonic": 5,
+      "gray_code": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trigram": "water",
+      "phase": "earth",
+      "alchemy_element": "earth",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#408BE7",
+        "#8625D0"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "05-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 5,
+      "title": "FIVE OF PENTACLES",
+      "meaning": "scarcity / exclusion",
+      "spell_intent": "scarcity",
+      "harmonic": 6,
+      "gray_code": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "metal",
+      "alchemy_element": "earth",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E7405B",
+        "#D0B825"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "06-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 6,
+      "title": "SIX OF PENTACLES",
+      "meaning": "giving / balance",
+      "spell_intent": "giving",
+      "harmonic": 7,
+      "gray_code": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trigram": "mountain",
+      "phase": "water",
+      "alchemy_element": "earth",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#40E757",
+        "#25B6D0"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "07-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 7,
+      "title": "SEVEN OF PENTACLES",
+      "meaning": "cultivation / patience",
+      "spell_intent": "cultivation",
+      "harmonic": 1,
+      "gray_code": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "wood",
+      "alchemy_element": "earth",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#8740E7",
+        "#D02584"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "08-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 8,
+      "title": "EIGHT OF PENTACLES",
+      "meaning": "practice / skill",
+      "spell_intent": "practice",
+      "harmonic": 2,
+      "gray_code": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trigram": "wind",
+      "phase": "fire",
+      "alchemy_element": "earth",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E7B840",
+        "#52D025"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "09-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 9,
+      "title": "NINE OF PENTACLES",
+      "meaning": "self-possession / fruition",
+      "spell_intent": "self-possession",
+      "harmonic": 3,
+      "gray_code": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trigram": "heaven",
+      "phase": "earth",
+      "alchemy_element": "earth",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#40E6E7",
+        "#2A25D0"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "10-pentacles.svg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": 10,
+      "title": "TEN OF PENTACLES",
+      "meaning": "inheritance / continuity",
+      "spell_intent": "inheritance",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "trigram": "earth",
+      "phase": "metal",
+      "alchemy_element": "earth",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#E740B5",
+        "#D05C25"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "revision": "v3-suit-grammar"
+    },
+    {
+      "file": "page-pentacles.svg",
+      "arcana": "court",
+      "suit": "pentacles",
+      "rank": "page",
+      "title": "PAGE OF PENTACLES",
+      "meaning": "study",
+      "spell_intent": "study",
+      "harmonic": 4,
+      "gray_code": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trigram": "water",
+      "phase": "water",
+      "alchemy_element": "earth",
+      "orbit_count": 1,
+      "spectral_colors": [
+        "#84E740",
+        "#25D08E"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "court_role": "receiver",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "knight-pentacles.svg",
+      "arcana": "court",
+      "suit": "pentacles",
+      "rank": "knight",
+      "title": "KNIGHT OF PENTACLES",
+      "meaning": "stewardship",
+      "spell_intent": "stewardship",
+      "harmonic": 5,
+      "gray_code": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "trigram": "lake",
+      "phase": "wood",
+      "alchemy_element": "earth",
+      "orbit_count": 2,
+      "spectral_colors": [
+        "#4054E7",
+        "#C025D0"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "court_role": "vector",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "queen-pentacles.svg",
+      "arcana": "court",
+      "suit": "pentacles",
+      "rank": "queen",
+      "title": "QUEEN OF PENTACLES",
+      "meaning": "craft",
+      "spell_intent": "craft",
+      "harmonic": 6,
+      "gray_code": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trigram": "mountain",
+      "phase": "fire",
+      "alchemy_element": "earth",
+      "orbit_count": 3,
+      "spectral_colors": [
+        "#E75E40",
+        "#AED025"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "court_role": "field",
+      "revision": "v3-court-role"
+    },
+    {
+      "file": "king-pentacles.svg",
+      "arcana": "court",
+      "suit": "pentacles",
+      "rank": "king",
+      "title": "KING OF PENTACLES",
+      "meaning": "legacy",
+      "spell_intent": "legacy",
+      "harmonic": 7,
+      "gray_code": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trigram": "fire",
+      "phase": "earth",
+      "alchemy_element": "earth",
+      "orbit_count": 4,
+      "spectral_colors": [
+        "#40E78F",
+        "#257CD0"
+      ],
+      "suit_grammar": "lattice / stable nodes",
+      "court_role": "governing architecture",
+      "revision": "v3-court-role"
+    }
+  ]
+}

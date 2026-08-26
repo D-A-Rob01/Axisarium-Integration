@@ -1,0 +1,12 @@
+.gradle/
+build/
+app/build/
+app/build-stale-*/
+local.properties
+keystore.properties
+captures/
+.idea/
+*.iml
+qa-*.xml
+qa-*.png
+qa-mobile-helm/

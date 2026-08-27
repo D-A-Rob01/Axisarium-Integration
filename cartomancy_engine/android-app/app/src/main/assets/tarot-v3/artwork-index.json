@@ -7,392 +7,392 @@
     {
       "card_id": "major_00_fool",
       "asset_path": "tarot-v3/cards/00-the-fool.svg",
-      "sha256": "02c48be5956333d1685c268b1d658404e1c142b4a3d3765b5f9bd6149ac06a4a"
+      "sha256": "bda40d1579078e4ebfbc7fab9dc0d3584eb9cefd6afffeec170b9e6edbf637eb"
     },
     {
       "card_id": "major_01_magician",
       "asset_path": "tarot-v3/cards/01-the-magician.svg",
-      "sha256": "983dc6c87888bc6bd90e50a496472d417d82fefd1f81d735c8343c81ee562388"
+      "sha256": "88d8c22dc0b21eb0619bbfe302dccd9c1d860f81f6f048b5f277f6511955abbd"
     },
     {
       "card_id": "major_02_high_priestess",
       "asset_path": "tarot-v3/cards/02-the-high-priestess.svg",
-      "sha256": "31f8fd491605f1f05b7c58b27b7765dda2381f910b945988d8bd6aeac9c576df"
+      "sha256": "57a91611d0cc10d173a690a3b4d2e9a59bcf897486117e6368e24d84036ef439"
     },
     {
       "card_id": "major_03_empress",
       "asset_path": "tarot-v3/cards/03-the-empress.svg",
-      "sha256": "db13e8d212e58588c5d34eafec44cef08cec15b350b22f8bc2f2a5cad6aa25a8"
+      "sha256": "bcc99322cd9437cf57065277a2ac3eb20749cb614d8d1c35ac910992e3b43d33"
     },
     {
       "card_id": "major_04_emperor",
       "asset_path": "tarot-v3/cards/04-the-emperor.svg",
-      "sha256": "369b3120d487a4413aa780e1b8604aef8072c0c1299b4fbfa374c466e0ae433c"
+      "sha256": "449ccb306501ad13ddacc13a75bd43815987a389a6f443c71ca04249702df93e"
     },
     {
       "card_id": "major_05_hierophant",
       "asset_path": "tarot-v3/cards/05-the-hierophant.svg",
-      "sha256": "70d1815ea09d48ff56ab06d0d6eca590789cc3e069fff2a2b3b3469ab5eac8d3"
+      "sha256": "7236d8a2005d1ae1f63059da6f8a48adbe6ffc38ce25bd1ee29cf8919d13c368"
     },
     {
       "card_id": "major_06_lovers",
       "asset_path": "tarot-v3/cards/06-the-lovers.svg",
-      "sha256": "321ae357081bd468aa674dd70d6e6914c5d71039284c2f517770103224fbe01b"
+      "sha256": "8b170e96c6ffefcd4a6269df17515a7fc7abbc7b436ae9cc2493ab592e349765"
     },
     {
       "card_id": "major_07_chariot",
       "asset_path": "tarot-v3/cards/07-the-chariot.svg",
-      "sha256": "3d52c04380b668420e13bf2db465704d587dbe66f34b1f1db0f5be7dbc496de4"
+      "sha256": "4c88fcfd4972d361ae330d0bda8a06d891b3485faf2ab4dd174173fbf0e578cb"
     },
     {
       "card_id": "major_08_strength",
       "asset_path": "tarot-v3/cards/08-strength.svg",
-      "sha256": "a1991051a1d452751594f1dc26e28356eef29d036a23fa691f70d2aa5bf1236a"
+      "sha256": "128652b95ef22dadf130b53191176b5b9b82c3be78f1d31bfc515a9ab988ae1b"
     },
     {
       "card_id": "major_09_hermit",
       "asset_path": "tarot-v3/cards/09-the-hermit.svg",
-      "sha256": "01da27541ef8ee99aeef3f3188324a300b6519708b9b64ef19df740b83471232"
+      "sha256": "d45fc28a904e0bf605a3f6347a238dbf225a6ada1270310cbd31280f570427e0"
     },
     {
       "card_id": "major_10_wheel_of_fortune",
       "asset_path": "tarot-v3/cards/10-wheel-of-fortune.svg",
-      "sha256": "0948ee20d62c9e88f8712585d8b2eb91f5f94a7963e5d063c89118a1298d92e7"
+      "sha256": "58666cee7e86faf73206c2b50335c4dee4f04cf467718e1860549cdb478b2b6d"
     },
     {
       "card_id": "major_11_justice",
       "asset_path": "tarot-v3/cards/11-justice.svg",
-      "sha256": "a12af93f94bd1692ef52d0c2fbd50893a28c6f9c81c517f37e59b989a0037654"
+      "sha256": "7e848ce72ccf73d69c2cd955feed8421ba228af1eb8d5d1fa6a32b7f8a15714d"
     },
     {
       "card_id": "major_12_hanged_man",
       "asset_path": "tarot-v3/cards/12-the-hanged-man.svg",
-      "sha256": "083c50c40fb249ad3a6c293396575d14b5559f8511e125e90b482ab517ba7ad1"
+      "sha256": "2d4e5f8c52c9c80b6e0adb2c6985c7d2e495e8b9f66a971d16c93059dfd61c5d"
     },
     {
       "card_id": "major_13_death",
       "asset_path": "tarot-v3/cards/13-death.svg",
-      "sha256": "dd690bd87c2734b8cd90dcbe73a85baeee86efa401e546ad4ff002dc2c7bb183"
+      "sha256": "75379b8c76a1fae91c7d1b2d1e424edefc2f780472f434b38d794d9a4d955d62"
     },
     {
       "card_id": "major_14_temperance",
       "asset_path": "tarot-v3/cards/14-temperance.svg",
-      "sha256": "f15839fa0ed9a9158db34684ca91345f28096e7f55854b9af8d369613d0b7ad3"
+      "sha256": "d71f8c6fd5aa4222f305afba4d5edbbba86a5713089d41bcbfacf02e30b036fb"
     },
     {
       "card_id": "major_15_devil",
       "asset_path": "tarot-v3/cards/15-the-devil.svg",
-      "sha256": "cae55f3223fcf2c83032b906a54510743396d22a30f35c08a091c699bb1f190b"
+      "sha256": "d19b80a3533af703b01ca8f8dd9c3825f62182f3a8cd90489e676cb3d07ba1ce"
     },
     {
       "card_id": "major_16_tower",
       "asset_path": "tarot-v3/cards/16-the-tower.svg",
-      "sha256": "8d8d00fd9f20ab21829b16aab44f6ea27d5b00f57357321333867cacaa1dcf8a"
+      "sha256": "f160e7f88dd716b9eef73872ed82f1a1b9d816cb5f8213789f4ca019d83e7415"
     },
     {
       "card_id": "major_17_star",
       "asset_path": "tarot-v3/cards/17-the-star.svg",
-      "sha256": "0c0e3b0afd9da36c9c19558c0942a0c563c3bf07db8b204e8c598d8712ce09ee"
+      "sha256": "92253f0d40a9b32fd6596beffc7ab6f35a087272ee56d3cae31cd901f9e59c26"
     },
     {
       "card_id": "major_18_moon",
       "asset_path": "tarot-v3/cards/18-the-moon.svg",
-      "sha256": "28f7c23abcbe6a1dcd5a07333748712a377d53eada5f20d88a13b9b6b5bbfd71"
+      "sha256": "e920456b91e1e041b05b6f465ce37215c67869f033cb1660e66fef7e76069e96"
     },
     {
       "card_id": "major_19_sun",
       "asset_path": "tarot-v3/cards/19-the-sun.svg",
-      "sha256": "c9d7466b0c1ae819bdf65ae0e6a42d52db7e619c6d5599eeaafd37398baf28b1"
+      "sha256": "4b015bc4c135921d3aa627f0527a66947858d244fb8e9cc086a16095f4734094"
     },
     {
       "card_id": "major_20_judgement",
       "asset_path": "tarot-v3/cards/20-judgement.svg",
-      "sha256": "15d8d49813fdfc24a71fe3653cdc74da97b3b4ad9f2337e84f2519010f574b35"
+      "sha256": "7fafe777b95378af358241970101301fd48d6cc59b88ad2f494e0acf05f549f1"
     },
     {
       "card_id": "major_21_world",
       "asset_path": "tarot-v3/cards/21-the-world.svg",
-      "sha256": "dca9ec639ec1a6dfead31c4a307d17cf13f9ddc9c686bb13b4cd2148b0cc514d"
+      "sha256": "e7b2f1f2db089069f8c92d8f0597bb89694aedc919b53530bb28d162d3965a84"
     },
     {
       "card_id": "wands_ace",
       "asset_path": "tarot-v3/cards/01-wands.svg",
-      "sha256": "9696840ae5af46719805253534502a4a6ce90ad6cd40d8e6b6271eca4023bd7b"
+      "sha256": "2260fe2098f4534f1464813a86bfff40dd6f7d6da041b4aaf6ace811ab82e551"
     },
     {
       "card_id": "wands_two",
       "asset_path": "tarot-v3/cards/02-wands.svg",
-      "sha256": "5fe7dccedb1dd4bdb677930ed60362998ec4801ff5f2c2991f21918583e4147a"
+      "sha256": "791d0ba992691cff3dbba178133aca48a0824b51546e827e09cc130387da3539"
     },
     {
       "card_id": "wands_three",
       "asset_path": "tarot-v3/cards/03-wands.svg",
-      "sha256": "21c0ad7e55c3cdde57fcc6149e28b0ec207db7dfecca2eb2b55b1bba7eebebd1"
+      "sha256": "867bb541c6e607df2f125a6b000f81c0430ef14a83aba57177331866660ff37b"
     },
     {
       "card_id": "wands_four",
       "asset_path": "tarot-v3/cards/04-wands.svg",
-      "sha256": "46784b4224e4f9d0c629ad2c804f50dbdfe92b452a77d9c669566b06aac77761"
+      "sha256": "35e94bc273075eba07e38bee9c8b18770970370dcf6e67509b77170a4bb67aee"
     },
     {
       "card_id": "wands_five",
       "asset_path": "tarot-v3/cards/05-wands.svg",
-      "sha256": "eb66a93389693177897f224dc9baf69198aac4108d7cbf62d53b4f7d4445d481"
+      "sha256": "4472ad41094b84ca73a7276fd6d3e563132abd6d34bcf86641a34f8d745b385d"
     },
     {
       "card_id": "wands_six",
       "asset_path": "tarot-v3/cards/06-wands.svg",
-      "sha256": "459ed769135e07cd6060dfde738ee490e810fa22226e67ced2e4e88a8857fb39"
+      "sha256": "1206dafa39c8a2d4019e0ee3485e0cc85a5c44c3f0186cdf0b8249f6980357bc"
     },
     {
       "card_id": "wands_seven",
       "asset_path": "tarot-v3/cards/07-wands.svg",
-      "sha256": "bc9b3703ab26e3a73fe3e0efb40af186c3eb317cd2246ad861584f88615d1eb2"
+      "sha256": "bfeadac93e1f28d27ea16e6ef98dca327c189b9201297e545da6cca86b6b4c85"
     },
     {
       "card_id": "wands_eight",
       "asset_path": "tarot-v3/cards/08-wands.svg",
-      "sha256": "ea2d05b919cbf88dd18e77e2b5201c1876cc18c4ee10c0da6e6e19564959eec5"
+      "sha256": "909b30858eae22218e62444eb21644a96d479cfbc5a3760889e10a6a2d005e6c"
     },
     {
       "card_id": "wands_nine",
       "asset_path": "tarot-v3/cards/09-wands.svg",
-      "sha256": "c84bebf90e85af34a92807f89db19fcfd28193ec368c52141266f2eda4068c11"
+      "sha256": "3507e55d93c7927b596cfe4802d2c15ef528bc2011ed5d83a60fa9a1d5a48c5b"
     },
     {
       "card_id": "wands_ten",
       "asset_path": "tarot-v3/cards/10-wands.svg",
-      "sha256": "2cc707e5eb11bae6868e575e6d9e457d8b8fc27934596d4b09c43a005c82c8f8"
+      "sha256": "c9bcccedf97bd4249aa267fb07c67117027356cd1457df35a2bc65e633a97a98"
     },
     {
       "card_id": "wands_page",
       "asset_path": "tarot-v3/cards/page-wands.svg",
-      "sha256": "9787eac8ffe41170e9e17e981049383ddb91bab89bd3d8fd9ea5be7ae24d56ed"
+      "sha256": "d32b3c9d7e05ad8943b5b785a6bbb244fd8616d453b0360675e0ed92503d2912"
     },
     {
       "card_id": "wands_knight",
       "asset_path": "tarot-v3/cards/knight-wands.svg",
-      "sha256": "028d4d3ed72af8fac8d5608b9956c4b3d8b8ae2d747462b7eea9a980911f6d2e"
+      "sha256": "caab94ac175dccb63d3e15f9171bb3e46a8ddd3138395c69f0c6299bb8875505"
     },
     {
       "card_id": "wands_queen",
       "asset_path": "tarot-v3/cards/queen-wands.svg",
-      "sha256": "76d950b3b68a7a1452a02303c756faf7f84e85b14bd9c240069bc8cbcedf0bd8"
+      "sha256": "46fe6be5e7797ee71df7c9bcf55544c099603f71e850d34b210aff2ca2a931f2"
     },
     {
       "card_id": "wands_king",
       "asset_path": "tarot-v3/cards/king-wands.svg",
-      "sha256": "4feccbbbee0241da856bead9b7baab0c0f2780ccc894e20e1e1464d62347bf4b"
+      "sha256": "e234929ff3b1ce9773a73ce2456865e262dbda8fe62d430b29389b161d6cc8fa"
     },
     {
       "card_id": "cups_ace",
       "asset_path": "tarot-v3/cards/01-cups.svg",
-      "sha256": "5024d66df7591f1df3628294bb53d79125060c448628c49564eab045be5378d3"
+      "sha256": "cc58277ef744a20595d77b490f04df100751ef08911f897440c77be7c51c531b"
     },
     {
       "card_id": "cups_two",
       "asset_path": "tarot-v3/cards/02-cups.svg",
-      "sha256": "be0038ba0c475b23eb0cf65e0d8fadfabcd91d5dc8d3b8100be2fe3701612945"
+      "sha256": "97d7047fd260ac75837afe87278c44cf8b8f28578bca03b575d8f61430aa4505"
     },
     {
       "card_id": "cups_three",
       "asset_path": "tarot-v3/cards/03-cups.svg",
-      "sha256": "0f083c49259ea854e1acb7e5213d36e117d475ec6f17eeecae7551e7f350f1be"
+      "sha256": "d50ab6adf1973d846d67b8a80cbb1b1b79e540539e9b6302c4e794d1102fd141"
     },
     {
       "card_id": "cups_four",
       "asset_path": "tarot-v3/cards/04-cups.svg",
-      "sha256": "f8bf1504489943451c5834f87d2846e17f3a24a21a572b988ad6d53b13f27936"
+      "sha256": "3bebbc5ce6b66cf939e30e8e1bdb081e952e88ca54b376b0b23185a6404bfd31"
     },
     {
       "card_id": "cups_five",
       "asset_path": "tarot-v3/cards/05-cups.svg",
-      "sha256": "af9aec592b3ae2cb014e90eaa7e0e340fba2c202e7c3d6d8c2fce5463d502849"
+      "sha256": "122c80a1ff9744d07f6a9a9eeba5540ece60202532b9aa7d0bec88544bec43c4"
     },
     {
       "card_id": "cups_six",
       "asset_path": "tarot-v3/cards/06-cups.svg",
-      "sha256": "172d79c73841bbc215aebb23c10d525171c97cc3a6e000c0675d66c16aa80767"
+      "sha256": "475b8f686d0d7a297871edcf38521bbf0d4680776c790febb810365917f3a42b"
     },
     {
       "card_id": "cups_seven",
       "asset_path": "tarot-v3/cards/07-cups.svg",
-      "sha256": "e1f71d6e093e4410773ec633b2efac84ae2ed7e3656f048d7da0680481648c0f"
+      "sha256": "c868c72d4a53e5176159e22f5e11c176fe2586ff79ad7f0b39bc1099a2e502c6"
     },
     {
       "card_id": "cups_eight",
       "asset_path": "tarot-v3/cards/08-cups.svg",
-      "sha256": "7e989bed4249f1b8110e67268445a0dfedc74753c5f73525596ab9494e34c285"
+      "sha256": "ab03d8d2d17bb7a28f1a3f78fd789f2f718651c06ff31eff16762f6fd345064c"
     },
     {
       "card_id": "cups_nine",
       "asset_path": "tarot-v3/cards/09-cups.svg",
-      "sha256": "1ba41bd2602c43fca82981d0df794ae471e0d5884a6bb084acd8426432303b45"
+      "sha256": "8c6d7987ebd8bb9ea58f1189ac580f86ff310cdc4be9e536ce66cd39cb319348"
     },
     {
       "card_id": "cups_ten",
       "asset_path": "tarot-v3/cards/10-cups.svg",
-      "sha256": "4c6ee56ebc63f383c23fe428e953c41befd395cab80e3ebdfa068698ecf58d06"
+      "sha256": "cf496cadb19127386083a9cefeb64a167792bfd15d544dbd2e272272c94011d9"
     },
     {
       "card_id": "cups_page",
       "asset_path": "tarot-v3/cards/page-cups.svg",
-      "sha256": "56975a1b0b35c5cfb824db9f60d49915218e22b54a582e6fb3e6b761872c2c8f"
+      "sha256": "a686e2740417a3534dc182680142a1bfb71bfc52de2907092b636d8c72302e72"
     },
     {
       "card_id": "cups_knight",
       "asset_path": "tarot-v3/cards/knight-cups.svg",
-      "sha256": "228bf688679abacb75443851f26ec7ccc4e6b8bfd76b4dcbcee594801f9a33fe"
+      "sha256": "cc74f3bcb8e860bec45ca3189633978e452a2e31606a9fc327b4889505a10bce"
     },
     {
       "card_id": "cups_queen",
       "asset_path": "tarot-v3/cards/queen-cups.svg",
-      "sha256": "cca92ce4cb14cfc2f3b64ef0ab4929f8fc67eacfbef4aaa1fb7c770b312540d7"
+      "sha256": "859461cb91f5b2f1b239cb237506616c0aa8e45a40244b61c3ee549710869052"
     },
     {
       "card_id": "cups_king",
       "asset_path": "tarot-v3/cards/king-cups.svg",
-      "sha256": "06fc4f8712768a38146e10c65d95f6c48714ed4dc8fcce8ab661f15addacb111"
+      "sha256": "83c24fc355a1f74648effe8bd42e3f9d00e6fb1a363e88fd4456d95f4deabfcb"
     },
     {
       "card_id": "swords_ace",
       "asset_path": "tarot-v3/cards/01-swords.svg",
-      "sha256": "d30f253a96a05618d487cae4c7330b4d3799d271f6a0276d0b03d789d77d526d"
+      "sha256": "956e6ab5430ab02218abeb4cdbf8255d02843271b8254bafcdff259c00b77f71"
     },
     {
       "card_id": "swords_two",
       "asset_path": "tarot-v3/cards/02-swords.svg",
-      "sha256": "c4902bdbeed93bef99c1ddb15c44295ef6d21178374fa4d05125f20fcd81eb56"
+      "sha256": "f436f9d7ed54ed4ad0149b524aaef4b618dff28a4f27a8113b260d3c55872750"
     },
     {
       "card_id": "swords_three",
       "asset_path": "tarot-v3/cards/03-swords.svg",
-      "sha256": "eaf3ff0096bcc5ab99091341b9a7db99802a0b58f43d392a736650e2f0ad9f96"
+      "sha256": "4c23e0101c91234b55e0cf2a96dbf0ce69bbae1be0d87cb35595493e8d0c44d3"
     },
     {
       "card_id": "swords_four",
       "asset_path": "tarot-v3/cards/04-swords.svg",
-      "sha256": "b4c688ff18fa268af43af751ca3f62e4912f86e00691defdf10fd2ead91866c5"
+      "sha256": "706f1cda337b6900b901d8606a14610da3049b81ecbd40801ac12c767a1eb875"
     },
     {
       "card_id": "swords_five",
       "asset_path": "tarot-v3/cards/05-swords.svg",
-      "sha256": "94d729ede5ad3e153023c7e0c3da5dc0378855205e71049e5862d06ec73056f6"
+      "sha256": "9a650ee62cd3eba2b66ec768e21c90c3290777e9906a35a962e0238566a548bd"
     },
     {
       "card_id": "swords_six",
       "asset_path": "tarot-v3/cards/06-swords.svg",
-      "sha256": "7f27841c14bdd19d9156aec235faaeca28616edb98f15996b62a8381b094ea84"
+      "sha256": "9d80586aa70c7753ce2ed035f2f7657df49f833e92428f402519a78e07b145e1"
     },
     {
       "card_id": "swords_seven",
       "asset_path": "tarot-v3/cards/07-swords.svg",
-      "sha256": "4ede0df65ae87ed1a5206ef8f8b5b9ec9243b9fea93fd45f4b73227fbd79fd4e"
+      "sha256": "d01d16f22692cfe160106cab766a170edb7db10352b5562a1ad1fb607fae4db6"
     },
     {
       "card_id": "swords_eight",
       "asset_path": "tarot-v3/cards/08-swords.svg",
-      "sha256": "7fffa277774d50237c4b5091d2620c904953594cbd7eacc1e275c6c9923cb237"
+      "sha256": "195ed892c1eebbc0e615fa445eb67f8a5fd57a2d95c5364814693f7a804678a5"
     },
     {
       "card_id": "swords_nine",
       "asset_path": "tarot-v3/cards/09-swords.svg",
-      "sha256": "6b760eeed1ba0345be0e4cc4e4f7de548def6269c6b45367cec376878456d215"
+      "sha256": "f5ad2d789c6f7b66cafc7aae838b605705cd55b63964f9438a05e6f27a035089"
     },
     {
       "card_id": "swords_ten",
       "asset_path": "tarot-v3/cards/10-swords.svg",
-      "sha256": "9be4eb129c771b471f8d36a71bc8ba709f5d8fd16f9e0120c05fb157be0a5a9f"
+      "sha256": "0984fb664690ab0aeeb98a5268d8bc0dff71ddddf52c13086efbafe50763dc93"
     },
     {
       "card_id": "swords_page",
       "asset_path": "tarot-v3/cards/page-swords.svg",
-      "sha256": "a024e61af1e9fd7c4ed42333c8c864c4416478cd9c254f4157c564eef8273f7c"
+      "sha256": "db7e6ef830b3ed8d6cab65918dc37e11d435166396dbb83b66d7a5327760862a"
     },
     {
       "card_id": "swords_knight",
       "asset_path": "tarot-v3/cards/knight-swords.svg",
-      "sha256": "64fdf2d84034711c0ecdde88f77ca758ecd884e3ce9d80a822a3e659df242f47"
+      "sha256": "6de305b4433da87ff0d7ef69175c9edb09a9963c85c223d18a1609927b1b07fe"
     },
     {
       "card_id": "swords_queen",
       "asset_path": "tarot-v3/cards/queen-swords.svg",
-      "sha256": "c7335ac7beb07840912001c2c662b343da9a6be5c4dfc1f9c1fb56f9e12225f3"
+      "sha256": "0c7901d227408f0ee03a1f2d25c35a7d6f5319f8450f4ad0586999be29b04d02"
     },
     {
       "card_id": "swords_king",
       "asset_path": "tarot-v3/cards/king-swords.svg",
-      "sha256": "f6632c9b50793eedf3d1746be996ca5234d2d4350fbb210f212c68f35a06f4d2"
+      "sha256": "bb2f1bc16a1fcaf25acf075688f925e0dba55b341ddfca9bdda9e8fa51208124"
     },
     {
       "card_id": "pentacles_ace",
       "asset_path": "tarot-v3/cards/01-pentacles.svg",
-      "sha256": "6a09a2c76f336233df4468f91b0209b360c04153c8f2e0a6b19ef4002a739196"
+      "sha256": "99987ad07e73bc61e55e9fbe463e6d1eb49c7cbf3c76528dcfba26f976ddb290"
     },
     {
       "card_id": "pentacles_two",
       "asset_path": "tarot-v3/cards/02-pentacles.svg",
-      "sha256": "a7e79b4629b132271d6c3effa26478d7fd7ad210114f18e6dd231c5c56a36e56"
+      "sha256": "a1ffc37fb34d370a19eabe097da6e3936884ff101580ca1b0655b71b9b5b1f5f"
     },
     {
       "card_id": "pentacles_three",
       "asset_path": "tarot-v3/cards/03-pentacles.svg",
-      "sha256": "3ee1ec88a360371561b930edf49227dd1fc43afd44ad11430d1ad6dda7d18d81"
+      "sha256": "75015a5c82b998191e169f411430daa0ac1b461778fb73b61f45d9f8460dc556"
     },
     {
       "card_id": "pentacles_four",
       "asset_path": "tarot-v3/cards/04-pentacles.svg",
-      "sha256": "1686afc823a496a797adb907a06b0ff09eeefea54cf72d9e7faf31b6462fb6b6"
+      "sha256": "987eee046ec9f7f914fdf7c3440365e1c9b26ae2e0bc65938b60b0e54a0be9fc"
     },
     {
       "card_id": "pentacles_five",
       "asset_path": "tarot-v3/cards/05-pentacles.svg",
-      "sha256": "ad6334dcce501034bdb2f636903ecd78c1d83595fe865e4089d436140494af83"
+      "sha256": "e5810e5751be2f23ad376b6e4b651c50889d1a76c76afb0e1e7bf55858ae84c7"
     },
     {
       "card_id": "pentacles_six",
       "asset_path": "tarot-v3/cards/06-pentacles.svg",
-      "sha256": "ebd7fd38440a2b9bb3a8592d44dbf2adfe7556ae8d561a943f6fb5264c77b79f"
+      "sha256": "c1bb5f3e5eeb05e12d62a9fd2dcf3de4f48516bdefafd856f4a1b674bdfd1f47"
     },
     {
       "card_id": "pentacles_seven",
       "asset_path": "tarot-v3/cards/07-pentacles.svg",
-      "sha256": "29df094835d61b6fbbe09447ac2bdfa43150d05d2924bd7d2361a6dbbc9961ea"
+      "sha256": "4a685d1cf3f60695732124022f656c1cd0b9c6098ed9e8c538481b7433b63b0e"
     },
     {
       "card_id": "pentacles_eight",
       "asset_path": "tarot-v3/cards/08-pentacles.svg",
-      "sha256": "96f74020405c7cfd30f1d7242466af4d4af7f3fa620baeafde0ba2d5821b26ba"
+      "sha256": "e4cdd736b396b172211e7e8d0ec0b5618e87531d92052383b56d0f76e98df8ec"
     },
     {
       "card_id": "pentacles_nine",
       "asset_path": "tarot-v3/cards/09-pentacles.svg",
-      "sha256": "5eb03c9c1eea5d916b119e11de24813f84525a5bd68bdd4a5364f6747c312b37"
+      "sha256": "0dffe925f450e278b457e960ea25f1c1893e0ef14d757b3228793da2858d407d"
     },
     {
       "card_id": "pentacles_ten",
       "asset_path": "tarot-v3/cards/10-pentacles.svg",
-      "sha256": "15f81ceebdb1a891451a276727c677084f5e57f43f9fccc58dd38b5a59534757"
+      "sha256": "736fddc1399e3ce7bc3ebde8e48ca78ea47b9f47b90b23c9912cd73cd25bcbf2"
     },
     {
       "card_id": "pentacles_page",
       "asset_path": "tarot-v3/cards/page-pentacles.svg",
-      "sha256": "017fdfd1d21b25ab72012e744a0a3b950bf65e5f5a5025ddf11ba2d4c26e74de"
+      "sha256": "860b1c0b4ffb9fd72d7a6f0e7941aa5b8f060d22e6b6118872d7b8ddf475454a"
     },
     {
       "card_id": "pentacles_knight",
       "asset_path": "tarot-v3/cards/knight-pentacles.svg",
-      "sha256": "77a535bc621bc9dfc222ae94df54c7de7b63e3fe3bf3fe91f5f262899f1cc617"
+      "sha256": "c82bae9a337036053b5a8b4e45b76e3e70ad08fd1e09d218e3bbc6bd9f4b1fd1"
     },
     {
       "card_id": "pentacles_queen",
       "asset_path": "tarot-v3/cards/queen-pentacles.svg",
-      "sha256": "d30cdd7a6c2a7dc62493574475b8ba67d2198df09563fab23809398c2381866d"
+      "sha256": "5390ab6cf970202d417ef76cec4ac228c85af7dc3a79f13bd6b95010a091b4fc"
     },
     {
       "card_id": "pentacles_king",
       "asset_path": "tarot-v3/cards/king-pentacles.svg",
-      "sha256": "b8a6e308668526d5e0811a2b1a88f5e218e98769641fd1a051736bf7534cc509"
+      "sha256": "ee0d649a7bafe86d7ac0bad466a662bb61c95a2d7099b4d7e5768d8c93646aa4"
     }
   ]
 }

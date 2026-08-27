@@ -14,6 +14,11 @@ on:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    env:
+      KYBERNION_KEYSTORE_B64: ${{ secrets.KYBERNION_KEYSTORE_B64 }}
+      KYBERNION_STORE_PASSWORD: ${{ secrets.KYBERNION_STORE_PASSWORD }}
+      KYBERNION_KEY_ALIAS: ${{ secrets.KYBERNION_KEY_ALIAS }}
+      KYBERNION_KEY_PASSWORD: ${{ secrets.KYBERNION_KEY_PASSWORD }}
     defaults:
       run:
         working-directory: cartomancy_engine/android-app
@@ -25,25 +30,20 @@ jobs:
           java-version: "17"
       - uses: gradle/actions/setup-gradle@v4
       - name: Materialize release keystore
-        if: ${{ secrets.KYBERNION_KEYSTORE_B64 != '' }}
-        env:
-          KYBERNION_KEYSTORE_B64: ${{ secrets.KYBERNION_KEYSTORE_B64 }}
+        if: env.KYBERNION_KEYSTORE_B64 != ''
         run: |
           mkdir -p release
           printf '%s' "$KYBERNION_KEYSTORE_B64" | base64 --decode > release/kybernion-release.jks
       - name: Verify artwork and Android unit tests
         env:
           KYBERNION_STORE_FILE: release/kybernion-release.jks
-          KYBERNION_STORE_PASSWORD: ${{ secrets.KYBERNION_STORE_PASSWORD }}
-          KYBERNION_KEY_ALIAS: ${{ secrets.KYBERNION_KEY_ALIAS }}
-          KYBERNION_KEY_PASSWORD: ${{ secrets.KYBERNION_KEY_PASSWORD }}
         run: ./gradlew verifyTarotAssets testDebugUnitTest assembleDebug assembleRelease --stacktrace
       - name: Verify signed release APK
-        if: ${{ secrets.KYBERNION_KEYSTORE_B64 != '' }}
+        if: env.KYBERNION_KEYSTORE_B64 != ''
         run: |
           "$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -n1)/apksigner" verify --verbose app/build/outputs/apk/release/app-release.apk
       - name: Retain signed Kybernion APK
-        if: ${{ secrets.KYBERNION_KEYSTORE_B64 != '' }}
+        if: env.KYBERNION_KEYSTORE_B64 != ''
         uses: actions/upload-artifact@v4
         with:
           name: Kybernion-Mobile-Helm-0.3.0-signed

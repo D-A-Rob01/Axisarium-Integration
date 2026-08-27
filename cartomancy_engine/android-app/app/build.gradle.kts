@@ -46,7 +46,23 @@ android {
     val releaseStorePassword = signingValue("KYBERNION_STORE_PASSWORD")
     val releaseKeyAlias = signingValue("KYBERNION_KEY_ALIAS")
     val releaseKeyPassword = signingValue("KYBERNION_KEY_PASSWORD")
-    if (listOf(releaseStoreFile, releaseStorePassword, releaseKeyAlias, releaseKeyPassword).all { !it.isNullOrBlank() }) {
+    val releaseSigningValues = mapOf(
+        "KYBERNION_STORE_FILE" to releaseStoreFile,
+        "KYBERNION_STORE_PASSWORD" to releaseStorePassword,
+        "KYBERNION_KEY_ALIAS" to releaseKeyAlias,
+        "KYBERNION_KEY_PASSWORD" to releaseKeyPassword,
+    )
+    val configuredSigningValues = releaseSigningValues.filterValues { !it.isNullOrBlank() }
+    val signingRequired = signingValue("KYBERNION_REQUIRE_SIGNING")
+        ?.toBooleanStrictOrNull() == true
+    if (configuredSigningValues.isNotEmpty() && configuredSigningValues.size != releaseSigningValues.size) {
+        val missing = releaseSigningValues.keys - configuredSigningValues.keys
+        throw GradleException("Incomplete Kybernion release signing configuration; missing: ${missing.joinToString()}")
+    }
+    if (signingRequired && configuredSigningValues.size != releaseSigningValues.size) {
+        throw GradleException("Kybernion release signing is required, but complete credentials were not supplied")
+    }
+    if (configuredSigningValues.size == releaseSigningValues.size) {
         signingConfigs {
             create("kybernionRelease") {
                 storeFile = rootProject.file(requireNotNull(releaseStoreFile))

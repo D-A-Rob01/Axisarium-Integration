@@ -1,6 +1,13 @@
 name: Kybernion Android
 
 on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: Build and retain the signed release APK
+        required: true
+        default: true
+        type: boolean
   pull_request:
     paths:
       - ".github/workflows/kybernion-android.yml"
@@ -8,13 +15,43 @@ on:
       - "cartomancy_engine/src/cartomancy_engine/data/**"
   push:
     branches: ["**"]
+    tags:
+      - "kybernion-v*"
     paths:
       - ".github/workflows/kybernion-android.yml"
       - "cartomancy_engine/android-app/**"
       - "cartomancy_engine/src/cartomancy_engine/data/**"
 
+permissions:
+  contents: read
+
+concurrency:
+  group: kybernion-android-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cartomancy_engine/android-app
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v6
+      - name: Verify artwork, unit tests, and unsigned builds
+        run: ./gradlew verifyTarotAssets testDebugUnitTest assembleDebug assembleRelease --stacktrace
+
+  release:
+    if: >-
+      (github.event_name == 'workflow_dispatch' && inputs.release) ||
+      startsWith(github.ref, 'refs/tags/kybernion-v')
+    needs: verify
     runs-on: ubuntu-latest
     env:
       KYBERNION_KEYSTORE_B64: ${{ secrets.KYBERNION_KEYSTORE_B64 }}
@@ -25,30 +62,56 @@ jobs:
       run:
         working-directory: cartomancy_engine/android-app
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: "17"
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
+      - name: Require complete signing credentials
+        shell: bash
+        run: |
+          missing=()
+          for name in \
+            KYBERNION_KEYSTORE_B64 \
+            KYBERNION_STORE_PASSWORD \
+            KYBERNION_KEY_ALIAS \
+            KYBERNION_KEY_PASSWORD
+          do
+            if [[ -z "${!name:-}" ]]; then
+              missing+=("$name")
+            fi
+          done
+          if (( ${#missing[@]} > 0 )); then
+            printf 'Missing required GitHub Actions secret: %s\n' "${missing[@]}" >&2
+            exit 1
+          fi
       - name: Materialize release keystore
-        if: env.KYBERNION_KEYSTORE_B64 != ''
         run: |
           mkdir -p release
-          printf '%s' "$KYBERNION_KEYSTORE_B64" | base64 --decode > release/kybernion-release.jks
-      - name: Verify artwork and Android unit tests
+          printf '%s' "$KYBERNION_KEYSTORE_B64" |
+            base64 --decode > release/kybernion-release.jks
+          test -s release/kybernion-release.jks
+      - name: Build signed release APK
         env:
+          KYBERNION_REQUIRE_SIGNING: "true"
           KYBERNION_STORE_FILE: release/kybernion-release.jks
-        run: ./gradlew verifyTarotAssets testDebugUnitTest assembleDebug assembleRelease --stacktrace
-      - name: Verify signed release APK
-        if: env.KYBERNION_KEYSTORE_B64 != ''
+        run: ./gradlew verifyTarotAssets testDebugUnitTest assembleRelease --stacktrace
+      - name: Verify signature and record checksum
         run: |
-          "$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -n1)/apksigner" verify --verbose app/build/outputs/apk/release/app-release.apk
+          apk="app/build/outputs/apk/release/app-release.apk"
+          build_tools="$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -n1)"
+          "$ANDROID_HOME/build-tools/$build_tools/apksigner" \
+            verify --verbose --print-certs "$apk"
+          sha256sum "$apk" > "$apk.sha256"
       - name: Retain signed Kybernion APK
-        if: env.KYBERNION_KEYSTORE_B64 != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Kybernion-Mobile-Helm-0.3.0-signed
-          path: cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk
+          path: |
+            cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk
+            cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk.sha256
           if-no-files-found: error
           retention-days: 30

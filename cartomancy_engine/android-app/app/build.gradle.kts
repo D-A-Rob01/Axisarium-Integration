@@ -46,7 +46,7 @@ android {
     val releaseStorePassword = signingValue("KYBERNION_STORE_PASSWORD")
     val releaseKeyAlias = signingValue("KYBERNION_KEY_ALIAS")
     val releaseKeyPassword = signingValue("KYBERNION_KEY_PASSWORD")
-    if (listOf(releaseStoreFile, releaseStorePassword, releaseKeyAlias, releaseKeyPassword).all { it != null }) {
+    if (listOf(releaseStoreFile, releaseStorePassword, releaseKeyAlias, releaseKeyPassword).all { !it.isNullOrBlank() }) {
         signingConfigs {
             create("kybernionRelease") {
                 storeFile = rootProject.file(requireNotNull(releaseStoreFile))

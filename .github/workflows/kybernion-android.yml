@@ -3,11 +3,13 @@ name: Kybernion Android
 on:
   pull_request:
     paths:
+      - ".github/workflows/kybernion-android.yml"
       - "cartomancy_engine/android-app/**"
       - "cartomancy_engine/src/cartomancy_engine/data/**"
   push:
     branches: ["**"]
     paths:
+      - ".github/workflows/kybernion-android.yml"
       - "cartomancy_engine/android-app/**"
       - "cartomancy_engine/src/cartomancy_engine/data/**"
 

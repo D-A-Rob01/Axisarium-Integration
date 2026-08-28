@@ -25,8 +25,8 @@ android {
         applicationId = "com.aletheion.cartomancy"
         minSdk = 26
         targetSdk = 35
-        versionCode = 3
-        versionName = "0.3.0"
+        versionCode = 4
+        versionName = "0.3.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -157,4 +157,31 @@ val verifyTarotAssets by tasks.registering {
     }
 }
 
-tasks.named("preBuild").configure { dependsOn(verifyTarotAssets) }
+val verifyStartupContracts by tasks.registering {
+    group = "verification"
+    description = "Verifies every Kybernion contract required at application startup."
+    doLast {
+        val contracts = listOf(
+            "three-card" to 3,
+            "the-constellation" to 7,
+        )
+        val spreadsRoot = engineRoot.resolve("src/cartomancy_engine/data/spreads")
+        contracts.forEach { (id, expectedPositionCount) ->
+            val contract = spreadsRoot.resolve("$id.json")
+            require(contract.isFile) { "Missing startup spread contract: $contract" }
+            val content = contract.readText()
+            require(Regex("\\\"id\\\"\\s*:\\s*\\\"$id\\\"").containsMatchIn(content)) {
+                "Startup spread contract has the wrong id: $contract"
+            }
+            val positions = Regex("\\\"index\\\"\\s*:").findAll(content).count()
+            require(positions == expectedPositionCount) {
+                "Expected $expectedPositionCount positions in $contract; found $positions"
+            }
+        }
+    }
+}
+
+tasks.named("preBuild").configure {
+    dependsOn(verifyTarotAssets)
+    dependsOn(verifyStartupContracts)
+}

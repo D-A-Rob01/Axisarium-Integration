@@ -1,0 +1,41 @@
+{
+  "id": "the-constellation",
+  "name": "The Constellation",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Present Star",
+      "prompt": "What is most alive and visible in this moment?"
+    },
+    {
+      "index": 2,
+      "label": "Gravitational Pull",
+      "prompt": "What underlying force is shaping the situation?"
+    },
+    {
+      "index": 3,
+      "label": "Threshold",
+      "prompt": "What tension, obstacle, or transition asks to be met?"
+    },
+    {
+      "index": 4,
+      "label": "Hidden Light",
+      "prompt": "What resource, truth, or capacity is not yet fully seen?"
+    },
+    {
+      "index": 5,
+      "label": "Relation",
+      "prompt": "What relationship or surrounding condition needs attention?"
+    },
+    {
+      "index": 6,
+      "label": "Course Correction",
+      "prompt": "What practical adjustment will bring the system into better alignment?"
+    },
+    {
+      "index": 7,
+      "label": "Emerging Pattern",
+      "prompt": "What direction becomes possible when the whole constellation is held together?"
+    }
+  ]
+}

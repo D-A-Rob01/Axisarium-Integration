@@ -45,7 +45,7 @@ jobs:
           java-version: "17"
       - uses: gradle/actions/setup-gradle@v6
       - name: Verify artwork, unit tests, and unsigned builds
-        run: ./gradlew verifyTarotAssets verifyStartupContracts testDebugUnitTest assembleDebug assembleRelease --stacktrace
+        run: ./gradlew verifyTarotAssets verifyStartupContracts verifyDeckArtworkContract testDebugUnitTest assembleDebug assembleRelease --stacktrace
 
   release:
     if: >-
@@ -98,7 +98,7 @@ jobs:
         env:
           KYBERNION_REQUIRE_SIGNING: "true"
           KYBERNION_STORE_FILE: release/kybernion-release.jks
-        run: ./gradlew verifyTarotAssets verifyStartupContracts testDebugUnitTest assembleRelease --stacktrace
+        run: ./gradlew verifyTarotAssets verifyStartupContracts verifyDeckArtworkContract testDebugUnitTest assembleRelease --stacktrace
       - name: Verify signature and record checksum
         run: |
           apk="app/build/outputs/apk/release/app-release.apk"
@@ -109,7 +109,7 @@ jobs:
       - name: Retain signed Kybernion APK
         uses: actions/upload-artifact@v7
         with:
-          name: Kybernion-Mobile-Helm-0.3.1-signed
+          name: Kybernion-Mobile-Helm-0.3.2-signed
           path: |
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk.sha256

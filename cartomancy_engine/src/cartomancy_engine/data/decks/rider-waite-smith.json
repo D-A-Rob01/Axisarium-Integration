@@ -9,8 +9,18 @@
       "number": 0,
       "suit": null,
       "element": "air",
-      "upright_keywords": ["beginning", "risk", "innocence", "threshold"],
-      "reversed_keywords": ["folly", "avoidance", "recklessness", "blocked beginning"],
+      "upright_keywords": [
+        "beginning",
+        "risk",
+        "innocence",
+        "threshold"
+      ],
+      "reversed_keywords": [
+        "folly",
+        "avoidance",
+        "recklessness",
+        "blocked beginning"
+      ],
       "notes": ""
     },
     {
@@ -20,8 +30,18 @@
       "number": 1,
       "suit": null,
       "element": "air",
-      "upright_keywords": ["agency", "skill", "will", "manifestation"],
-      "reversed_keywords": ["manipulation", "scattered will", "misdirection", "unused skill"],
+      "upright_keywords": [
+        "agency",
+        "skill",
+        "will",
+        "manifestation"
+      ],
+      "reversed_keywords": [
+        "manipulation",
+        "scattered will",
+        "misdirection",
+        "unused skill"
+      ],
       "notes": ""
     },
     {
@@ -31,8 +51,18 @@
       "number": 2,
       "suit": null,
       "element": "water",
-      "upright_keywords": ["intuition", "mystery", "inner knowing", "receptivity"],
-      "reversed_keywords": ["withheld knowledge", "disconnection", "secrecy", "ignored intuition"],
+      "upright_keywords": [
+        "intuition",
+        "mystery",
+        "inner knowing",
+        "receptivity"
+      ],
+      "reversed_keywords": [
+        "withheld knowledge",
+        "disconnection",
+        "secrecy",
+        "ignored intuition"
+      ],
       "notes": ""
     },
     {
@@ -42,8 +72,18 @@
       "number": 3,
       "suit": null,
       "element": "earth",
-      "upright_keywords": ["fertility", "care", "embodiment", "abundance"],
-      "reversed_keywords": ["neglect", "overgiving", "creative block", "depletion"],
+      "upright_keywords": [
+        "fertility",
+        "care",
+        "embodiment",
+        "abundance"
+      ],
+      "reversed_keywords": [
+        "neglect",
+        "overgiving",
+        "creative block",
+        "depletion"
+      ],
       "notes": ""
     },
     {
@@ -53,8 +93,18 @@
       "number": 4,
       "suit": null,
       "element": "fire",
-      "upright_keywords": ["structure", "authority", "stability", "command"],
-      "reversed_keywords": ["rigidity", "domination", "instability", "control"],
+      "upright_keywords": [
+        "structure",
+        "authority",
+        "stability",
+        "command"
+      ],
+      "reversed_keywords": [
+        "rigidity",
+        "domination",
+        "instability",
+        "control"
+      ],
       "notes": ""
     },
     {
@@ -64,8 +114,18 @@
       "number": 5,
       "suit": null,
       "element": "earth",
-      "upright_keywords": ["tradition", "teaching", "lineage", "shared practice"],
-      "reversed_keywords": ["dogma", "rebellion", "stale doctrine", "private path"],
+      "upright_keywords": [
+        "tradition",
+        "teaching",
+        "lineage",
+        "shared practice"
+      ],
+      "reversed_keywords": [
+        "dogma",
+        "rebellion",
+        "stale doctrine",
+        "private path"
+      ],
       "notes": ""
     },
     {
@@ -75,8 +135,18 @@
       "number": 6,
       "suit": null,
       "element": "air",
-      "upright_keywords": ["choice", "union", "values", "alignment"],
-      "reversed_keywords": ["misalignment", "indecision", "division", "conflicted values"],
+      "upright_keywords": [
+        "choice",
+        "union",
+        "values",
+        "alignment"
+      ],
+      "reversed_keywords": [
+        "misalignment",
+        "indecision",
+        "division",
+        "conflicted values"
+      ],
       "notes": ""
     },
     {
@@ -86,8 +156,18 @@
       "number": 7,
       "suit": null,
       "element": "water",
-      "upright_keywords": ["direction", "discipline", "victory", "momentum"],
-      "reversed_keywords": ["drift", "force without aim", "stalling", "loss of control"],
+      "upright_keywords": [
+        "direction",
+        "discipline",
+        "victory",
+        "momentum"
+      ],
+      "reversed_keywords": [
+        "drift",
+        "force without aim",
+        "stalling",
+        "loss of control"
+      ],
       "notes": ""
     },
     {
@@ -97,8 +177,18 @@
       "number": 8,
       "suit": null,
       "element": "fire",
-      "upright_keywords": ["courage", "patience", "gentle power", "self-mastery"],
-      "reversed_keywords": ["self-doubt", "force", "impatience", "inner conflict"],
+      "upright_keywords": [
+        "courage",
+        "patience",
+        "gentle power",
+        "self-mastery"
+      ],
+      "reversed_keywords": [
+        "self-doubt",
+        "force",
+        "impatience",
+        "inner conflict"
+      ],
       "notes": ""
     },
     {
@@ -108,8 +198,18 @@
       "number": 9,
       "suit": null,
       "element": "earth",
-      "upright_keywords": ["solitude", "discernment", "study", "inner guidance"],
-      "reversed_keywords": ["isolation", "avoidance", "lost counsel", "withdrawal"],
+      "upright_keywords": [
+        "solitude",
+        "discernment",
+        "study",
+        "inner guidance"
+      ],
+      "reversed_keywords": [
+        "isolation",
+        "avoidance",
+        "lost counsel",
+        "withdrawal"
+      ],
       "notes": ""
     },
     {
@@ -119,8 +219,18 @@
       "number": 10,
       "suit": null,
       "element": "fire",
-      "upright_keywords": ["turning point", "cycle", "chance", "pattern"],
-      "reversed_keywords": ["resistance", "bad timing", "repeating cycle", "instability"],
+      "upright_keywords": [
+        "turning point",
+        "cycle",
+        "chance",
+        "pattern"
+      ],
+      "reversed_keywords": [
+        "resistance",
+        "bad timing",
+        "repeating cycle",
+        "instability"
+      ],
       "notes": ""
     },
     {
@@ -130,8 +240,18 @@
       "number": 11,
       "suit": null,
       "element": "air",
-      "upright_keywords": ["truth", "accountability", "balance", "consequence"],
-      "reversed_keywords": ["bias", "avoidance", "unfairness", "unowned consequence"],
+      "upright_keywords": [
+        "truth",
+        "accountability",
+        "balance",
+        "consequence"
+      ],
+      "reversed_keywords": [
+        "bias",
+        "avoidance",
+        "unfairness",
+        "unowned consequence"
+      ],
       "notes": ""
     },
     {
@@ -141,8 +261,18 @@
       "number": 12,
       "suit": null,
       "element": "water",
-      "upright_keywords": ["pause", "surrender", "reversal", "new perspective"],
-      "reversed_keywords": ["stasis", "martyrdom", "resistance", "pointless delay"],
+      "upright_keywords": [
+        "pause",
+        "surrender",
+        "reversal",
+        "new perspective"
+      ],
+      "reversed_keywords": [
+        "stasis",
+        "martyrdom",
+        "resistance",
+        "pointless delay"
+      ],
       "notes": ""
     },
     {
@@ -152,8 +282,18 @@
       "number": 13,
       "suit": null,
       "element": "water",
-      "upright_keywords": ["ending", "transformation", "release", "threshold"],
-      "reversed_keywords": ["clinging", "stagnation", "fear of change", "unfinished ending"],
+      "upright_keywords": [
+        "ending",
+        "transformation",
+        "release",
+        "threshold"
+      ],
+      "reversed_keywords": [
+        "clinging",
+        "stagnation",
+        "fear of change",
+        "unfinished ending"
+      ],
       "notes": ""
     },
     {
@@ -163,8 +303,18 @@
       "number": 14,
       "suit": null,
       "element": "fire",
-      "upright_keywords": ["integration", "moderation", "alchemy", "patience"],
-      "reversed_keywords": ["excess", "imbalance", "haste", "failed integration"],
+      "upright_keywords": [
+        "integration",
+        "moderation",
+        "alchemy",
+        "patience"
+      ],
+      "reversed_keywords": [
+        "excess",
+        "imbalance",
+        "haste",
+        "failed integration"
+      ],
       "notes": ""
     },
     {
@@ -174,8 +324,18 @@
       "number": 15,
       "suit": null,
       "element": "earth",
-      "upright_keywords": ["attachment", "shadow", "bondage", "compulsion"],
-      "reversed_keywords": ["release", "awareness", "detachment", "breaking pattern"],
+      "upright_keywords": [
+        "attachment",
+        "shadow",
+        "bondage",
+        "compulsion"
+      ],
+      "reversed_keywords": [
+        "release",
+        "awareness",
+        "detachment",
+        "breaking pattern"
+      ],
       "notes": ""
     },
     {
@@ -185,8 +345,18 @@
       "number": 16,
       "suit": null,
       "element": "fire",
-      "upright_keywords": ["rupture", "revelation", "collapse", "liberation"],
-      "reversed_keywords": ["delayed collapse", "denial", "fear of upheaval", "private crisis"],
+      "upright_keywords": [
+        "rupture",
+        "revelation",
+        "collapse",
+        "liberation"
+      ],
+      "reversed_keywords": [
+        "delayed collapse",
+        "denial",
+        "fear of upheaval",
+        "private crisis"
+      ],
       "notes": ""
     },
     {
@@ -196,8 +366,18 @@
       "number": 17,
       "suit": null,
       "element": "air",
-      "upright_keywords": ["hope", "renewal", "guidance", "restoration"],
-      "reversed_keywords": ["discouragement", "lost faith", "depletion", "dimmed vision"],
+      "upright_keywords": [
+        "hope",
+        "renewal",
+        "guidance",
+        "restoration"
+      ],
+      "reversed_keywords": [
+        "discouragement",
+        "lost faith",
+        "depletion",
+        "dimmed vision"
+      ],
       "notes": ""
     },
     {
@@ -207,8 +387,18 @@
       "number": 18,
       "suit": null,
       "element": "water",
-      "upright_keywords": ["dream", "uncertainty", "projection", "subconscious"],
-      "reversed_keywords": ["confusion clearing", "deception", "anxiety", "distorted signal"],
+      "upright_keywords": [
+        "dream",
+        "uncertainty",
+        "projection",
+        "subconscious"
+      ],
+      "reversed_keywords": [
+        "confusion clearing",
+        "deception",
+        "anxiety",
+        "distorted signal"
+      ],
       "notes": ""
     },
     {
@@ -218,8 +408,18 @@
       "number": 19,
       "suit": null,
       "element": "fire",
-      "upright_keywords": ["clarity", "vitality", "joy", "revelation"],
-      "reversed_keywords": ["partial clarity", "burnout", "blocked joy", "overexposure"],
+      "upright_keywords": [
+        "clarity",
+        "vitality",
+        "joy",
+        "revelation"
+      ],
+      "reversed_keywords": [
+        "partial clarity",
+        "burnout",
+        "blocked joy",
+        "overexposure"
+      ],
       "notes": ""
     },
     {
@@ -229,8 +429,18 @@
       "number": 20,
       "suit": null,
       "element": "fire",
-      "upright_keywords": ["reckoning", "calling", "awakening", "review"],
-      "reversed_keywords": ["self-judgment", "avoidance", "unanswered call", "refusal to review"],
+      "upright_keywords": [
+        "reckoning",
+        "calling",
+        "awakening",
+        "review"
+      ],
+      "reversed_keywords": [
+        "self-judgment",
+        "avoidance",
+        "unanswered call",
+        "refusal to review"
+      ],
       "notes": ""
     },
     {
@@ -240,8 +450,1194 @@
       "number": 21,
       "suit": null,
       "element": "earth",
-      "upright_keywords": ["completion", "integration", "arrival", "wholeness"],
-      "reversed_keywords": ["incompletion", "loose ends", "delay", "unintegrated lesson"],
+      "upright_keywords": [
+        "completion",
+        "integration",
+        "arrival",
+        "wholeness"
+      ],
+      "reversed_keywords": [
+        "incompletion",
+        "loose ends",
+        "delay",
+        "unintegrated lesson"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_ace",
+      "name": "Ace of Wands",
+      "arcana": "minor",
+      "number": 1,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "spark",
+        "initiative",
+        "creative force",
+        "beginning"
+      ],
+      "reversed_keywords": [
+        "blocked spark",
+        "false start",
+        "low energy",
+        "delayed initiative"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_two",
+      "name": "Two of Wands",
+      "arcana": "minor",
+      "number": 2,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "planning",
+        "vision",
+        "choice",
+        "horizon"
+      ],
+      "reversed_keywords": [
+        "narrow vision",
+        "hesitation",
+        "fear of expansion",
+        "unclear plan"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_three",
+      "name": "Three of Wands",
+      "arcana": "minor",
+      "number": 3,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "expansion",
+        "foresight",
+        "progress",
+        "waiting"
+      ],
+      "reversed_keywords": [
+        "delays",
+        "small thinking",
+        "blocked progress",
+        "poor timing"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_four",
+      "name": "Four of Wands",
+      "arcana": "minor",
+      "number": 4,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "celebration",
+        "threshold",
+        "homecoming",
+        "stability"
+      ],
+      "reversed_keywords": [
+        "instability",
+        "private milestone",
+        "delayed celebration",
+        "unsettled home"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_five",
+      "name": "Five of Wands",
+      "arcana": "minor",
+      "number": 5,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "conflict",
+        "competition",
+        "friction",
+        "testing"
+      ],
+      "reversed_keywords": [
+        "avoidance of conflict",
+        "inner conflict",
+        "diffused tension",
+        "truce"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_six",
+      "name": "Six of Wands",
+      "arcana": "minor",
+      "number": 6,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "recognition",
+        "victory",
+        "public confidence",
+        "momentum"
+      ],
+      "reversed_keywords": [
+        "ego check",
+        "private success",
+        "fall from praise",
+        "unrecognized work"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_seven",
+      "name": "Seven of Wands",
+      "arcana": "minor",
+      "number": 7,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "defense",
+        "conviction",
+        "pressure",
+        "standing ground"
+      ],
+      "reversed_keywords": [
+        "overwhelm",
+        "giving ground",
+        "defensiveness",
+        "exhausted stance"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_eight",
+      "name": "Eight of Wands",
+      "arcana": "minor",
+      "number": 8,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "speed",
+        "messages",
+        "movement",
+        "acceleration"
+      ],
+      "reversed_keywords": [
+        "delays",
+        "scattered energy",
+        "miscommunication",
+        "blocked movement"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_nine",
+      "name": "Nine of Wands",
+      "arcana": "minor",
+      "number": 9,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "endurance",
+        "boundaries",
+        "fatigue",
+        "resilience"
+      ],
+      "reversed_keywords": [
+        "paranoia",
+        "collapse",
+        "lowered guard",
+        "burnout"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_ten",
+      "name": "Ten of Wands",
+      "arcana": "minor",
+      "number": 10,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "burden",
+        "responsibility",
+        "overload",
+        "completion strain"
+      ],
+      "reversed_keywords": [
+        "release",
+        "delegation",
+        "dropped burden",
+        "unsustainable load"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_page",
+      "name": "Page of Wands",
+      "arcana": "minor",
+      "number": 11,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "curiosity",
+        "experiment",
+        "message",
+        "fresh enthusiasm"
+      ],
+      "reversed_keywords": [
+        "restlessness",
+        "immaturity",
+        "unfocused impulse",
+        "stalled experiment"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_knight",
+      "name": "Knight of Wands",
+      "arcana": "minor",
+      "number": 12,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "pursuit",
+        "boldness",
+        "adventure",
+        "heat"
+      ],
+      "reversed_keywords": [
+        "recklessness",
+        "inconsistency",
+        "haste",
+        "scattered pursuit"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_queen",
+      "name": "Queen of Wands",
+      "arcana": "minor",
+      "number": 13,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "confidence",
+        "magnetism",
+        "warmth",
+        "creative sovereignty"
+      ],
+      "reversed_keywords": [
+        "jealousy",
+        "insecurity",
+        "dimmed confidence",
+        "controlling warmth"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wands_king",
+      "name": "King of Wands",
+      "arcana": "minor",
+      "number": 14,
+      "suit": "wands",
+      "element": "fire",
+      "upright_keywords": [
+        "leadership",
+        "vision",
+        "command",
+        "enterprise"
+      ],
+      "reversed_keywords": [
+        "domination",
+        "impatience",
+        "poor leadership",
+        "inflated vision"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_ace",
+      "name": "Ace of Cups",
+      "arcana": "minor",
+      "number": 1,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "opening heart",
+        "feeling",
+        "receptivity",
+        "new bond"
+      ],
+      "reversed_keywords": [
+        "emotional block",
+        "withheld feeling",
+        "drain",
+        "closed heart"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_two",
+      "name": "Two of Cups",
+      "arcana": "minor",
+      "number": 2,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "bond",
+        "mutuality",
+        "agreement",
+        "meeting"
+      ],
+      "reversed_keywords": [
+        "imbalance",
+        "misalignment",
+        "strained bond",
+        "unspoken feeling"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_three",
+      "name": "Three of Cups",
+      "arcana": "minor",
+      "number": 3,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "friendship",
+        "celebration",
+        "community",
+        "shared joy"
+      ],
+      "reversed_keywords": [
+        "exclusion",
+        "overindulgence",
+        "social strain",
+        "private joy"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_four",
+      "name": "Four of Cups",
+      "arcana": "minor",
+      "number": 4,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "withdrawal",
+        "dissatisfaction",
+        "contemplation",
+        "missed offer"
+      ],
+      "reversed_keywords": [
+        "renewed interest",
+        "emotional opening",
+        "restlessness",
+        "seeing the offer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_five",
+      "name": "Five of Cups",
+      "arcana": "minor",
+      "number": 5,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "grief",
+        "regret",
+        "loss",
+        "remaining support"
+      ],
+      "reversed_keywords": [
+        "acceptance",
+        "recovery",
+        "forgiveness",
+        "turning around"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_six",
+      "name": "Six of Cups",
+      "arcana": "minor",
+      "number": 6,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "memory",
+        "kindness",
+        "childhood",
+        "return"
+      ],
+      "reversed_keywords": [
+        "nostalgia trap",
+        "outgrowing past",
+        "stale memory",
+        "moving forward"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_seven",
+      "name": "Seven of Cups",
+      "arcana": "minor",
+      "number": 7,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "options",
+        "fantasy",
+        "temptation",
+        "imagination"
+      ],
+      "reversed_keywords": [
+        "clarity",
+        "choice",
+        "sobering up",
+        "fewer illusions"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_eight",
+      "name": "Eight of Cups",
+      "arcana": "minor",
+      "number": 8,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "departure",
+        "seeking",
+        "emotional honesty",
+        "leaving"
+      ],
+      "reversed_keywords": [
+        "avoidance of leaving",
+        "return",
+        "fear of loss",
+        "unfinished goodbye"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_nine",
+      "name": "Nine of Cups",
+      "arcana": "minor",
+      "number": 9,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "satisfaction",
+        "wish",
+        "pleasure",
+        "contentment"
+      ],
+      "reversed_keywords": [
+        "hollow pleasure",
+        "excess",
+        "dissatisfaction",
+        "misplaced wish"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_ten",
+      "name": "Ten of Cups",
+      "arcana": "minor",
+      "number": 10,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "belonging",
+        "harmony",
+        "family",
+        "emotional fulfillment"
+      ],
+      "reversed_keywords": [
+        "disharmony",
+        "idealized happiness",
+        "family strain",
+        "private discontent"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_page",
+      "name": "Page of Cups",
+      "arcana": "minor",
+      "number": 11,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "sensitivity",
+        "message",
+        "wonder",
+        "emotional curiosity"
+      ],
+      "reversed_keywords": [
+        "emotional immaturity",
+        "blocked message",
+        "shyness",
+        "moodiness"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_knight",
+      "name": "Knight of Cups",
+      "arcana": "minor",
+      "number": 12,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "romance",
+        "offering",
+        "quest",
+        "idealism"
+      ],
+      "reversed_keywords": [
+        "unreliable offer",
+        "mood-driven action",
+        "seduction",
+        "disillusion"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_queen",
+      "name": "Queen of Cups",
+      "arcana": "minor",
+      "number": 13,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "compassion",
+        "intuition",
+        "emotional depth",
+        "care"
+      ],
+      "reversed_keywords": [
+        "overabsorption",
+        "poor boundaries",
+        "emotional fog",
+        "self-neglect"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cups_king",
+      "name": "King of Cups",
+      "arcana": "minor",
+      "number": 14,
+      "suit": "cups",
+      "element": "water",
+      "upright_keywords": [
+        "emotional steadiness",
+        "wisdom",
+        "diplomacy",
+        "containment"
+      ],
+      "reversed_keywords": [
+        "emotional control",
+        "volatility",
+        "avoidance",
+        "cold diplomacy"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_ace",
+      "name": "Ace of Swords",
+      "arcana": "minor",
+      "number": 1,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "clarity",
+        "truth",
+        "decision",
+        "cutting through"
+      ],
+      "reversed_keywords": [
+        "confusion",
+        "harsh words",
+        "clouded judgment",
+        "misused truth"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_two",
+      "name": "Two of Swords",
+      "arcana": "minor",
+      "number": 2,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "stalemate",
+        "choice",
+        "blocked feeling",
+        "pause"
+      ],
+      "reversed_keywords": [
+        "indecision breaking",
+        "overwhelm",
+        "forced choice",
+        "avoidance exposed"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_three",
+      "name": "Three of Swords",
+      "arcana": "minor",
+      "number": 3,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "heartbreak",
+        "truth pain",
+        "separation",
+        "grief"
+      ],
+      "reversed_keywords": [
+        "healing",
+        "released pain",
+        "denial",
+        "old wound"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_four",
+      "name": "Four of Swords",
+      "arcana": "minor",
+      "number": 4,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "rest",
+        "recovery",
+        "retreat",
+        "stillness"
+      ],
+      "reversed_keywords": [
+        "restlessness",
+        "burnout",
+        "returning too soon",
+        "stagnation"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_five",
+      "name": "Five of Swords",
+      "arcana": "minor",
+      "number": 5,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "conflict",
+        "hollow victory",
+        "self-interest",
+        "fallout"
+      ],
+      "reversed_keywords": [
+        "repair",
+        "de-escalation",
+        "resentment",
+        "learning from conflict"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_six",
+      "name": "Six of Swords",
+      "arcana": "minor",
+      "number": 6,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "transition",
+        "passage",
+        "leaving difficulty",
+        "mental distance"
+      ],
+      "reversed_keywords": [
+        "stuck transition",
+        "returning trouble",
+        "resistance",
+        "unfinished passage"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_seven",
+      "name": "Seven of Swords",
+      "arcana": "minor",
+      "number": 7,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "strategy",
+        "secrecy",
+        "evasion",
+        "self-protection"
+      ],
+      "reversed_keywords": [
+        "confession",
+        "exposure",
+        "poor strategy",
+        "self-deception"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_eight",
+      "name": "Eight of Swords",
+      "arcana": "minor",
+      "number": 8,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "restriction",
+        "fear",
+        "mental trap",
+        "constraint"
+      ],
+      "reversed_keywords": [
+        "release",
+        "new perspective",
+        "self-liberation",
+        "seen limits"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_nine",
+      "name": "Nine of Swords",
+      "arcana": "minor",
+      "number": 9,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "anxiety",
+        "rumination",
+        "night thoughts",
+        "guilt"
+      ],
+      "reversed_keywords": [
+        "relief",
+        "seeking help",
+        "persistent worry",
+        "facing fear"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_ten",
+      "name": "Ten of Swords",
+      "arcana": "minor",
+      "number": 10,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "ending",
+        "defeat",
+        "collapse",
+        "finality"
+      ],
+      "reversed_keywords": [
+        "recovery",
+        "survival",
+        "delayed ending",
+        "old pain lifting"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_page",
+      "name": "Page of Swords",
+      "arcana": "minor",
+      "number": 11,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "inquiry",
+        "watchfulness",
+        "new idea",
+        "mental agility"
+      ],
+      "reversed_keywords": [
+        "gossip",
+        "defensiveness",
+        "scattered thought",
+        "immature critique"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_knight",
+      "name": "Knight of Swords",
+      "arcana": "minor",
+      "number": 12,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "speed",
+        "argument",
+        "pursuit of truth",
+        "decisive action"
+      ],
+      "reversed_keywords": [
+        "rashness",
+        "verbal aggression",
+        "tunnel vision",
+        "reckless certainty"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_queen",
+      "name": "Queen of Swords",
+      "arcana": "minor",
+      "number": 13,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "discernment",
+        "boundaries",
+        "honesty",
+        "clear perception"
+      ],
+      "reversed_keywords": [
+        "coldness",
+        "bitterness",
+        "overanalysis",
+        "guarded speech"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swords_king",
+      "name": "King of Swords",
+      "arcana": "minor",
+      "number": 14,
+      "suit": "swords",
+      "element": "air",
+      "upright_keywords": [
+        "reason",
+        "authority",
+        "judgment",
+        "principle"
+      ],
+      "reversed_keywords": [
+        "rigidity",
+        "misuse of logic",
+        "cruel judgment",
+        "detached control"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_ace",
+      "name": "Ace of Pentacles",
+      "arcana": "minor",
+      "number": 1,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "opportunity",
+        "seed",
+        "resource",
+        "material beginning"
+      ],
+      "reversed_keywords": [
+        "missed opportunity",
+        "delay",
+        "insecurity",
+        "unrooted seed"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_two",
+      "name": "Two of Pentacles",
+      "arcana": "minor",
+      "number": 2,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "balance",
+        "adaptation",
+        "juggling",
+        "change"
+      ],
+      "reversed_keywords": [
+        "imbalance",
+        "overextension",
+        "dropped task",
+        "poor prioritization"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_three",
+      "name": "Three of Pentacles",
+      "arcana": "minor",
+      "number": 3,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "craft",
+        "collaboration",
+        "skill",
+        "building"
+      ],
+      "reversed_keywords": [
+        "poor teamwork",
+        "unrecognized skill",
+        "rework",
+        "misalignment"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_four",
+      "name": "Four of Pentacles",
+      "arcana": "minor",
+      "number": 4,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "security",
+        "holding",
+        "control",
+        "conservation"
+      ],
+      "reversed_keywords": [
+        "release",
+        "scarcity fear",
+        "loosening grip",
+        "hoarding"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_five",
+      "name": "Five of Pentacles",
+      "arcana": "minor",
+      "number": 5,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "lack",
+        "exile",
+        "hardship",
+        "support nearby"
+      ],
+      "reversed_keywords": [
+        "recovery",
+        "help received",
+        "persistent scarcity",
+        "rejoining"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_six",
+      "name": "Six of Pentacles",
+      "arcana": "minor",
+      "number": 6,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "generosity",
+        "exchange",
+        "support",
+        "fair giving"
+      ],
+      "reversed_keywords": [
+        "strings attached",
+        "imbalance",
+        "debt",
+        "withheld support"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_seven",
+      "name": "Seven of Pentacles",
+      "arcana": "minor",
+      "number": 7,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "assessment",
+        "patience",
+        "investment",
+        "slow growth"
+      ],
+      "reversed_keywords": [
+        "impatience",
+        "poor investment",
+        "reassessment",
+        "lack of results"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_eight",
+      "name": "Eight of Pentacles",
+      "arcana": "minor",
+      "number": 8,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "practice",
+        "apprenticeship",
+        "discipline",
+        "refinement"
+      ],
+      "reversed_keywords": [
+        "perfectionism",
+        "drudgery",
+        "skill gap",
+        "unfocused work"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_nine",
+      "name": "Nine of Pentacles",
+      "arcana": "minor",
+      "number": 9,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "self-sufficiency",
+        "luxury",
+        "earned ease",
+        "independence"
+      ],
+      "reversed_keywords": [
+        "dependence",
+        "overwork",
+        "fragile security",
+        "loneliness"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_ten",
+      "name": "Ten of Pentacles",
+      "arcana": "minor",
+      "number": 10,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "legacy",
+        "family systems",
+        "wealth",
+        "continuity"
+      ],
+      "reversed_keywords": [
+        "family strain",
+        "unstable legacy",
+        "short-term thinking",
+        "inheritance burden"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_page",
+      "name": "Page of Pentacles",
+      "arcana": "minor",
+      "number": 11,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "study",
+        "practice",
+        "offer",
+        "beginner craft"
+      ],
+      "reversed_keywords": [
+        "procrastination",
+        "unapplied study",
+        "lost focus",
+        "immature plan"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_knight",
+      "name": "Knight of Pentacles",
+      "arcana": "minor",
+      "number": 12,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "steadiness",
+        "duty",
+        "routine",
+        "persistence"
+      ],
+      "reversed_keywords": [
+        "stagnation",
+        "stubbornness",
+        "grind",
+        "risk avoidance"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_queen",
+      "name": "Queen of Pentacles",
+      "arcana": "minor",
+      "number": 13,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "nourishment",
+        "practical care",
+        "resourcefulness",
+        "embodiment"
+      ],
+      "reversed_keywords": [
+        "overwork",
+        "smothering",
+        "neglected body",
+        "resource anxiety"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pentacles_king",
+      "name": "King of Pentacles",
+      "arcana": "minor",
+      "number": 14,
+      "suit": "pentacles",
+      "element": "earth",
+      "upright_keywords": [
+        "stability",
+        "stewardship",
+        "abundance",
+        "mastery"
+      ],
+      "reversed_keywords": [
+        "materialism",
+        "inflexibility",
+        "poor stewardship",
+        "status fixation"
+      ],
       "notes": ""
     }
   ]

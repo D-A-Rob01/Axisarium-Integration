@@ -1,0 +1,3 @@
+# Kybernion v3 artwork hashes are calculated from canonical LF bytes.
+/cartomancy_engine/android-app/app/src/main/assets/tarot-v3/cards/*.svg text eol=lf
+/cartomancy_engine/android-app/app/src/main/assets/tarot-v3/*.json text eol=lf

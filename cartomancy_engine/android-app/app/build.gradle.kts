@@ -25,8 +25,8 @@ android {
         applicationId = "com.aletheion.cartomancy"
         minSdk = 26
         targetSdk = 35
-        versionCode = 4
-        versionName = "0.3.1"
+        versionCode = 5
+        versionName = "0.3.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -181,7 +181,43 @@ val verifyStartupContracts by tasks.registering {
     }
 }
 
+val verifyDeckArtworkContract by tasks.registering {
+    group = "verification"
+    description = "Verifies the bundled deck and Kybernion v3 artwork index map the same 78 cards."
+    doLast {
+        val deckFile = engineRoot.resolve("src/cartomancy_engine/data/decks/rider-waite-smith.json")
+        val artworkIndex = file("src/main/assets/tarot-v3/artwork-index.json")
+        require(deckFile.isFile) { "Missing bundled Rider-Waite-Smith deck: $deckFile" }
+        require(artworkIndex.isFile) { "Missing Kybernion artwork index: $artworkIndex" }
+
+        val deckIds = Regex("\\\"id\\\"\\s*:\\s*\\\"([^\\\"]+)\\\"")
+            .findAll(deckFile.readText())
+            .map { it.groupValues[1] }
+            .toList()
+        require(deckIds.firstOrNull() == "rider-waite-smith") {
+            "Bundled deck contract must identify rider-waite-smith"
+        }
+        val cardIds = deckIds.drop(1)
+        val artworkIds = Regex("\\\"card_id\\\"\\s*:\\s*\\\"([^\\\"]+)\\\"")
+            .findAll(artworkIndex.readText())
+            .map { it.groupValues[1] }
+            .toList()
+        require(cardIds.size == 78 && cardIds.toSet().size == 78) {
+            "Bundled deck must declare 78 unique cards; found ${cardIds.size}"
+        }
+        require(artworkIds.size == 78 && artworkIds.toSet().size == 78) {
+            "Kybernion artwork index must declare 78 unique cards; found ${artworkIds.size}"
+        }
+        require(cardIds.toSet() == artworkIds.toSet()) {
+            val missingArtwork = cardIds.toSet() - artworkIds.toSet()
+            val missingDeckCards = artworkIds.toSet() - cardIds.toSet()
+            "Bundled deck/artwork mismatch; missing artwork=$missingArtwork, missing deck cards=$missingDeckCards"
+        }
+    }
+}
+
 tasks.named("preBuild").configure {
     dependsOn(verifyTarotAssets)
     dependsOn(verifyStartupContracts)
+    dependsOn(verifyDeckArtworkContract)
 }

@@ -50,7 +50,8 @@ jobs:
   release:
     if: >-
       (github.event_name == 'workflow_dispatch' && inputs.release) ||
-      startsWith(github.ref, 'refs/tags/kybernion-v')
+      startsWith(github.ref, 'refs/tags/kybernion-v') ||
+      (github.event_name == 'push' && github.ref == 'refs/heads/main' && startsWith(github.event.head_commit.message, 'Release Kybernion '))
     needs: verify
     runs-on: ubuntu-latest
     env:
@@ -109,7 +110,7 @@ jobs:
       - name: Retain signed Kybernion APK
         uses: actions/upload-artifact@v7
         with:
-          name: Kybernion-Mobile-Helm-0.3.2-signed
+          name: Kybernion-Mobile-Helm-0.3.3-signed
           path: |
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk.sha256

@@ -25,8 +25,8 @@ android {
         applicationId = "com.aletheion.cartomancy"
         minSdk = 26
         targetSdk = 35
-        versionCode = 6
-        versionName = "0.3.3"
+        versionCode = 7
+        versionName = "0.3.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -100,6 +100,10 @@ android {
     )
 
     packaging.resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
+
+    testOptions.unitTests.all {
+        it.systemProperty("kybernion.contracts", engineRoot.resolve("src/cartomancy_engine/data").absolutePath)
+    }
 }
 
 dependencies {
@@ -120,6 +124,7 @@ dependencies {
     implementation("io.coil-kt:coil-svg:2.7.0")
 
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.json:json:20240303")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
@@ -164,6 +169,11 @@ val verifyStartupContracts by tasks.registering {
         val contracts = listOf(
             "three-card" to 3,
             "the-constellation" to 7,
+            "the-fork" to 7,
+            "the-aperture" to 7,
+            "the-crucible" to 7,
+            "the-interface" to 7,
+            "the-vector" to 7,
         )
         val spreadsRoot = engineRoot.resolve("src/cartomancy_engine/data/spreads")
         contracts.forEach { (id, expectedPositionCount) ->

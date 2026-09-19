@@ -110,7 +110,7 @@ jobs:
       - name: Retain signed Kybernion APK
         uses: actions/upload-artifact@v7
         with:
-          name: Kybernion-Mobile-Helm-0.3.3-signed
+          name: Kybernion-Mobile-Helm-0.3.4-signed
           path: |
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk.sha256

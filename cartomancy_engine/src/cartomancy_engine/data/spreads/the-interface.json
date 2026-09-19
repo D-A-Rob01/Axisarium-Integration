@@ -1,0 +1,41 @@
+{
+  "id": "the-interface",
+  "name": "The Interface",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Self-state",
+      "prompt": "What am I bringing to this interaction?"
+    },
+    {
+      "index": 2,
+      "label": "Other/system state",
+      "prompt": "What is my working model of the other person or system, and what evidence could check it?"
+    },
+    {
+      "index": 3,
+      "label": "Contact surface",
+      "prompt": "Where does actual contact or exchange occur?"
+    },
+    {
+      "index": 4,
+      "label": "Misreading/noise",
+      "prompt": "What ambiguity or assumption might interfere with understanding?"
+    },
+    {
+      "index": 5,
+      "label": "Mutual affordance",
+      "prompt": "What could this interaction make possible for both sides, subject to confirmation?"
+    },
+    {
+      "index": 6,
+      "label": "Boundary",
+      "prompt": "What limit, consent, or responsibility needs to remain clear?"
+    },
+    {
+      "index": 7,
+      "label": "Viable exchange",
+      "prompt": "What concrete communication or exchange could I propose without presuming agreement?"
+    }
+  ]
+}

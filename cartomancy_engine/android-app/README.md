@@ -1,10 +1,10 @@
 # Kybernion Mobile Helm
 
-Phase 4B is an Android Studio project for Kybernion's first handheld capture surface.
+Kybernion 0.3.4 (Android version code 7) is a local-first handheld symbolic inquiry and reading capture app.
 
 Open this `android-app/` folder in Android Studio, allow Gradle to resolve the Android and Compose dependencies, then run the `app` configuration on an emulator or physical device.
 
-The prototype loads the Python package's existing deck and spread JSON directly as a Gradle asset tree. The source checkout must therefore retain:
+The app loads the Python package's existing deck and spread JSON directly as a Gradle asset tree. The source checkout must therefore retain:
 
 ```text
 ../src/cartomancy_engine/data/
@@ -13,7 +13,7 @@ The prototype loads the Python package's existing deck and spread JSON directly 
 The first screen supports Kybernion's field-capture workflow:
 
 - question and context capture
-- Three Card and The Constellation formations
+- Three Card, The Constellation, The Fork, The Aperture, The Crucible, The Interface, and The Vector formations
 - interpretation protocol selection
 - optional confidence
 - reversals enabled or disabled
@@ -59,3 +59,7 @@ This is a personal release, not a published Play Store app. It does
 not write directly to an Obsidian vault, perform AI interpretation, sync to the
 cloud, or support Galaxy Watch. The package/application id remains
 `com.aletheion.cartomancy` as a technical compatibility name.
+
+## Spread Grammar 0.3.4
+
+See [the spread guide](../docs/spread-grammar.md) and [change record](../docs/changes-0.3.4.md). The Constellation, icon, draw engine, reading state, and export renderers are preserved. Run `./gradlew verifyTarotAssets verifyStartupContracts verifyDeckArtworkContract testDebugUnitTest assembleDebug assembleRelease` from this folder. Signed APKs are produced by the Kybernion Android workflow with `release=true`; signing material must never enter source bundles.

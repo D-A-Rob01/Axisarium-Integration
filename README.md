@@ -63,3 +63,7 @@ To intentionally update the live vault's `reports/` folder, omit `--reports-dir`
 
 - Aletheion guide: `docs/ALETHEION.md`
 - Repo/vault boundary: `docs/REPO_VAULT_BOUNDARY.md`
+
+## Kybernion Mobile Helm
+
+[Kybernion](cartomancy_engine/README.md) is the local-first Android symbolic inquiry app and Python cartomancy engine. Android 0.3.4 adds the curated Spread Grammar family while preserving the immutable draw and Markdown/JSON export workflow.

@@ -44,7 +44,7 @@ still requires the explicit refresh control.
 
 ## Artwork source and validation
 
-Import or verify the source package from the repository root:
+Import or verify the source package from this `android-app/` folder:
 
 ```powershell
 python .\scripts\import_tarot_v3.py --source <path-to-tarot-sigil-drafts-v3>

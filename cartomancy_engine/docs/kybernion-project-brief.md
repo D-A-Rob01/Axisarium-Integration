@@ -46,7 +46,8 @@ behavior and user agency.
   must not silently redraw. The explicit refresh control begins a new reading.
 - `CartomancyApp.kt`: question/setup, generative field, formation/protocol selection,
   draw action, adaptive card overview, full-screen detail view, first impression,
-  and export controls. `Theme.kt` and resource vectors provide presentation.
+  and export controls. `MainActivity.kt` defines the theme; resource vectors
+  provide the icon and other presentation assets.
 - `ArtifactRenderer.kt`: Markdown and JSON representations of the same Android
   reading. `Export.kt` writes export files into app cache and shares them through
   a FileProvider and Android share intent, granting temporary URI read access.

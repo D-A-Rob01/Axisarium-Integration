@@ -17,7 +17,7 @@ credentials. A partial signing configuration is rejected rather than silently
 producing an unsigned package.
 
 ```powershell
-./gradlew.bat verifyTarotAssets testDebugUnitTest assembleRelease
+./gradlew.bat verifyTarotAssets verifyStartupContracts verifyDeckArtworkContract testDebugUnitTest assembleRelease
 ```
 
 When signing is configured, the usable artifact is:
@@ -45,7 +45,12 @@ The explicit `Kybernion Android` workflow-dispatch release and any
 The release job fails with the names of any missing secrets. With complete
 credentials, it signs the release, verifies the APK certificate, records a
 SHA-256 file, and retains both files in the
-`Kybernion-Mobile-Helm-0.3.0-signed` workflow artifact for 30 days.
+`Kybernion-Mobile-Helm-0.3.4-signed` workflow artifact for 30 days.
+
+The current Android version is 0.3.4 / code 7. A main-branch push whose commit
+message begins `Release Kybernion ` also requests the signed release job.
+Successful signing/build verification produces a release candidate; handset
+acceptance below is a separate requirement.
 
 ## Lexarcanum acceptance gate
 

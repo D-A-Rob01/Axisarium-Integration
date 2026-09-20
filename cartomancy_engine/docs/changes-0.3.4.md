@@ -33,6 +33,7 @@ and private readings were not changed.
   `3dbe692`.
 - Debug APK and unsigned release APK built. Signed delivery uses the existing
   GitHub workflow with `release=true`; see the run and artifact for signing status.
+- GitHub Actions signed release: [run 35468247811](https://github.com/D-A-Rob01/Axisarium-Integration/actions/runs/35468247811) completed successfully for commit `3e8255d`. The workflow verified the APK signature and retained `Kybernion-Mobile-Helm-0.3.4-signed`, containing the signed APK and SHA-256 checksum, for 30 days.
 
 ## Acceptance limits
 

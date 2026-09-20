@@ -1,4 +1,4 @@
-# Cartomancy Engine
+# Kybernion — Cartomancy Engine
 
 Local-first Tarot reading logger and symbolic audit tool for Axisarium.
 
@@ -132,12 +132,28 @@ Use these labels while interpreting:
 - Action recommendation:
 ```
 
-## v0.1 Boundaries
+## Current scope (Android 0.3.4)
 
-- Major Arcana only.
-- No card images.
-- No AI interpretation.
-- No Obsidian plugin or daily note insertion.
-- No cloud sync or web UI.
-- No astrology/Aletheion sky correlation.
-- No recurrence detection or statistics.
+Kybernion Mobile Helm is the Android capture surface: ask, draw, notice, save,
+export. It bundles all 78 Rider-Waite-Smith records and the complete Kybernion v3
+SVG artwork, a generative Kybernetic Field, adaptive card views, and Markdown /
+JSON sharing. Reading state survives activity recreation; a new draw is explicit.
+
+The Python CLI and Android share deck/spread JSON resources. Their reading
+models and renderers are separate implementations; Android's richer artifact
+contract is not a claim of exact Python/Android export parity.
+
+Android offers Three Card, the unchanged Constellation, and five new seven-card
+formations: The Fork, The Aperture, The Crucible, The Interface, and The Vector.
+The Python CLI also retains Situation / Obstacle / Counsel, Body / Mind / Action,
+and Avoidance / Reality / Next Move. See [Spread Grammar](docs/spread-grammar.md)
+for positions, use cases, and interpretation boundaries.
+
+The app does not generate AI interpretations, establish supernatural facts,
+write directly into an Obsidian vault, or sync readings to a cloud service.
+The exported worksheet supports human interpretation and later audit. External
+AI-assisted discussion is a separate, user-directed activity.
+
+- [Android build and artwork](android-app/README.md)
+- [0.3.4 change record](docs/changes-0.3.4.md)
+- [Project brief](docs/kybernion-project-brief.md)

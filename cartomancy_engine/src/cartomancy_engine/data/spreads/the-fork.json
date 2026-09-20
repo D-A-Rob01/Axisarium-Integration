@@ -1,0 +1,41 @@
+{
+  "id": "the-fork",
+  "name": "The Fork",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Current vector",
+      "prompt": "What direction are my present choices already taking?"
+    },
+    {
+      "index": 2,
+      "label": "Path A affordance",
+      "prompt": "What might Path A make possible? Name this option before drawing."
+    },
+    {
+      "index": 3,
+      "label": "Path A cost",
+      "prompt": "What tradeoff or demand might Path A involve?"
+    },
+    {
+      "index": 4,
+      "label": "Path B affordance",
+      "prompt": "What might Path B make possible? Name this option before drawing."
+    },
+    {
+      "index": 5,
+      "label": "Path B cost",
+      "prompt": "What tradeoff or demand might Path B involve?"
+    },
+    {
+      "index": 6,
+      "label": "Irreversible factor",
+      "prompt": "What may be difficult to undo, and what real-world information would clarify it?"
+    },
+    {
+      "index": 7,
+      "label": "Steering criterion",
+      "prompt": "What value or practical criterion could guide my choice without deciding it for me?"
+    }
+  ]
+}

@@ -28,7 +28,10 @@ class ContractRepository(private val context: Context) {
         )
     }
 
-    fun loadAvailableSpreads(): List<Spread> = listOf("three-card", "the-constellation").map(::loadSpread)
+    fun loadAvailableSpreads(): List<Spread> = listOf(
+        "three-card", "the-constellation",
+        "the-fork", "the-aperture", "the-crucible", "the-interface", "the-vector",
+    ).map(::loadSpread)
 
     private fun readAsset(name: String): String = context.assets.open(name).bufferedReader().use { it.readText() }
 }

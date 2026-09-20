@@ -1,0 +1,41 @@
+{
+  "id": "the-aperture",
+  "name": "The Aperture",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Surface appearance",
+      "prompt": "What seems apparent in the situation as I currently see it?"
+    },
+    {
+      "index": 2,
+      "label": "Assumption",
+      "prompt": "What am I taking for granted?"
+    },
+    {
+      "index": 3,
+      "label": "Missing information",
+      "prompt": "What do I need to learn through observation or inquiry rather than infer from a card?"
+    },
+    {
+      "index": 4,
+      "label": "Distortion",
+      "prompt": "What bias, fear, or framing might be shaping my account?"
+    },
+    {
+      "index": 5,
+      "label": "Alternate frame",
+      "prompt": "What different perspective could I test?"
+    },
+    {
+      "index": 6,
+      "label": "What becomes visible",
+      "prompt": "What possibility comes into view through that perspective?"
+    },
+    {
+      "index": 7,
+      "label": "Next inquiry",
+      "prompt": "What concrete question or observation would help distinguish these possibilities?"
+    }
+  ]
+}

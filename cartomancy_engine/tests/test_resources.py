@@ -7,12 +7,13 @@ from cartomancy_engine.models import Deck, Spread
 from cartomancy_engine.resources import list_decks, list_spreads, load_deck, load_spread
 
 
-def test_bundled_deck_loads_major_arcana():
+def test_bundled_deck_loads_all_78_cards():
     deck = load_deck("rider-waite-smith")
 
     assert deck.id == "rider-waite-smith"
-    assert len(deck.cards) == 22
-    assert {card.arcana for card in deck.cards} == {"major"}
+    assert len(deck.cards) == 78
+    assert sum(card.arcana == "major" for card in deck.cards) == 22
+    assert sum(card.arcana == "minor" for card in deck.cards) == 56
 
 
 def test_bundled_spreads_load():

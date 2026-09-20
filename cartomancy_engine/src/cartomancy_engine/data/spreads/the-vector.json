@@ -1,0 +1,41 @@
+{
+  "id": "the-vector",
+  "name": "The Vector",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Initial condition",
+      "prompt": "What observable starting conditions matter within the time window I named?"
+    },
+    {
+      "index": 2,
+      "label": "Momentum",
+      "prompt": "What pattern appears to be continuing?"
+    },
+    {
+      "index": 3,
+      "label": "Accelerant",
+      "prompt": "What might strengthen or speed up that pattern?"
+    },
+    {
+      "index": 4,
+      "label": "Drag",
+      "prompt": "What might slow or constrain it?"
+    },
+    {
+      "index": 5,
+      "label": "Perturbation",
+      "prompt": "What change or unknown could alter the course?"
+    },
+    {
+      "index": 6,
+      "label": "Steering surface",
+      "prompt": "What part of this situation can I realistically influence?"
+    },
+    {
+      "index": 7,
+      "label": "Probable trajectory",
+      "prompt": "If present conditions continue, what tentative scenario could I check later? This is not a measured probability."
+    }
+  ]
+}

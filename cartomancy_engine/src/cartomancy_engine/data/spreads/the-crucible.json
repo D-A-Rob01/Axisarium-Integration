@@ -1,0 +1,41 @@
+{
+  "id": "the-crucible",
+  "name": "The Crucible",
+  "positions": [
+    {
+      "index": 1,
+      "label": "Material entering",
+      "prompt": "What experiences, commitments, or resources am I bringing into this transition?"
+    },
+    {
+      "index": 2,
+      "label": "Heat/pressure",
+      "prompt": "What demands are shaping the process, and which can be reduced?"
+    },
+    {
+      "index": 3,
+      "label": "What resists",
+      "prompt": "What resists change, and might that resistance protect something valuable?"
+    },
+    {
+      "index": 4,
+      "label": "What is being shed",
+      "prompt": "What pattern might I choose to release without assuming loss is required?"
+    },
+    {
+      "index": 5,
+      "label": "What survives",
+      "prompt": "What value or capacity deserves protection through change?"
+    },
+    {
+      "index": 6,
+      "label": "New property",
+      "prompt": "What capacity might emerge, without treating difficulty as a guarantee of growth?"
+    },
+    {
+      "index": 7,
+      "label": "Tempering action",
+      "prompt": "What manageable action or support could help me integrate change safely?"
+    }
+  ]
+}

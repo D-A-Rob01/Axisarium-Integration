@@ -4,6 +4,7 @@ __pycache__/
 .pytest_cache/
 
 # Runtime output
+cartomancy_engine/android-app/app/build-astrerium/
 logs/
 scratch/
 reports/

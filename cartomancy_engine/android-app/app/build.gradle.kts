@@ -8,6 +8,9 @@ plugins {
 }
 
 val engineRoot = rootProject.projectDir.parentFile
+providers.environmentVariable("KYBERNION_BUILD_DIR").orNull?.let {
+    layout.buildDirectory.set(layout.projectDirectory.dir(it))
+}
 val signingProperties = Properties().apply {
     val localProperties = rootProject.file("keystore.properties")
     if (localProperties.isFile) {
@@ -25,8 +28,8 @@ android {
         applicationId = "com.aletheion.cartomancy"
         minSdk = 26
         targetSdk = 35
-        versionCode = 7
-        versionName = "0.3.4"
+        versionCode = 8
+        versionName = "0.4.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -226,7 +229,36 @@ val verifyDeckArtworkContract by tasks.registering {
     }
 }
 
+val verifyAstreriumArtwork by tasks.registering {
+    group = "verification"
+    description = "Checks the 78 distinct Astrerium cells, deck IDs and atlas checksums."
+    doLast {
+        val root = file("src/main/assets/astrerium")
+        val index = root.resolve("index.json").readText()
+        val ids = Regex("\"id\"\\s*:\\s*\"([^\"]+)\"").findAll(index).map { it.groupValues[1] }.toList()
+        val deckIds = Regex("\"id\"\\s*:\\s*\"([^\"]+)\"")
+            .findAll(engineRoot.resolve("src/cartomancy_engine/data/decks/rider-waite-smith.json").readText())
+            .map { it.groupValues[1] }.drop(1).toSet()
+        require(ids.size == 78 && ids.toSet() == deckIds) { "Astrerium must map every deck card exactly once" }
+        val cells = Regex("\"file\"\\s*:\\s*\"([^\"]+)\",\\s*\"column\"\\s*:\\s*([0-2]),\\s*\"row\"\\s*:\\s*([0-2])")
+            .findAll(index).map { it.groupValues.drop(1) }.toList()
+        require(cells.size == 78 && cells.toSet().size == 78) { "Astrerium cells must be unique and in range" }
+        val hashes = Regex("\"([a-z0-9-]+\\.png)\"\\s*:\\s*\"([0-9a-f]{64})\"")
+            .findAll(index).associate { it.groupValues[1] to it.groupValues[2] }
+        require(hashes.keys == cells.map { it[0] }.toSet()) { "Every atlas needs a checksum" }
+        hashes.forEach { (name, expected) ->
+            val image = root.resolve(name)
+            val actual = MessageDigest.getInstance("SHA-256").digest(image.readBytes()).joinToString("") { "%02x".format(it) }
+            require(actual == expected) { "Astrerium checksum mismatch: $name" }
+            val decoded = javax.imageio.ImageIO.read(image)
+            require(decoded != null && decoded.width >= 900 && decoded.height >= 1500) { "Invalid atlas: $name" }
+        }
+        require(root.resolve("environment.png").isFile) { "Missing Astrerium environment" }
+    }
+}
+
 tasks.named("preBuild").configure {
+    dependsOn(verifyAstreriumArtwork)
     dependsOn(verifyTarotAssets)
     dependsOn(verifyStartupContracts)
     dependsOn(verifyDeckArtworkContract)

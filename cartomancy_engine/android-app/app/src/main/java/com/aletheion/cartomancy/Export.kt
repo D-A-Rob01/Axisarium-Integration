@@ -5,16 +5,29 @@ import android.content.Intent
 import androidx.core.content.FileProvider
 import java.io.File
 
-fun shareReading(context: Context, reading: ReadingArtifact, includeJson: Boolean) {
+fun shareReading(context: Context, reading: ReadingArtifact, includeJson: Boolean, journalEntry: JournalEntry? = null) {
     val exportDirectory = File(context.cacheDir, "kybernion").apply { mkdirs() }
-    val stem = "${reading.date}_tarot-reading_${slugify(reading.question.ifBlank { reading.spread })}"
+    val stem = "${reading.date}_tarot-reading_${slugify(reading.question.ifBlank { reading.spread })}${journalEntry?.let { "_${it.id.take(8)}" }.orEmpty()}"
     val markdownFile = File(exportDirectory, "$stem.md").apply {
-        writeText(ArtifactRenderer.toMarkdown(reading), Charsets.UTF_8)
+        val annotations = journalEntry?.let { entry -> buildString {
+            appendLine("\n## Astrerium Journal — Human Annotations")
+            appendLine("\nReading ID: ${entry.id}. The committed draw is unchanged.")
+            entry.notes.forEach { note ->
+                appendLine("\n### ${note.kind.replaceFirstChar { it.uppercase() }} · ${note.at}")
+                if(note.positions.isNotEmpty()) appendLine("Positions: ${note.positions.joinToString(", ")}")
+                appendLine("\n${note.text}")
+            }
+        }}.orEmpty()
+        writeText(ArtifactRenderer.toMarkdown(reading) + annotations, Charsets.UTF_8)
     }
     val files = mutableListOf(markdownFile)
     if (includeJson) {
         files += File(exportDirectory, "$stem.json").apply {
-            writeText(ArtifactRenderer.toJson(reading), Charsets.UTF_8)
+            val json = org.json.JSONObject(ArtifactRenderer.toJson(reading))
+            journalEntry?.let { entry ->
+                json.put("astrerium_journal", org.json.JSONObject(JournalCodec.encode(entry)).apply { remove("reading") })
+            }
+            writeText(json.toString(2) + "\n", Charsets.UTF_8)
         }
     }
 

@@ -81,7 +81,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.ImageLoader
 
 @Composable
-fun CartomancyApp() {
+fun LegacyCartomancyApp() {
     val context = LocalContext.current
     val repository = remember { ContractRepository(context) }
     val artworkRepository = remember { ArtworkRepository(context) }

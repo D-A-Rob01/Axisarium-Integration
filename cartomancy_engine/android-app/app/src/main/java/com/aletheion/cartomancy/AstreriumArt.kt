@@ -83,7 +83,7 @@ object AstreriumArt {
 @Composable fun AstreriumBackground() {
     AsyncImage(model = "file:///android_asset/astrerium/environment.png", contentDescription = null,
         contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
-    Box(Modifier.fillMaxSize().background(Color(0xFF050812).copy(alpha = .32f)))
+    Box(Modifier.fillMaxSize().background(Color(0xFF03050D).copy(alpha = .52f)))
 }
 
 @Composable fun AstreriumCard(card: Card, cell: ArtCell, reversed: Boolean, modifier: Modifier = Modifier) {
@@ -91,7 +91,7 @@ object AstreriumArt {
     val bitmap by produceState<ImageBitmap?>(null, cell.file) { value = AstreriumArt.bitmap(context, cell.file) }
     val shape = RoundedCornerShape(14.dp)
     Box(modifier.aspectRatio(.6f).clip(shape).background(Color(0xFF080B17))
-        .border(1.dp, Brush.linearGradient(listOf(Color(0xFFD9BCFF), Color(0xFF7AE5F4), Color(0xFFE8C9A0))), shape)
+        .border(1.dp, Brush.linearGradient(listOf(Color(0xFFAA8CDD), Color(0xFF62D8EB), Color(0xFF7973A0))), shape)
         .semantics { contentDescription = "${card.name}, ${if(reversed) "reversed" else "upright"}" }) {
         Canvas(Modifier.fillMaxSize().rotate(if(reversed) 180f else 0f)) {
             bitmap?.let { image ->
@@ -138,7 +138,7 @@ object AstreriumArt {
             }
             drawPath(path, if(n==0) Color(0xFF82CFDE) else Color(0xFFB99DE9), style=Stroke(1.dp.toPx()))
         }
-        drawCircle(Color(0xFFE9D2AC),3.dp.toPx(),Offset(size.width/2,size.height/2))
+        drawCircle(Color(0xFFB5ECF4),2.dp.toPx(),Offset(size.width/2,size.height/2))
     }
 }
 

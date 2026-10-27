@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -174,7 +175,7 @@ private val Panel = Color(0xEF090D1A)
                     "about" -> {
                         Heading("An instrument\nof attention")
                         DarkPanel {
-                            Text("Kybernion · Astrerium 0.4.0",fontFamily=FontFamily.Serif,fontSize=24.sp)
+                            Text("Kybernion · Astrerium 0.5.0",fontFamily=FontFamily.Serif,fontSize=24.sp)
                             Text("Ask. Draw. Notice. Relate. Revisit.",color=Violet)
                             Text("The deck offers symbolic prompts. Your observations, associations, and interpretations remain your own. A reading does not establish another person's thoughts or a measured prediction.")
                             Text("The plasma and wavelength imagery is a visual metaphor. Sparse elemental marks follow the deck's existing element metadata; the artwork is a new Astrerium interpretation.")
@@ -307,6 +308,7 @@ private val Panel = Color(0xEF090D1A)
     if(focus!=null) {
         Box(Modifier.fillMaxWidth(),contentAlignment=Alignment.Center) {AstreriumCard(focus,art.getValue(focus.id),false,Modifier.widthIn(max=320.dp).fillMaxWidth(.9f))}
         DarkPanel {Text(focus.name,fontFamily=FontFamily.Serif,fontSize=26.sp);Text("Upright · ${focus.uprightKeywords.joinToString(" · ")}");Text("Reversed · ${focus.reversedKeywords.joinToString(" · ")}",color=Muted)}
+        SymbolicStructure(focus)
         TextButton(onClick={selected=null}) {Text("Back to collection")}
     } else cards.chunked(2).forEach {row->
         Row(horizontalArrangement=Arrangement.spacedBy(14.dp)) {
@@ -316,6 +318,51 @@ private val Panel = Color(0xEF090D1A)
             }}
             if(row.size==1) Spacer(Modifier.weight(1f))
         }
+    }
+}
+
+@Composable private fun SymbolicStructure(card: Card) {
+    val context = LocalContext.current
+    val uriHandler = LocalUriHandler.current
+    var expanded by rememberSaveable(card.id) { mutableStateOf(false) }
+    var lens by rememberSaveable(card.id) { mutableStateOf(0) }
+    var sourceVisible by rememberSaveable(card.id) { mutableStateOf(false) }
+    val record by produceState<Pair<org.json.JSONObject,org.json.JSONObject>?>(null, card.id) {
+        value = withContext(Dispatchers.IO) {
+            runCatching {
+                val root = context.assets.open("astrerium/synthesis-foundation.json").bufferedReader().use { org.json.JSONObject(it.readText()) }
+                val cards = root.getJSONArray("cards")
+                (0 until cards.length()).map { cards.getJSONObject(it) }.first { it.getString("card_id") == card.id } to root.getJSONObject("sources")
+            }.getOrNull()
+        }
+    }
+    TextButton(onClick = { expanded = !expanded }) { Text(if(expanded) "Close symbolic structure" else "Inspect symbolic structure") }
+    if(expanded) DarkPanel {
+        Text("Kybernion synthesis", fontFamily=FontFamily.Serif, fontSize=23.sp)
+        Text("Authored connections · source context kept separate", color=Violet)
+        record?.let { (r,sources) ->
+            Text("Operation · ${r.getString("intent")}")
+            Text("Form · ${r.getString("visual_grammar")}")
+            val layers=r.getJSONArray("layers")
+            val layer=layers.getJSONObject(lens)
+            Choice("Resonance lens",layer.getString("title"),(0 until layers.length()).map { it.toString() to layers.getJSONObject(it).getString("title") }) { lens=it.toInt();sourceVisible=false }
+            Text("Kybernion connection",color=Violet,fontWeight=FontWeight.Bold)
+            Text(layer.getString("connection"))
+            Text("Visual translation",color=Violet,fontWeight=FontWeight.Bold)
+            Text(layer.getString("visual"))
+            if(layer.getString("id")=="math") Text("Harmonic ${r.getInt("harmonic")} · Orbits ${r.getInt("orbit_count")}\nGray code ${r.getJSONArray("gray_code")}",color=Muted)
+            if(layer.getString("id")=="spectral") Text("Current light pair ${r.getJSONArray("spectral_colors")}\nEarlier sigil palette ${r.getJSONArray("legacy_spectral_colors")}",color=Muted)
+            if(layer.getString("id")=="alchemy" && r.getString("element") != r.getString("legacy_art_element")) Text("Earlier artwork used ${r.getString("legacy_art_element")}; this edition follows the deck's ${r.getString("element")} metadata.",color=Muted)
+            TextButton(onClick={sourceVisible=!sourceVisible}) { Text(if(sourceVisible) "Close source context" else "Read source context") }
+            if(sourceVisible) {
+                val source=sources.getJSONObject(layer.getString("id"))
+                Text(source.getString("context"),color=Muted)
+                Text(source.getString("title"),fontSize=14.sp,color=Violet)
+                val url=source.getString("url")
+                if(url.isNotBlank()) TextButton(onClick={runCatching {uriHandler.openUri(url)}}) {Text("Open source")}
+            }
+            Text("These are authored contemplative connections, not a universal correspondence table. Your reading can disagree with them.",color=Muted,fontSize=14.sp)
+        } ?: Text("The symbolic record is unavailable. The card and saved readings remain available.", color=Muted)
     }
 }
 

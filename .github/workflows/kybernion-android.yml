@@ -45,7 +45,9 @@ jobs:
           java-version: "17"
       - uses: gradle/actions/setup-gradle@v6
       - name: Verify artwork, unit tests, and unsigned builds
-        run: ./gradlew verifyTarotAssets verifyStartupContracts verifyDeckArtworkContract testDebugUnitTest assembleDebug assembleRelease --stacktrace
+        run: |
+          python3 validate_neon_assets.py
+          ./gradlew verifyTarotAssets verifyStartupContracts verifyDeckArtworkContract testDebugUnitTest assembleDebug assembleRelease --stacktrace
 
   release:
     if: >-
@@ -110,7 +112,7 @@ jobs:
       - name: Retain signed Kybernion APK
         uses: actions/upload-artifact@v7
         with:
-          name: Kybernion-Astrerium-0.4.0-signed
+          name: Kybernion-Astrerium-0.5.0-signed
           path: |
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk
             cartomancy_engine/android-app/app/build/outputs/apk/release/app-release.apk.sha256

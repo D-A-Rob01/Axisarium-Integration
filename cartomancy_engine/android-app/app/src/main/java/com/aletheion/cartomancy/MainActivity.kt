@@ -28,15 +28,15 @@ class MainActivity : ComponentActivity() {
 private fun CartomancyTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = darkColorScheme(
-            primary = Color(0xFF9A7CFF),
+            primary = Color(0xFFB8A5F4),
             onPrimary = Color(0xFF0B0815),
             secondary = Color(0xFF58E8F6),
-            tertiary = Color(0xFFFFC857),
-            background = Color(0xFF080B14),
+            tertiary = Color(0xFFD5C5AB),
+            background = Color(0xFF050711),
             onBackground = Color(0xFFF4F0FF),
-            surface = Color(0xFF131827),
+            surface = Color(0xFF0A0E19),
             onSurface = Color(0xFFF4F0FF),
-            surfaceVariant = Color(0xFF20273A),
+            surfaceVariant = Color(0xFF151A29),
             onSurfaceVariant = Color(0xFFC7C3D7),
             outline = Color(0xFF777189),
             outlineVariant = Color(0xFF34394B),

@@ -1,9 +1,13 @@
-# Kybernion Mobile Helm Release Procedure
+# Kybernion Astrerium Release Procedure
 
 ## Preconditions
 
 - Complete a fresh debug build and the full unit-test suite.
 - Run `verifyTarotAssets`; it must validate exactly 78 indexed SVG files.
+- Run `python validate_neon_assets.py`; it must validate all 78 current paintings,
+  bounds, checksums and separately attributed synthesis records.
+- Run `connectedDebugAndroidTest` on the API 35 emulator for immutable readings,
+  durable drafts, journal annotations and Markdown/JSON export.
 - Test on the target Lexarcanum handset: create a reading, rotate the display,
   open card detail, export Markdown and JSON, and save both to the Axisarium
   readings destination.
@@ -45,9 +49,9 @@ The explicit `Kybernion Android` workflow-dispatch release and any
 The release job fails with the names of any missing secrets. With complete
 credentials, it signs the release, verifies the APK certificate, records a
 SHA-256 file, and retains both files in the
-`Kybernion-Mobile-Helm-0.3.4-signed` workflow artifact for 30 days.
+`Kybernion-Astrerium-0.5.0-signed` workflow artifact for 30 days.
 
-The current Android version is 0.3.4 / code 7. A main-branch push whose commit
+The current Android version is 0.5.0 / code 9. A main-branch push whose commit
 message begins `Release Kybernion ` also requests the signed release job.
 Successful signing/build verification produces a release candidate; handset
 acceptance below is a separate requirement.

@@ -5,20 +5,20 @@
   "rows": 3,
   "generator": "OpenAI built-in image generation; native identity typography",
   "files": {
-    "neon-corrections.png": "55209922eb4fa1263e85660d182e1c338537f1539e9817552cb4e59a33506649",
-    "neon-courts-0.png": "1d68ac7104f07f95ba18003fb50c12bf3f13eb35e227b55a97727f2d3abe2e31",
-    "neon-courts-1.png": "c9d6f2dfea61a5d26ddf7491ed0f4608cdf3ff2b47632d38a8d7252ef5329417",
-    "neon-cups.png": "ad6503a399c20f3e4b5ba1e20913bbe1cc096d6df100c3ed25a1ed68ccb7aa94",
-    "neon-major-0.png": "fbc20cf0bbfc9d722e77f775af3169ea0b20bf22e27f5a10a46cedf32a594900",
-    "neon-major-1.png": "7f25759259b9a93e47f0e7ca71593ad410a1b91c86152c429ce41ca5f6d081bb",
-    "neon-major-2.png": "805b4e5dd0f7856d352849b3a2c0b1e281c42ccc878c645d362993e19241ab34",
-    "neon-pentacles.png": "a90073de95a99c8ede3d9f6b2fdfc50e0a4a88899e8c7f8738372b5b8786a23d",
-    "neon-swords.png": "cb43ef6665ff70a3ab65c1bab25c06d7499d4d1abc8d87753e9cb8a34a295e39",
-    "neon-temperance.png": "35cdcb94cce8aec3adfe1fdfdc1a585ff25ec2087dfed03378bb319fc128e494",
-    "neon-ten-swords.png": "b09b51b175fe7320e511c98c6569923b559ad0c19977d22239812f1bac71d9e0",
-    "neon-the-chariot.png": "7897ddb8042546f7d5cb4dfc740f959b6f12d2011793d4a0fa77f4e5245959b0",
-    "neon-the-moon.png": "6d3b61ae83f8b24c9bc0d40451edbe1a4057f6ddd104cfb9ba82e5bc95233b35",
-    "neon-wands.png": "ac0c21c79008120fe564be67d286ae95afe538feb2723140b807b7de4e09fd3c"
+    "neon-corrections.png": "4b0f4b021de19e579dfe351fe873424a23e271a7a156ca2703e1c3e77a00611f",
+    "neon-courts-0.png": "3e658fb202f7385d22e58cba0bffc0dfa733c246948c9b03d599f26d3a7c4c83",
+    "neon-courts-1.png": "c27b13682c90a8e455861ec21bf19926fb20978a7c8c3a58e51a81aa001964b4",
+    "neon-cups.png": "020955ba58c0ffd456a0976a18aa9ba61d752a58025f74e08544eb7f320f80c6",
+    "neon-major-0.png": "687216513e576862a04e8c13c03687851d43732670a1c734574fc6ba89e31be4",
+    "neon-major-1.png": "7ca70e86cf453178f72e80ec108633a86f1c9baa29011c00599d2daab1d384ea",
+    "neon-major-2.png": "ee6fa254586ebf8e13553de9eb5b8b2696f4b16154fcdffa9051df9216378e3c",
+    "neon-pentacles.png": "376cb4908f64ce22e3ef14ce0906815893c3ad82f5456c5c714c26a4ef95ba3f",
+    "neon-swords.png": "82529beecf43bb779d4b12d7abe8608d1d8b305a07c3f92541143c42906ff302",
+    "neon-temperance.png": "7a663b705a2dbc185e5b5f0cbf4ef68fb6ff91cd6a4be512e19c43b654fb469d",
+    "neon-ten-swords.png": "cc4e54fe89b47e2f18b6773c2b0f5d47872d4553afeb04635ee19ee7c8165ec7",
+    "neon-the-chariot.png": "158f29d4e1c74fea67a10ac988fef888777c7d241f26bd7d115686a7970f1d70",
+    "neon-the-moon.png": "acf26ac7af594d6c46b44a9b72e86f6f45bc27a9beeb5cfba9d90a0f6b4dda3d",
+    "neon-wands.png": "ec1f18de8875a5b41a0d01012ff706903976d2529b208906cd6c6e81793df76a"
   },
   "cards": [
     {
@@ -802,7 +802,7 @@
       "bottom": 0.9981470043236566
     }
   ],
-  "palette_revision": 1,
+  "palette_revision": 2,
   "palette": {
     "blue_source": "blue/cyan hues 162\u2013259 degrees",
     "blue_target": "#00FFDA",
@@ -818,102 +818,495 @@
         }
       },
       "neon-corrections.png": {
-        "sha256": "55209922eb4fa1263e85660d182e1c338537f1539e9817552cb4e59a33506649",
+        "sha256": "4b0f4b021de19e579dfe351fe873424a23e271a7a156ca2703e1c3e77a00611f",
         "pixels_remapped": {
           "blue": 652759,
           "violet": 45912
         }
       },
       "neon-courts-0.png": {
-        "sha256": "1d68ac7104f07f95ba18003fb50c12bf3f13eb35e227b55a97727f2d3abe2e31",
+        "sha256": "3e658fb202f7385d22e58cba0bffc0dfa733c246948c9b03d599f26d3a7c4c83",
         "pixels_remapped": {
           "blue": 770470,
           "violet": 148069
         }
       },
       "neon-courts-1.png": {
-        "sha256": "c9d6f2dfea61a5d26ddf7491ed0f4608cdf3ff2b47632d38a8d7252ef5329417",
+        "sha256": "c27b13682c90a8e455861ec21bf19926fb20978a7c8c3a58e51a81aa001964b4",
         "pixels_remapped": {
           "blue": 748690,
           "violet": 40116
         }
       },
       "neon-cups.png": {
-        "sha256": "ad6503a399c20f3e4b5ba1e20913bbe1cc096d6df100c3ed25a1ed68ccb7aa94",
+        "sha256": "020955ba58c0ffd456a0976a18aa9ba61d752a58025f74e08544eb7f320f80c6",
         "pixels_remapped": {
           "blue": 944153,
           "violet": 35389
         }
       },
       "neon-major-0.png": {
-        "sha256": "fbc20cf0bbfc9d722e77f775af3169ea0b20bf22e27f5a10a46cedf32a594900",
+        "sha256": "687216513e576862a04e8c13c03687851d43732670a1c734574fc6ba89e31be4",
         "pixels_remapped": {
           "blue": 928255,
           "violet": 70211
         }
       },
       "neon-major-1.png": {
-        "sha256": "7f25759259b9a93e47f0e7ca71593ad410a1b91c86152c429ce41ca5f6d081bb",
+        "sha256": "7ca70e86cf453178f72e80ec108633a86f1c9baa29011c00599d2daab1d384ea",
         "pixels_remapped": {
           "blue": 823563,
           "violet": 87130
         }
       },
       "neon-major-2.png": {
-        "sha256": "805b4e5dd0f7856d352849b3a2c0b1e281c42ccc878c645d362993e19241ab34",
+        "sha256": "ee6fa254586ebf8e13553de9eb5b8b2696f4b16154fcdffa9051df9216378e3c",
         "pixels_remapped": {
           "blue": 778209,
           "violet": 106800
         }
       },
       "neon-pentacles.png": {
-        "sha256": "a90073de95a99c8ede3d9f6b2fdfc50e0a4a88899e8c7f8738372b5b8786a23d",
+        "sha256": "376cb4908f64ce22e3ef14ce0906815893c3ad82f5456c5c714c26a4ef95ba3f",
         "pixels_remapped": {
           "blue": 1068215,
           "violet": 51617
         }
       },
       "neon-swords.png": {
-        "sha256": "cb43ef6665ff70a3ab65c1bab25c06d7499d4d1abc8d87753e9cb8a34a295e39",
+        "sha256": "82529beecf43bb779d4b12d7abe8608d1d8b305a07c3f92541143c42906ff302",
         "pixels_remapped": {
           "blue": 746477,
           "violet": 84124
         }
       },
       "neon-temperance.png": {
-        "sha256": "35cdcb94cce8aec3adfe1fdfdc1a585ff25ec2087dfed03378bb319fc128e494",
+        "sha256": "7a663b705a2dbc185e5b5f0cbf4ef68fb6ff91cd6a4be512e19c43b654fb469d",
         "pixels_remapped": {
           "blue": 527722,
           "violet": 116656
         }
       },
       "neon-ten-swords.png": {
-        "sha256": "b09b51b175fe7320e511c98c6569923b559ad0c19977d22239812f1bac71d9e0",
+        "sha256": "cc4e54fe89b47e2f18b6773c2b0f5d47872d4553afeb04635ee19ee7c8165ec7",
         "pixels_remapped": {
           "blue": 603976,
           "violet": 11232
         }
       },
       "neon-the-chariot.png": {
-        "sha256": "7897ddb8042546f7d5cb4dfc740f959b6f12d2011793d4a0fa77f4e5245959b0",
+        "sha256": "158f29d4e1c74fea67a10ac988fef888777c7d241f26bd7d115686a7970f1d70",
         "pixels_remapped": {
           "blue": 475280,
           "violet": 130144
         }
       },
       "neon-the-moon.png": {
-        "sha256": "6d3b61ae83f8b24c9bc0d40451edbe1a4057f6ddd104cfb9ba82e5bc95233b35",
+        "sha256": "acf26ac7af594d6c46b44a9b72e86f6f45bc27a9beeb5cfba9d90a0f6b4dda3d",
         "pixels_remapped": {
           "blue": 641591,
           "violet": 51355
         }
       },
       "neon-wands.png": {
-        "sha256": "ac0c21c79008120fe564be67d286ae95afe538feb2723140b807b7de4e09fd3c",
+        "sha256": "ec1f18de8875a5b41a0d01012ff706903976d2529b208906cd6c6e81793df76a",
         "pixels_remapped": {
           "blue": 1074652,
           "violet": 117024
         }
+      }
+    },
+    "balance": "Per card, violet #8e00ff is dominant over aquamarine #00ffda; existing already-violet-dominant cards retained.",
+    "balance_results": {
+      "wands_six": {
+        "aquamarine_before": 60973,
+        "violet_before": 6621,
+        "swapped": true
+      },
+      "cups_ten": {
+        "aquamarine_before": 62011,
+        "violet_before": 6391,
+        "swapped": true
+      },
+      "swords_nine": {
+        "aquamarine_before": 42175,
+        "violet_before": 2929,
+        "swapped": true
+      },
+      "pentacles_nine": {
+        "aquamarine_before": 74477,
+        "violet_before": 6388,
+        "swapped": true
+      },
+      "pentacles_ten": {
+        "aquamarine_before": 58120,
+        "violet_before": 5334,
+        "swapped": true
+      },
+      "wands_page": {
+        "aquamarine_before": 58369,
+        "violet_before": 20937,
+        "swapped": true
+      },
+      "wands_knight": {
+        "aquamarine_before": 58324,
+        "violet_before": 46775,
+        "swapped": true
+      },
+      "wands_queen": {
+        "aquamarine_before": 68481,
+        "violet_before": 37251,
+        "swapped": true
+      },
+      "wands_king": {
+        "aquamarine_before": 67614,
+        "violet_before": 26870,
+        "swapped": true
+      },
+      "cups_page": {
+        "aquamarine_before": 106299,
+        "violet_before": 1799,
+        "swapped": true
+      },
+      "cups_knight": {
+        "aquamarine_before": 107132,
+        "violet_before": 1839,
+        "swapped": true
+      },
+      "cups_queen": {
+        "aquamarine_before": 116455,
+        "violet_before": 1789,
+        "swapped": true
+      },
+      "cups_king": {
+        "aquamarine_before": 103384,
+        "violet_before": 1220,
+        "swapped": true
+      },
+      "swords_page": {
+        "aquamarine_before": 78319,
+        "violet_before": 2728,
+        "swapped": true
+      },
+      "swords_knight": {
+        "aquamarine_before": 91873,
+        "violet_before": 4118,
+        "swapped": true
+      },
+      "swords_queen": {
+        "aquamarine_before": 67192,
+        "violet_before": 4020,
+        "swapped": true
+      },
+      "swords_king": {
+        "aquamarine_before": 84883,
+        "violet_before": 3317,
+        "swapped": true
+      },
+      "pentacles_page": {
+        "aquamarine_before": 73747,
+        "violet_before": 934,
+        "swapped": true
+      },
+      "pentacles_knight": {
+        "aquamarine_before": 87458,
+        "violet_before": 3528,
+        "swapped": true
+      },
+      "pentacles_queen": {
+        "aquamarine_before": 95662,
+        "violet_before": 1707,
+        "swapped": true
+      },
+      "pentacles_king": {
+        "aquamarine_before": 99490,
+        "violet_before": 2528,
+        "swapped": true
+      },
+      "cups_two": {
+        "aquamarine_before": 83190,
+        "violet_before": 3098,
+        "swapped": true
+      },
+      "cups_three": {
+        "aquamarine_before": 97867,
+        "violet_before": 3546,
+        "swapped": true
+      },
+      "cups_four": {
+        "aquamarine_before": 94382,
+        "violet_before": 2663,
+        "swapped": true
+      },
+      "cups_five": {
+        "aquamarine_before": 92456,
+        "violet_before": 4527,
+        "swapped": true
+      },
+      "cups_six": {
+        "aquamarine_before": 105727,
+        "violet_before": 2096,
+        "swapped": true
+      },
+      "cups_seven": {
+        "aquamarine_before": 118356,
+        "violet_before": 3801,
+        "swapped": true
+      },
+      "cups_eight": {
+        "aquamarine_before": 89692,
+        "violet_before": 5112,
+        "swapped": true
+      },
+      "cups_nine": {
+        "aquamarine_before": 106432,
+        "violet_before": 3208,
+        "swapped": true
+      },
+      "major_00_fool": {
+        "aquamarine_before": 103857,
+        "violet_before": 2356,
+        "swapped": true
+      },
+      "major_01_magician": {
+        "aquamarine_before": 108308,
+        "violet_before": 4881,
+        "swapped": true
+      },
+      "major_02_high_priestess": {
+        "aquamarine_before": 108607,
+        "violet_before": 1988,
+        "swapped": true
+      },
+      "major_03_empress": {
+        "aquamarine_before": 95681,
+        "violet_before": 5021,
+        "swapped": true
+      },
+      "major_04_emperor": {
+        "aquamarine_before": 89122,
+        "violet_before": 24956,
+        "swapped": true
+      },
+      "major_05_hierophant": {
+        "aquamarine_before": 97808,
+        "violet_before": 4715,
+        "swapped": true
+      },
+      "major_06_lovers": {
+        "aquamarine_before": 94358,
+        "violet_before": 13523,
+        "swapped": true
+      },
+      "major_08_strength": {
+        "aquamarine_before": 92122,
+        "violet_before": 5593,
+        "swapped": true
+      },
+      "major_09_hermit": {
+        "aquamarine_before": 69711,
+        "violet_before": 6800,
+        "swapped": true
+      },
+      "major_10_wheel_of_fortune": {
+        "aquamarine_before": 92318,
+        "violet_before": 9315,
+        "swapped": true
+      },
+      "major_11_justice": {
+        "aquamarine_before": 97333,
+        "violet_before": 10778,
+        "swapped": true
+      },
+      "major_12_hanged_man": {
+        "aquamarine_before": 84623,
+        "violet_before": 11757,
+        "swapped": true
+      },
+      "major_13_death": {
+        "aquamarine_before": 75208,
+        "violet_before": 4537,
+        "swapped": true
+      },
+      "major_15_devil": {
+        "aquamarine_before": 71057,
+        "violet_before": 10099,
+        "swapped": true
+      },
+      "major_16_tower": {
+        "aquamarine_before": 96152,
+        "violet_before": 20910,
+        "swapped": true
+      },
+      "major_17_star": {
+        "aquamarine_before": 107562,
+        "violet_before": 6562,
+        "swapped": true
+      },
+      "major_19_sun": {
+        "aquamarine_before": 62419,
+        "violet_before": 31714,
+        "swapped": true
+      },
+      "major_20_judgement": {
+        "aquamarine_before": 98990,
+        "violet_before": 15784,
+        "swapped": true
+      },
+      "major_21_world": {
+        "aquamarine_before": 78697,
+        "violet_before": 11670,
+        "swapped": true
+      },
+      "wands_ace": {
+        "aquamarine_before": 73243,
+        "violet_before": 11953,
+        "swapped": true
+      },
+      "cups_ace": {
+        "aquamarine_before": 95424,
+        "violet_before": 6608,
+        "swapped": true
+      },
+      "swords_ace": {
+        "aquamarine_before": 94411,
+        "violet_before": 4463,
+        "swapped": true
+      },
+      "pentacles_ace": {
+        "aquamarine_before": 80000,
+        "violet_before": 8909,
+        "swapped": true
+      },
+      "pentacles_two": {
+        "aquamarine_before": 108062,
+        "violet_before": 5533,
+        "swapped": true
+      },
+      "pentacles_three": {
+        "aquamarine_before": 114106,
+        "violet_before": 4551,
+        "swapped": true
+      },
+      "pentacles_four": {
+        "aquamarine_before": 112687,
+        "violet_before": 4738,
+        "swapped": true
+      },
+      "pentacles_five": {
+        "aquamarine_before": 105653,
+        "violet_before": 5688,
+        "swapped": true
+      },
+      "pentacles_six": {
+        "aquamarine_before": 114654,
+        "violet_before": 3744,
+        "swapped": true
+      },
+      "pentacles_seven": {
+        "aquamarine_before": 116046,
+        "violet_before": 5149,
+        "swapped": true
+      },
+      "pentacles_eight": {
+        "aquamarine_before": 109327,
+        "violet_before": 6522,
+        "swapped": true
+      },
+      "swords_two": {
+        "aquamarine_before": 56867,
+        "violet_before": 3459,
+        "swapped": true
+      },
+      "swords_three": {
+        "aquamarine_before": 64605,
+        "violet_before": 12795,
+        "swapped": true
+      },
+      "swords_four": {
+        "aquamarine_before": 79247,
+        "violet_before": 7703,
+        "swapped": true
+      },
+      "swords_five": {
+        "aquamarine_before": 93794,
+        "violet_before": 11899,
+        "swapped": true
+      },
+      "swords_six": {
+        "aquamarine_before": 94563,
+        "violet_before": 5751,
+        "swapped": true
+      },
+      "swords_seven": {
+        "aquamarine_before": 79405,
+        "violet_before": 9879,
+        "swapped": true
+      },
+      "swords_eight": {
+        "aquamarine_before": 76148,
+        "violet_before": 12002,
+        "swapped": true
+      },
+      "major_14_temperance": {
+        "aquamarine_before": 464870,
+        "violet_before": 106378,
+        "swapped": true
+      },
+      "swords_ten": {
+        "aquamarine_before": 552705,
+        "violet_before": 11177,
+        "swapped": true
+      },
+      "major_07_chariot": {
+        "aquamarine_before": 413614,
+        "violet_before": 113225,
+        "swapped": true
+      },
+      "major_18_moon": {
+        "aquamarine_before": 590570,
+        "violet_before": 48799,
+        "swapped": true
+      },
+      "wands_two": {
+        "aquamarine_before": 102738,
+        "violet_before": 11076,
+        "swapped": true
+      },
+      "wands_three": {
+        "aquamarine_before": 119676,
+        "violet_before": 6633,
+        "swapped": true
+      },
+      "wands_four": {
+        "aquamarine_before": 111496,
+        "violet_before": 16298,
+        "swapped": true
+      },
+      "wands_five": {
+        "aquamarine_before": 116785,
+        "violet_before": 11261,
+        "swapped": true
+      },
+      "wands_seven": {
+        "aquamarine_before": 112852,
+        "violet_before": 9294,
+        "swapped": true
+      },
+      "wands_eight": {
+        "aquamarine_before": 123934,
+        "violet_before": 14383,
+        "swapped": true
+      },
+      "wands_nine": {
+        "aquamarine_before": 116051,
+        "violet_before": 14766,
+        "swapped": true
+      },
+      "wands_ten": {
+        "aquamarine_before": 109906,
+        "violet_before": 21715,
+        "swapped": true
       }
     }
   }

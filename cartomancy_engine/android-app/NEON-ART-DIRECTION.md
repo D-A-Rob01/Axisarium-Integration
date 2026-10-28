@@ -4,6 +4,8 @@ Edition 0.5.0. Generated using the built-in OpenAI image-generation tool; native
 
 ## Palette revision 1
 
+Palette revision 2 reverses the balance per card: violet `#8e00ff` is the principal color and aquamarine `#00ffda` the secondary accent. The established art is remapped within the indexed card bounds, preserving pixel luminance and chroma, symbolic forms and original crops. The surrounding environment remains as in revision 1.
+
 The complete card and environment image set retains its local luminance and painterly texture while remapping saturated blue/cyan light to `#00FFDA` and saturated violet/magenta light to `#8e00ff`. Warm paint, neutral stone, skin tones, and near-black shadows remain untouched. The exact post-pass hashes and pixel counts are recorded in `astrerium/index.json`.
 
 ## Shared prompt

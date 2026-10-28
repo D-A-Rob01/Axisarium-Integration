@@ -5,20 +5,20 @@
   "rows": 3,
   "generator": "OpenAI built-in image generation; native identity typography",
   "files": {
-    "neon-major-0.png": "dbb55f5902a9a1b968a1d0bd52807921c55707c4b0607384b2502b8ae45ae27f",
-    "neon-the-chariot.png": "0b80eb8683f29cff9158a65b4be5ea752c925b364db973107651c0d5c4d8c956",
-    "neon-major-1.png": "0d49fd6fa4bf79ca771f57dddb9b7c400f60bce5ed3beae1d3a1a939f71c6b18",
-    "neon-temperance.png": "c925ca0b1943cd0430496ab06e2edbac32dfb1775b04a5014ad33ac5e8ad17c8",
-    "neon-the-moon.png": "25dae0a5e27ce5ea41fea59d59bb035ed4e3bbf47dfe76e5964a677413da7764",
-    "neon-major-2.png": "bd976c2e01d94ca2a485bf8b8146b200c371a534a0dd49aac52cfe1cfa2952ab",
-    "neon-wands.png": "09479c19e138e900998c598eaafb0e41e9f6524a8aa11220d0db80cfc11324e9",
-    "neon-corrections.png": "72be6bc865a945d8dda4e3fb94539e1ff68d5478f747e4316d131b100f2891d2",
-    "neon-courts-0.png": "d77738433d05657e2c0b982e6fb7ff9127ac5eb3da6adca81c48fc15eedbe5a6",
-    "neon-cups.png": "b4311136063a3efa9862c4bdb670c9fe7fd62d0d7bd850ee62f09d418bfa5f4c",
-    "neon-swords.png": "dfff15ef29112088ca3d39bda8d02dd7cb3ca2a65e781f25b7647de5d1786d08",
-    "neon-ten-swords.png": "5ab9626bc5a52a3d110517083666411190ed78dc0724d67728d2fbad99539fde",
-    "neon-courts-1.png": "b38bff25c962ceb9723745a6634b8434d47abc3eafdb13a446c13d770072b22d",
-    "neon-pentacles.png": "2eb41434782b1734680df7c4a9a0bb77975863e10064f324e8c6b355b5d863f2"
+    "neon-corrections.png": "55209922eb4fa1263e85660d182e1c338537f1539e9817552cb4e59a33506649",
+    "neon-courts-0.png": "1d68ac7104f07f95ba18003fb50c12bf3f13eb35e227b55a97727f2d3abe2e31",
+    "neon-courts-1.png": "c9d6f2dfea61a5d26ddf7491ed0f4608cdf3ff2b47632d38a8d7252ef5329417",
+    "neon-cups.png": "ad6503a399c20f3e4b5ba1e20913bbe1cc096d6df100c3ed25a1ed68ccb7aa94",
+    "neon-major-0.png": "fbc20cf0bbfc9d722e77f775af3169ea0b20bf22e27f5a10a46cedf32a594900",
+    "neon-major-1.png": "7f25759259b9a93e47f0e7ca71593ad410a1b91c86152c429ce41ca5f6d081bb",
+    "neon-major-2.png": "805b4e5dd0f7856d352849b3a2c0b1e281c42ccc878c645d362993e19241ab34",
+    "neon-pentacles.png": "a90073de95a99c8ede3d9f6b2fdfc50e0a4a88899e8c7f8738372b5b8786a23d",
+    "neon-swords.png": "cb43ef6665ff70a3ab65c1bab25c06d7499d4d1abc8d87753e9cb8a34a295e39",
+    "neon-temperance.png": "35cdcb94cce8aec3adfe1fdfdc1a585ff25ec2087dfed03378bb319fc128e494",
+    "neon-ten-swords.png": "b09b51b175fe7320e511c98c6569923b559ad0c19977d22239812f1bac71d9e0",
+    "neon-the-chariot.png": "7897ddb8042546f7d5cb4dfc740f959b6f12d2011793d4a0fa77f4e5245959b0",
+    "neon-the-moon.png": "6d3b61ae83f8b24c9bc0d40451edbe1a4057f6ddd104cfb9ba82e5bc95233b35",
+    "neon-wands.png": "ac0c21c79008120fe564be67d286ae95afe538feb2723140b807b7de4e09fd3c"
   },
   "cards": [
     {
@@ -801,5 +801,120 @@
       "right": 0.6632337796086509,
       "bottom": 0.9981470043236566
     }
-  ]
+  ],
+  "palette_revision": 1,
+  "palette": {
+    "blue_source": "blue/cyan hues 162\u2013259 degrees",
+    "blue_target": "#00FFDA",
+    "violet_source": "violet/magenta hues 259\u2013353 degrees",
+    "violet_target": "#8e00ff",
+    "method": "hue remap with local saturation/value preserved; warm and neutral pixels untouched",
+    "assets": {
+      "environment.png": {
+        "sha256": "674ca02db1bdd5836660d0b5c155db2f5d12c89308053ac4cec76305e6c3f7ba",
+        "pixels_remapped": {
+          "blue": 481336,
+          "violet": 1087
+        }
+      },
+      "neon-corrections.png": {
+        "sha256": "55209922eb4fa1263e85660d182e1c338537f1539e9817552cb4e59a33506649",
+        "pixels_remapped": {
+          "blue": 652759,
+          "violet": 45912
+        }
+      },
+      "neon-courts-0.png": {
+        "sha256": "1d68ac7104f07f95ba18003fb50c12bf3f13eb35e227b55a97727f2d3abe2e31",
+        "pixels_remapped": {
+          "blue": 770470,
+          "violet": 148069
+        }
+      },
+      "neon-courts-1.png": {
+        "sha256": "c9d6f2dfea61a5d26ddf7491ed0f4608cdf3ff2b47632d38a8d7252ef5329417",
+        "pixels_remapped": {
+          "blue": 748690,
+          "violet": 40116
+        }
+      },
+      "neon-cups.png": {
+        "sha256": "ad6503a399c20f3e4b5ba1e20913bbe1cc096d6df100c3ed25a1ed68ccb7aa94",
+        "pixels_remapped": {
+          "blue": 944153,
+          "violet": 35389
+        }
+      },
+      "neon-major-0.png": {
+        "sha256": "fbc20cf0bbfc9d722e77f775af3169ea0b20bf22e27f5a10a46cedf32a594900",
+        "pixels_remapped": {
+          "blue": 928255,
+          "violet": 70211
+        }
+      },
+      "neon-major-1.png": {
+        "sha256": "7f25759259b9a93e47f0e7ca71593ad410a1b91c86152c429ce41ca5f6d081bb",
+        "pixels_remapped": {
+          "blue": 823563,
+          "violet": 87130
+        }
+      },
+      "neon-major-2.png": {
+        "sha256": "805b4e5dd0f7856d352849b3a2c0b1e281c42ccc878c645d362993e19241ab34",
+        "pixels_remapped": {
+          "blue": 778209,
+          "violet": 106800
+        }
+      },
+      "neon-pentacles.png": {
+        "sha256": "a90073de95a99c8ede3d9f6b2fdfc50e0a4a88899e8c7f8738372b5b8786a23d",
+        "pixels_remapped": {
+          "blue": 1068215,
+          "violet": 51617
+        }
+      },
+      "neon-swords.png": {
+        "sha256": "cb43ef6665ff70a3ab65c1bab25c06d7499d4d1abc8d87753e9cb8a34a295e39",
+        "pixels_remapped": {
+          "blue": 746477,
+          "violet": 84124
+        }
+      },
+      "neon-temperance.png": {
+        "sha256": "35cdcb94cce8aec3adfe1fdfdc1a585ff25ec2087dfed03378bb319fc128e494",
+        "pixels_remapped": {
+          "blue": 527722,
+          "violet": 116656
+        }
+      },
+      "neon-ten-swords.png": {
+        "sha256": "b09b51b175fe7320e511c98c6569923b559ad0c19977d22239812f1bac71d9e0",
+        "pixels_remapped": {
+          "blue": 603976,
+          "violet": 11232
+        }
+      },
+      "neon-the-chariot.png": {
+        "sha256": "7897ddb8042546f7d5cb4dfc740f959b6f12d2011793d4a0fa77f4e5245959b0",
+        "pixels_remapped": {
+          "blue": 475280,
+          "violet": 130144
+        }
+      },
+      "neon-the-moon.png": {
+        "sha256": "6d3b61ae83f8b24c9bc0d40451edbe1a4057f6ddd104cfb9ba82e5bc95233b35",
+        "pixels_remapped": {
+          "blue": 641591,
+          "violet": 51355
+        }
+      },
+      "neon-wands.png": {
+        "sha256": "ac0c21c79008120fe564be67d286ae95afe538feb2723140b807b7de4e09fd3c",
+        "pixels_remapped": {
+          "blue": 1074652,
+          "violet": 117024
+        }
+      }
+    }
+  }
 }

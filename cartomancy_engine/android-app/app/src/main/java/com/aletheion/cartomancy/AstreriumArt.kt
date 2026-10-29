@@ -83,15 +83,15 @@ object AstreriumArt {
 @Composable fun AstreriumBackground() {
     AsyncImage(model = "file:///android_asset/astrerium/environment.png", contentDescription = null,
         contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
-    Box(Modifier.fillMaxSize().background(Color(0xFF03050D).copy(alpha = .52f)))
+    Box(Modifier.fillMaxSize().background(Color(0xFF000B2B).copy(alpha = .52f)))
 }
 
 @Composable fun AstreriumCard(card: Card, cell: ArtCell, reversed: Boolean, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val bitmap by produceState<ImageBitmap?>(null, cell.file) { value = AstreriumArt.bitmap(context, cell.file) }
     val shape = RoundedCornerShape(14.dp)
-    Box(modifier.aspectRatio(.6f).clip(shape).background(Color(0xFF080B17))
-        .border(1.dp, Brush.linearGradient(listOf(Color(0xFFAA8CDD), Color(0xFF62D8EB), Color(0xFF7973A0))), shape)
+    Box(modifier.aspectRatio(.6f).clip(shape).background(Color(0xFF000B2B))
+        .border(1.dp, Brush.linearGradient(listOf(Color(0xFF8E00FF), Color(0xFF19C4FF), Color(0xFF00FFDA))), shape)
         .semantics { contentDescription = "${card.name}, ${if(reversed) "reversed" else "upright"}" }) {
         Canvas(Modifier.fillMaxSize().rotate(if(reversed) 180f else 0f)) {
             bitmap?.let { image ->
@@ -103,7 +103,7 @@ object AstreriumArt {
                     dstSize = IntSize(size.width.toInt(), size.height.toInt()), filterQuality = FilterQuality.High)
             }
         }
-        Box(Modifier.fillMaxSize().background(Brush.verticalGradient(listOf(Color.Transparent, Color.Transparent, Color(0xF0080B17)))))
+        Box(Modifier.fillMaxSize().background(Brush.verticalGradient(listOf(Color.Transparent, Color.Transparent, Color(0xF0000B2B)))))
         ElementSeal(card.element, Modifier.align(Alignment.TopEnd).padding(13.dp).size(18.dp))
         Column(Modifier.align(Alignment.BottomCenter).fillMaxWidth().padding(12.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(if(card.arcana == "major") roman(card.number) else rankLabel(card.number), fontSize = 14.sp, color = Color(0xFFEADCC7))
@@ -136,7 +136,7 @@ object AstreriumArt {
                 val y = size.height/2 + sin(i/100f*2*PI + n*PI).toFloat()*size.height*.25f
                 if(i==0) path.moveTo(x,y) else path.lineTo(x,y)
             }
-            drawPath(path, if(n==0) Color(0xFF82CFDE) else Color(0xFFB99DE9), style=Stroke(1.dp.toPx()))
+            drawPath(path, if(n==0) Color(0xFF19C4FF) else Color(0xFFB99DE9), style=Stroke(1.dp.toPx()))
         }
         drawCircle(Color(0xFFB5ECF4),2.dp.toPx(),Offset(size.width/2,size.height/2))
     }

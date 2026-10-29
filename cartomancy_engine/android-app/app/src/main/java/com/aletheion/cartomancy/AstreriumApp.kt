@@ -28,7 +28,7 @@ import java.io.File
 private val Pearl = Color(0xFFF4F0E9)
 private val Muted = Color(0xFFC1BBD0)
 private val Violet = Color(0xFFBBA3F4)
-private val Panel = Color(0xEF090D1A)
+private val Panel = Color(0xF0000B2B)
 
 @Composable fun CartomancyApp() {
     val context = LocalContext.current
@@ -95,7 +95,7 @@ private val Panel = Color(0xEF090D1A)
     }
     BackHandler(page!="encounter") { page=if(page=="reading") "encounter" else if(entry!=null) "reading" else "encounter" }
     Column(Modifier.fillMaxSize().statusBarsPadding().navigationBarsPadding()) {
-        Column(Modifier.fillMaxWidth().background(Color(0xD9080B14)).padding(top=12.dp,bottom=6.dp),horizontalAlignment=Alignment.CenterHorizontally) {
+        Column(Modifier.fillMaxWidth().background(Color(0xE6000B2B)).padding(top=12.dp,bottom=6.dp),horizontalAlignment=Alignment.CenterHorizontally) {
             Text("K Y B E R N I O N",color=Pearl,fontSize=16.sp,fontFamily=FontFamily.Serif)
             Text("Astrerium",color=Pearl,fontSize=24.sp,fontFamily=FontFamily.Serif)
             Row(horizontalArrangement=Arrangement.Center,modifier=Modifier.fillMaxWidth()) {
@@ -368,7 +368,7 @@ private val Panel = Color(0xEF090D1A)
 
 @Composable private fun Heading(text:String) {Text(text,Modifier.fillMaxWidth(),fontFamily=FontFamily.Serif,fontSize=32.sp,lineHeight=38.sp,color=Pearl,textAlign=TextAlign.Center)}
 @Composable private fun DarkPanel(content:@Composable ColumnScope.()->Unit) {
-    Surface(color=Panel,shape=RoundedCornerShape(12.dp),border=BorderStroke(1.dp,Color(0xFF323044))) {
+    Surface(color=Panel,shape=RoundedCornerShape(12.dp),border=BorderStroke(1.dp,Color(0xFF315A83))) {
         Column(Modifier.fillMaxWidth().padding(18.dp),verticalArrangement=Arrangement.spacedBy(12.dp),content=content)
     }
 }

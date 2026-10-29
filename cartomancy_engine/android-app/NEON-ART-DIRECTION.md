@@ -1,6 +1,10 @@
 # Astrerium Neon Cyberspace — production art direction
 
-Edition 0.5.0. Generated using the built-in OpenAI image-generation tool; native Android typography, borders, elemental seals, launcher and splash marks are code-native vectors. All consumed paintings are copied into app/src/main/assets/astrerium. No raster pixels were programmatically edited. The index selects inspected display bounds. The approved Moon, Temperance and Chariot originals remain individually packaged; their painted title strips are excluded from the display rectangle because titles remain upright native text.
+Edition 0.5.0, Digital Arcana revision. The artwork was restyled using the built-in image-generation tool; native Android typography, borders, elemental seals, launcher and splash marks are code-native vectors. Consumed artwork is in app/src/main/assets/astrerium, with original indexed display bounds. Moon, Temperance and Chariot remain individually packaged; image title strips are excluded from the display rectangle because titles remain upright native text.
+
+## Digital Arcana revision
+
+Artwork retains the established symbolic compositions while replacing painted texture with anime-influenced digital surfaces, data fragments and dark dimensional space. Violet `#8E00FF` leads, aquamarine `#00FFDA` remains, and `#6A51FF` and `#19C4FF` are tertiary accents against `#000B2B` shadow. These hex values are art-direction targets for generated imagery; native interface colors use exact values. Historical prompts and palette passes below describe prior editions, not the current raster files.
 
 ## Palette revision 1
 

@@ -6,6 +6,10 @@ from pathlib import Path
 root = Path(__file__).resolve().parent / 'app/src/main/assets/astrerium'
 path = root / 'index.json'
 index = json.loads(path.read_text(encoding='utf-8'))
+world = next(card for card in index['cards'] if card['id'] == 'major_21_world')
+world.update(file='neon-the-world.png', column=0, row=0,
+             left=0.0, top=0.0, right=1.0, bottom=1.0)
+index['files']['neon-the-world.png'] = ''
 index['files'] = {name: sha256((root / name).read_bytes()).hexdigest()
                   for name in index['files']}
 index['edition'] = 'Astrerium — Digital Arcana'

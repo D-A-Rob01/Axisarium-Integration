@@ -18,7 +18,8 @@
     "neon-ten-swords.png": "28fcd46fc40492b9ca25f6d4df8a63edaf0d5d0e5c4c9793f95c4aa23faefb2f",
     "neon-the-chariot.png": "39070231406ecef465879980a396bff27b09b615612ed3f2c7213d5c676f8215",
     "neon-the-moon.png": "7ca63f8fa13cce82723d60b3129532f9b0f1970a33ae3888396e8689ff791c46",
-    "neon-wands.png": "e58c3952de87f6de1bb962b1888b029940d1cde9c49d83ba4cfb3ec113e72e7a"
+    "neon-wands.png": "e58c3952de87f6de1bb962b1888b029940d1cde9c49d83ba4cfb3ec113e72e7a",
+    "neon-the-world.png": "f25d011993f3b2e8c0de2f008bee7cc7112b5b8dbafb6d6bcc2aedb4394c18b6"
   },
   "cards": [
     {
@@ -233,13 +234,13 @@
     },
     {
       "id": "major_21_world",
-      "file": "neon-major-2.png",
+      "file": "neon-the-world.png",
       "column": 0,
-      "row": 1,
-      "left": 0.003089598352214212,
-      "top": 0.33539221741815933,
-      "right": 0.3305870236869207,
-      "bottom": 0.6652254478072884
+      "row": 0,
+      "left": 0.0,
+      "top": 0.0,
+      "right": 1.0,
+      "bottom": 1.0
     },
     {
       "id": "wands_ace",

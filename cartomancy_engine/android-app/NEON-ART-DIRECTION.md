@@ -6,6 +6,8 @@ Edition 0.5.0, Digital Arcana revision. The artwork was restyled using the built
 
 Artwork retains the established symbolic compositions while replacing painted texture with anime-influenced digital surfaces, data fragments and dark dimensional space. Violet `#8E00FF` leads, aquamarine `#00FFDA` remains, and `#6A51FF` and `#19C4FF` are tertiary accents against `#000B2B` shadow. These hex values are art-direction targets for generated imagery; native interface colors use exact values. Historical prompts and palette passes below describe prior editions, not the current raster files.
 
+The World uses a dedicated corrected image: winged human/angel upper left, eagle upper right, bull lower left, lion lower right, matching the positions in Pamela Colman Smith's 1911 illustration for Waite's Pictorial Key. Its lower margin leaves room for the app's native title overlay.
+
 ## Palette revision 1
 
 Palette revision 2 reverses the balance per card: violet `#8e00ff` is the principal color and aquamarine `#00ffda` the secondary accent. The established art is remapped within the indexed card bounds, preserving pixel luminance and chroma, symbolic forms and original crops. The surrounding environment remains as in revision 1.
